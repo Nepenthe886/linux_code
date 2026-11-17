@@ -1,0 +1,35 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-17-54-03-971401-nepenthe-pc-26
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [bash-1]: process started with pid [42]
+[INFO] [spawn_entity.py-2]: process started with pid [44]
+[INFO] [robot_state_publisher-3]: process started with pid [46]
+[robot_state_publisher-3] [INFO] [1794909244.058091291] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794909244.058156459] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794909244.058163529] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794909244.058168439] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794909244.058173309] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794909244.058177519] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794909244.058182438] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794909244.058187248] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794909244.058191618] [robot_state_publisher]: got segment wheel_rear_right_link
+[spawn_entity.py-2] [INFO] [1794909244.230758609] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794909244.230995883] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794909244.232015865] [spawn_robot]: Waiting for entity xml on robot_description
+[spawn_entity.py-2] [INFO] [1794909244.243061211] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794909244.243324944] [spawn_robot]: Waiting for service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794909244.996459301] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794909245.254174447] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[bash-1] [INFO] [1794909245.263307516] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[bash-1] [INFO] [1794909245.264365277] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[bash-1] [INFO] [1794909245.265378840] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[bash-1] [INFO] [1794909245.269824578] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[bash-1] [INFO] [1794909245.269842897] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[bash-1] [INFO] [1794909245.269849127] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[bash-1] [INFO] [1794909245.269854817] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 44]
+[robot_state_publisher-3] [INFO] [1794909253.544540924] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 46]
+[INFO] [bash-1]: process has finished cleanly [pid 42]
+[INFO] [launch]: process[bash-1] was required: shutting down launched system

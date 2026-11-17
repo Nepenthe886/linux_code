@@ -1,0 +1,22 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="#ffffff", pad="0.35", nodesep="0.35", ranksep="0.55", fontname="Noto Sans CJK SC"];
+  node [shape=box, style="rounded,filled", color="#5d6673", penwidth=1.3, fontname="Noto Sans CJK SC", fontsize=13, margin="0.16,0.08"];
+  edge [color="#6b7480", fontname="Noto Sans CJK SC", fontsize=10, arrowsize=0.8];
+  "base_footprint" [fillcolor="#e8eef7", label="base_footprint"];
+  "base_link" [fillcolor="#bcd4ee", label="base_link"];
+  "wheel_front_left_link" [fillcolor="#fbe0c8", label="wheel_front_left_link"];
+  "wheel_front_right_link" [fillcolor="#fbe0c8", label="wheel_front_right_link"];
+  "wheel_rear_left_link" [fillcolor="#fbe0c8", label="wheel_rear_left_link"];
+  "wheel_rear_right_link" [fillcolor="#fbe0c8", label="wheel_rear_right_link"];
+  "livox_mid360_link" [fillcolor="#d6ecd4", label="livox_mid360_link"];
+  "camera_link" [fillcolor="#e4d7f0", label="camera_link"];
+  "camera_optical_frame" [fillcolor="#e4d7f0", label="camera_optical_frame"];
+  "base_footprint" -> "base_link" [label="base_footprint_joint\n(fixed)", style="solid"];
+  "base_link" -> "wheel_front_left_link" [label="wheel_front_left_joint\n(continuous)", style="dashed"];
+  "base_link" -> "wheel_front_right_link" [label="wheel_front_right_joint\n(continuous)", style="dashed"];
+  "base_link" -> "wheel_rear_left_link" [label="wheel_rear_left_joint\n(continuous)", style="dashed"];
+  "base_link" -> "wheel_rear_right_link" [label="wheel_rear_right_joint\n(continuous)", style="dashed"];
+  "base_link" -> "livox_mid360_link" [label="livox_mid360_joint\n(fixed)", style="solid"];
+  "base_link" -> "camera_link" [label="camera_joint\n(fixed)", style="solid"];
+  "camera_link" -> "camera_optical_frame" [label="camera_optical_joint\n(fixed)", style="solid"];
+}

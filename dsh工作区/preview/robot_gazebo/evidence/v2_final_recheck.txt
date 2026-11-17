@@ -1,0 +1,60 @@
+=== world 解析 ===
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+
+=== gzserver GAZEBO_MODEL_PATH（只列含 zhirong 的条目）===
+GAZEBO_MODEL_PATH=/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/models
+
+=== 机器人 spawn 位姿（gz model -p: x y z r p yaw）===
+2.89999 1.60002 -3e-06 2.1e-05 0 3.14143
+
+=== /clock ===
+clock:
+  sec: 2
+  nanosec: 200000000
+---
+
+=== /odom ===
+header:
+  stamp:
+    sec: 3
+    nanosec: 49000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 2.8999820035614703
+      y: 1.599792276975063
+      z: -2.3810134447688203e-06
+
+=== v2 world 全量 42 个 include 名点名 ===
+结果: 存在=42 缺失=0
+
+=== 旧 v1 名字（预期：不存在）===
+  arena_floor_5x5: 不存在（符合 v2）
+  zone_yellow_cross: 不存在（符合 v2）
+  l_wall_112x060: 不存在（符合 v2）
+
+=== missing model / SDF 错误 ===
+
+=== /cmd_vel 前进 0.3 m/s x 2 s ===
+[INFO] [1794919446.214402514] [twist_phase_probe]: phase done: vx=0.30 vy=0.00 wz=0.00 duration=2.0s
+--- 前进后 gz model -p ---
+2.32067 1.59832 0 -0 -0 -3.14106
+--- 前进后 /odom ---
+header:
+  stamp:
+    sec: 29
+    nanosec: 69000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 2.3206237916524843
+      y: 1.598328880225053
+      z: 2.95045506082392e-08
+=== 残留进程 / 端口 ===
+（无残留进程）
+（11345/11392 空闲）

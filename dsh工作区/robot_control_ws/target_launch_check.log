@@ -1,0 +1,16 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/ros_logs/2026-11-17-16-58-02-614293-nepenthe-pc-66900
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [66904]
+[INFO] [sim_node-2]: process started with pid [66906]
+[robot_state_publisher-1] [INFO] [1794905882.690935545] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-1] [INFO] [1794905882.690988363] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1794905882.690994073] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1794905882.690998083] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-1] [INFO] [1794905882.691001923] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-1] [INFO] [1794905882.691005033] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-1] [INFO] [1794905882.691008613] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-1] [INFO] [1794905882.691011643] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-1] [INFO] [1794905882.691014573] [robot_state_publisher]: got segment wheel_rear_right_link
+[sim_node-2] [INFO] [1794905882.882943088] [mecanum_sim]: mecanum_sim 启动: r=0.065 m, bx=0.17 m, by=0.17 m, max_wheel_speed=30.0 rad/s, publish_rate=50.0 Hz, cmd_timeout=0.5 s, command_accel_limit=60.0 rad/s^2
+[sim_node-2] [INFO] [1794905882.883192751] [mecanum_sim]: 轮序固定 FL FR RL RR = wheel_front_left_joint, wheel_front_right_joint, wheel_rear_left_joint, wheel_rear_right_joint（axis=+Y，正轮速 -> 向车头 +X 滚动）
+[sim_node-2] [INFO] [1794905882.883411465] [mecanum_sim]: 订阅 /wheel_cmd [Float64MultiArray, rad/s] -> 发布 /joint_states, /odom, 广播 TF odom -> base_footprint

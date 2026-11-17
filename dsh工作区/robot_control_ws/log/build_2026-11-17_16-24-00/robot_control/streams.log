@@ -1,0 +1,32 @@
+[0.442s] Invoking command in '/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control': AMENT_PREFIX_PATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description PYTHONPATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/build --no-deps symlink_data
+[0.565s] running develop
+[0.634s] running egg_info
+[0.634s] creating robot_control.egg-info
+[0.634s] writing robot_control.egg-info/PKG-INFO
+[0.635s] writing dependency_links to robot_control.egg-info/dependency_links.txt
+[0.635s] writing entry points to robot_control.egg-info/entry_points.txt
+[0.635s] writing requirements to robot_control.egg-info/requires.txt
+[0.635s] writing top-level names to robot_control.egg-info/top_level.txt
+[0.635s] writing manifest file 'robot_control.egg-info/SOURCES.txt'
+[0.635s] reading manifest file 'robot_control.egg-info/SOURCES.txt'
+[0.636s] writing manifest file 'robot_control.egg-info/SOURCES.txt'
+[0.636s] running build_ext
+[0.636s] Creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/lib/python3.10/site-packages/robot-control.egg-link (link to .)
+[0.637s] Installing gui_teleop script to /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/lib/robot_control
+[0.637s] Installing sim_node script to /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/lib/robot_control
+[0.637s] Installing teleop_keyboard script to /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/lib/robot_control
+[0.637s] 
+[0.637s] Installed /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control
+[0.637s] running symlink_data
+[0.637s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/ament_index
+[0.637s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/ament_index/resource_index
+[0.637s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/ament_index/resource_index/packages
+[0.637s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/resource/robot_control -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/ament_index/resource_index/packages
+[0.638s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/package.xml -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/robot_control
+[0.638s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/robot_control/launch
+[0.638s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/launch/teleop_keyboard.launch.py -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/robot_control/launch
+[0.638s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/launch/teleop_gui.launch.py -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/robot_control/launch
+[0.638s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/robot_control/config
+[0.638s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/robot_control/rviz
+[0.638s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/rviz/teleop.rviz -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/share/robot_control/rviz
+[0.650s] Invoked command in '/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control' returned '0': AMENT_PREFIX_PATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description PYTHONPATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_control/build --no-deps symlink_data

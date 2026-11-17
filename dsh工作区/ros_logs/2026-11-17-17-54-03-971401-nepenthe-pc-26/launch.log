@@ -1,0 +1,11 @@
+1794909243.9719439 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-17-54-03-971401-nepenthe-pc-26
+1794909243.9720247 [INFO] [launch]: Default logging verbosity is set to INFO
+1794909244.0089495 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794909244.0090256 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794909244.0401037 [INFO] [bash-1]: process started with pid [42]
+1794909244.0402119 [INFO] [spawn_entity.py-2]: process started with pid [44]
+1794909244.0402634 [INFO] [robot_state_publisher-3]: process started with pid [46]
+1794909245.3761740 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 44]
+1794909253.6490996 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 46]
+1794909253.7800026 [INFO] [bash-1]: process has finished cleanly [pid 42]
+1794909253.7802143 [INFO] [launch]: process[bash-1] was required: shutting down launched system

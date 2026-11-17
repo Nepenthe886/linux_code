@@ -1,0 +1,471 @@
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/ground_8x8/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/arena_floor/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/cell_grid/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/boundary_red/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_yellow/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_orange_ramp1/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_orange_ramp2/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_red/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_095x061/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_130x052/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_113x049/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/a_frame_041x027/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/horiz_wall_100x006/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/t_wall_073x058/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/t_wall_073x058/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/wall_z_112x060/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/ramp_double_120/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_114x048/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/ramp_single_120/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/thin_wall_085x008/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/i_obstacle_089x049/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/red_barrier/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/red_barrier/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/t_wall_143x057/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_hostage/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_chest/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_qr/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_hostage/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_qr/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_chest/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/sign_in/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/sign_out/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/spawn_marker/model.sdf].
+Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
+  Please use the gz sdf tool to update your SDF files.
+    $ gz sdf -c [sdf_file]
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><publish_rate>50.0</publish_rate><publish_odom>true</publish_odom><publish_odom_tf>true</publish_odom_tf><odometry_frame>odom</odometry_frame><robot_base_frame>base_footprint</robot_base_frame><covariance_x>0.0001</covariance_x><covariance_y>0.0001</covariance_y><covariance_yaw>0.01</covariance_yaw></plugin>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><joint_name>wheel_front_left_joint</joint_name><joint_name>wheel_front_right_joint</joint_name><joint_name>wheel_rear_left_joint</joint_name><joint_name>wheel_rear_right_joint</joint_name></plugin>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:422] Fixed Joint Reduction: extension lumping from [camera_optical_frame] to [camera_link]
+Dbg [parser_urdf.cc:2477]   REDUCE EXTENSION: moving reference from [camera_optical_frame] to [camera_link]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><publish_rate>50.0</publish_rate><publish_odom>true</publish_odom><publish_odom_tf>true</publish_odom_tf><odometry_frame>odom</odometry_frame><robot_base_frame>base_footprint</robot_base_frame><covariance_x>0.0001</covariance_x><covariance_y>0.0001</covariance_y><covariance_yaw>0.01</covariance_yaw></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><joint_name>wheel_front_left_joint</joint_name><joint_name>wheel_front_right_joint</joint_name><joint_name>wheel_rear_left_joint</joint_name><joint_name>wheel_rear_right_joint</joint_name></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:422] Fixed Joint Reduction: extension lumping from [camera_link] to [base_link]
+Dbg [parser_urdf.cc:2477]   REDUCE EXTENSION: moving reference from [camera_link] to [base_link]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><publish_rate>50.0</publish_rate><publish_odom>true</publish_odom><publish_odom_tf>true</publish_odom_tf><odometry_frame>odom</odometry_frame><robot_base_frame>base_footprint</robot_base_frame><covariance_x>0.0001</covariance_x><covariance_y>0.0001</covariance_y><covariance_yaw>0.01</covariance_yaw></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><joint_name>wheel_front_left_joint</joint_name><joint_name>wheel_front_right_joint</joint_name><joint_name>wheel_rear_left_joint</joint_name><joint_name>wheel_rear_right_joint</joint_name></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:721] LINK NAME: [parent: base_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [8]
+Dbg [parser_urdf.cc:723]        CG: [0, 0, 0]
+Dbg [parser_urdf.cc:725]         I: [0.151667, 0, 0]
+Dbg [parser_urdf.cc:727]            [0, 0.151667, 0]
+Dbg [parser_urdf.cc:729]            [0, 0, 0.25]
+Dbg [parser_urdf.cc:721] LINK NAME: [link : camera_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [0.09]
+Dbg [parser_urdf.cc:723]        CG: [0, 0, 0]
+Dbg [parser_urdf.cc:725]         I: [6.54e-05, 0, 0]
+Dbg [parser_urdf.cc:727]            [0, 9.4e-06, 0]
+Dbg [parser_urdf.cc:729]            [0, 0, 6.54e-05]
+Dbg [parser_urdf.cc:721] LINK NAME: [link in parent link: camera_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [0.09]
+Dbg [parser_urdf.cc:723]        CG: [0.263, 0, 0.03]
+Dbg [parser_urdf.cc:725]         I: [0.0001464, 0, -0.0007101]
+Dbg [parser_urdf.cc:727]            [0, 0.00631561, 0]
+Dbg [parser_urdf.cc:729]            [-0.0007101, 0, 0.00629061]
+Dbg [parser_urdf.cc:721] LINK NAME: [combined: base_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [8.09]
+Dbg [parser_urdf.cc:723]        CG: [0.00292583, 0, 0.000333745]
+Dbg [parser_urdf.cc:725]         I: [0.151813, 0, -0.0007101]
+Dbg [parser_urdf.cc:727]            [0, 0.157982, 0]
+Dbg [parser_urdf.cc:729]            [-0.0007101, 0, 0.256291]
+Dbg [parser_urdf.cc:737] LINK NAME: [base_link] from dMass
+Dbg [parser_urdf.cc:738]      MASS: [8.09]
+Dbg [parser_urdf.cc:739]        CG: [0.00292583, 0, 0.000333745]
+Dbg [parser_urdf.cc:742]         I: [0.151812, 0, -0.0007022]
+Dbg [parser_urdf.cc:745]            [0, 0.157912, 0]
+Dbg [parser_urdf.cc:748]            [-0.0007022, 0, 0.256221]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:1007] lumping collision [] for link [camera_link] to parent [base_link] with name [camera_link]
+Dbg [parser_urdf.cc:422] Fixed Joint Reduction: extension lumping from [livox_mid360_link] to [base_link]
+Dbg [parser_urdf.cc:2477]   REDUCE EXTENSION: moving reference from [livox_mid360_link] to [base_link]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><publish_rate>50.0</publish_rate><publish_odom>true</publish_odom><publish_odom_tf>true</publish_odom_tf><odometry_frame>odom</odometry_frame><robot_base_frame>base_footprint</robot_base_frame><covariance_x>0.0001</covariance_x><covariance_y>0.0001</covariance_y><covariance_yaw>0.01</covariance_yaw></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><joint_name>wheel_front_left_joint</joint_name><joint_name>wheel_front_right_joint</joint_name><joint_name>wheel_rear_left_joint</joint_name><joint_name>wheel_rear_right_joint</joint_name></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:721] LINK NAME: [parent: base_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [8.09]
+Dbg [parser_urdf.cc:723]        CG: [0.00292583, 0, 0.000333745]
+Dbg [parser_urdf.cc:725]         I: [0.151813, 0, -0.0007101]
+Dbg [parser_urdf.cc:727]            [0, 0.157982, 0]
+Dbg [parser_urdf.cc:729]            [-0.0007101, 0, 0.256291]
+Dbg [parser_urdf.cc:721] LINK NAME: [link : livox_mid360_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [0.265]
+Dbg [parser_urdf.cc:723]        CG: [0, 0, 0]
+Dbg [parser_urdf.cc:725]         I: [0.0001727, 0, 0]
+Dbg [parser_urdf.cc:727]            [0, 0.0001727, 0]
+Dbg [parser_urdf.cc:729]            [0, 0, 0.0001866]
+Dbg [parser_urdf.cc:721] LINK NAME: [link in parent link: livox_mid360_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [0.265]
+Dbg [parser_urdf.cc:723]        CG: [0, 0, 0.13]
+Dbg [parser_urdf.cc:725]         I: [0.0046512, 0, 0]
+Dbg [parser_urdf.cc:727]            [0, 0.0046512, 0]
+Dbg [parser_urdf.cc:729]            [0, 0, 0.0001866]
+Dbg [parser_urdf.cc:721] LINK NAME: [combined: base_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [8.355]
+Dbg [parser_urdf.cc:723]        CG: [0.00283303, 0, 0.00444644]
+Dbg [parser_urdf.cc:725]         I: [0.156464, 0, -0.0007101]
+Dbg [parser_urdf.cc:727]            [0, 0.162634, 0]
+Dbg [parser_urdf.cc:729]            [-0.0007101, 0, 0.256477]
+Dbg [parser_urdf.cc:737] LINK NAME: [base_link] from dMass
+Dbg [parser_urdf.cc:738]      MASS: [8.355]
+Dbg [parser_urdf.cc:739]        CG: [0.00283303, 0, 0.00444644]
+Dbg [parser_urdf.cc:742]         I: [0.156299, 0, -0.000604853]
+Dbg [parser_urdf.cc:745]            [0, 0.162401, 0]
+Dbg [parser_urdf.cc:748]            [-0.000604853, 0, 0.25641]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [livox_mid360_link] to parent [base_link] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [livox_mid360_link] to parent [base_link] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [livox_mid360_link] to parent [base_link] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:1007] lumping collision [] for link [livox_mid360_link] to parent [base_link] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:422] Fixed Joint Reduction: extension lumping from [base_link] to [base_footprint]
+Dbg [parser_urdf.cc:2477]   REDUCE EXTENSION: moving reference from [base_link] to [base_footprint]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><publish_rate>50.0</publish_rate><publish_odom>true</publish_odom><publish_odom_tf>true</publish_odom_tf><odometry_frame>odom</odometry_frame><robot_base_frame>base_footprint</robot_base_frame><covariance_x>0.0001</covariance_x><covariance_y>0.0001</covariance_y><covariance_yaw>0.01</covariance_yaw></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><joint_name>wheel_front_left_joint</joint_name><joint_name>wheel_front_right_joint</joint_name><joint_name>wheel_rear_left_joint</joint_name><joint_name>wheel_rear_right_joint</joint_name></plugin>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:721] LINK NAME: [parent: base_footprint] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [0]
+Dbg [parser_urdf.cc:723]        CG: [0, 0, 0]
+Dbg [parser_urdf.cc:725]         I: [0, 0, 0]
+Dbg [parser_urdf.cc:727]            [0, 0, 0]
+Dbg [parser_urdf.cc:729]            [0, 0, 0]
+Dbg [parser_urdf.cc:721] LINK NAME: [link : base_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [8.355]
+Dbg [parser_urdf.cc:723]        CG: [0, 0, 0]
+Dbg [parser_urdf.cc:725]         I: [0.156299, 0, -0.000604853]
+Dbg [parser_urdf.cc:727]            [0, 0.162401, 0]
+Dbg [parser_urdf.cc:729]            [-0.000604853, 0, 0.25641]
+Dbg [parser_urdf.cc:721] LINK NAME: [link in parent link: base_link] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [8.355]
+Dbg [parser_urdf.cc:723]        CG: [0.00283303, 0, 0.244446]
+Dbg [parser_urdf.cc:725]         I: [0.655544, 0, -0.0063909]
+Dbg [parser_urdf.cc:727]            [0, 0.661714, 0]
+Dbg [parser_urdf.cc:729]            [-0.0063909, 0, 0.256477]
+Dbg [parser_urdf.cc:721] LINK NAME: [combined: base_footprint] from dMass
+Dbg [parser_urdf.cc:722]      MASS: [8.355]
+Dbg [parser_urdf.cc:723]        CG: [0.00283303, 0, 0.244446]
+Dbg [parser_urdf.cc:725]         I: [0.655544, 0, -0.0063909]
+Dbg [parser_urdf.cc:727]            [0, 0.661714, 0]
+Dbg [parser_urdf.cc:729]            [-0.0063909, 0, 0.256477]
+Dbg [parser_urdf.cc:737] LINK NAME: [base_footprint] from dMass
+Dbg [parser_urdf.cc:738]      MASS: [8.355]
+Dbg [parser_urdf.cc:739]        CG: [0.00283303, 0, 0.244446]
+Dbg [parser_urdf.cc:742]         I: [0.156299, 0, -0.000604853]
+Dbg [parser_urdf.cc:745]            [0, 0.162401, 0]
+Dbg [parser_urdf.cc:748]            [-0.000604853, 0, 0.25641]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [base_link] to parent [base_footprint] with name [base_link]
+Dbg [parser_urdf.cc:948] lumping visual [] for link [base_link] to parent [base_footprint] with name [base_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:948] lumping visual [livox_mid360_link] for link [base_link] to parent [base_footprint] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:948] lumping visual [livox_mid360_link] for link [base_link] to parent [base_footprint] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:948] lumping visual [livox_mid360_link] for link [base_link] to parent [base_footprint] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:1007] lumping collision [] for link [base_link] to parent [base_footprint] with name [base_link]
+Dbg [parser_urdf.cc:1007] lumping collision [camera_link] for link [base_link] to parent [base_footprint] with name [camera_link]
+Dbg [parser_urdf.cc:1007] lumping collision [livox_mid360_link] for link [base_link] to parent [base_footprint] with name [livox_mid360_link]
+Dbg [parser_urdf.cc:2748] [base_footprint] has no parent joint
+Dbg [parser_urdf.cc:2792] creating collision for link [base_footprint] collision [base_link]
+Dbg [parser_urdf.cc:2792] creating collision for link [base_footprint] collision [camera_link]
+Dbg [parser_urdf.cc:2792] creating collision for link [base_footprint] collision [livox_mid360_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [base_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [base_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [camera_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [livox_mid360_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [livox_mid360_link]
+Dbg [parser_urdf.cc:2837] creating visual for link [base_footprint] visual [livox_mid360_link]
+Dbg [parser_urdf.cc:2064] inserting extension with reference [base_footprint] into link.
+Dbg [parser_urdf.cc:2672] urdf2sdf: link[camera_optical_frame] has no inertia, parent joint [camera_optical_joint] ignored.
+Dbg [parser_urdf.cc:2678] urdf2sdf: link[camera_optical_frame] has no inertia, not modeled in sdf
+Dbg [parser_urdf.cc:2792] creating collision for link [wheel_front_left_link] collision []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_left_link] visual []
+Dbg [parser_urdf.cc:2064] inserting extension with reference [wheel_front_left_link] into link.
+Dbg [parser_urdf.cc:2792] creating collision for link [wheel_front_right_link] collision []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_front_right_link] visual []
+Dbg [parser_urdf.cc:2064] inserting extension with reference [wheel_front_right_link] into link.
+Dbg [parser_urdf.cc:2792] creating collision for link [wheel_rear_left_link] collision []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_left_link] visual []
+Dbg [parser_urdf.cc:2064] inserting extension with reference [wheel_rear_left_link] into link.
+Dbg [parser_urdf.cc:2792] creating collision for link [wheel_rear_right_link] collision []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2837] creating visual for link [wheel_rear_right_link] visual []
+Dbg [parser_urdf.cc:2064] inserting extension with reference [wheel_rear_right_link] into link.
+Dbg [parser_urdf.cc:1141] multiple consistent <static> exists with [false] due to fixed joint reduction.
+Dbg [parser.cc:483] Parsing from urdf.

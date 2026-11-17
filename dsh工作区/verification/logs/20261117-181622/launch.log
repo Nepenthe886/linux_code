@@ -1,0 +1,58 @@
+not found: "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/local_setup.bash"
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-18-16-23-936832-nepenthe-pc-28
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [bash-1]: process started with pid [39]
+[INFO] [spawn_entity.py-2]: process started with pid [41]
+[INFO] [robot_state_publisher-3]: process started with pid [43]
+[robot_state_publisher-3] [INFO] [1794910584.021999093] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794910584.022077241] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794910584.022082681] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794910584.022086411] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794910584.022090091] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794910584.022093221] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794910584.022096441] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794910584.022099460] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794910584.022102530] [robot_state_publisher]: got segment wheel_rear_right_link
+[bash-1] Gazebo multi-robot simulator, version 11.10.2
+[bash-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[bash-1] Released under the Apache 2 License.
+[bash-1] http://gazebosim.org
+[bash-1] 
+[spawn_entity.py-2] [INFO] [1794910584.193923132] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794910584.194154467] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794910584.195190364] [spawn_robot]: Waiting for entity xml on robot_description
+[spawn_entity.py-2] [INFO] [1794910584.206196455] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794910584.206412901] [spawn_robot]: Waiting for service /spawn_entity
+[bash-1] [1;33m[Wrn] [gazebo_ros_init.cpp:178] [0m[1;33m
+[bash-1] #     # ####### ####### ###  #####  #######
+[bash-1] ##    # #     #    #     #  #     # #
+[bash-1] # #   # #     #    #     #  #       #
+[bash-1] #  #  # #     #    #     #  #       #####
+[bash-1] #   # # #     #    #     #  #       #
+[bash-1] #    ## #     #    #     #  #     # #
+[bash-1] #     # #######    #    ###  #####  #######
+[bash-1] 
+[bash-1] This version of Gazebo, now called Gazebo classic, reaches end-of-life
+[bash-1] in January 2025. Users are highly encouraged to migrate to the new Gazebo
+[bash-1] using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+[bash-1] 
+[bash-1] [0m[1;33m
+[bash-1] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[bash-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11393[0m[1;32m
+[bash-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m10.126.62.118[0m[1;32m
+[bash-1] [0m[1;33m[0m[1;33m[0m[1;31m[Err] [RenderEngine.cc:749] [0m[1;31mCan't open display: [0m[1;31m[0m[1;31m
+[bash-1] [0m[1;33m[Wrn] [RenderEngine.cc:89] [0m[1;33mUnable to create X window. Rendering will be disabled
+[bash-1] [0m[1;33m[Wrn] [RenderEngine.cc:292] [0m[1;33mCannot initialize render engine since [0m[1;33mrender path type is NONE. Ignore this warning if[0m[1;33mrendering has been turned off on purpose.
+[spawn_entity.py-2] [INFO] [1794910584.959316302] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794910585.188974388] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[bash-1] [0m[INFO] [1794910585.196802458] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[bash-1] [INFO] [1794910585.197736948] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[bash-1] [INFO] [1794910585.198799295] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[bash-1] [INFO] [1794910585.202646021] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[bash-1] [INFO] [1794910585.202661121] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[bash-1] [INFO] [1794910585.202666551] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[bash-1] [INFO] [1794910585.202671471] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 41]
+[bash-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world[0m[1;32m][0m[1;32m

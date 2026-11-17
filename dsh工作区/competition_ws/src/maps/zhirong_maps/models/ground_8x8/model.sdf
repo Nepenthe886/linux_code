@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="ground_8x8">
+    <static>true</static>
+    <link name="link">
+      <visual name="concrete"><pose>0 0 -0.025 0 0 0</pose><geometry><box><size>8 8 0.05</size></box></geometry><material><ambient>0.56 0.54 0.5 1</ambient><diffuse>0.56 0.54 0.5 1</diffuse><specular>0.01 0.01 0.01 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <collision name="concrete_col"><pose>0 0 -0.025 0 0 0</pose><geometry><box><size>8 8 0.05</size></box></geometry><surface><friction><ode><mu>1</mu><mu2>1</mu2></ode></friction></surface></collision>
+    </link>
+  </model>
+</sdf>

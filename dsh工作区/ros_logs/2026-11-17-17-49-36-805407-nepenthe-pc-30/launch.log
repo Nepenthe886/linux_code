@@ -1,0 +1,8 @@
+1794908976.8059545 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-17-49-36-805407-nepenthe-pc-30
+1794908976.8060367 [INFO] [launch]: Default logging verbosity is set to INFO
+1794908976.8479404 [INFO] [launch.user]: [gazebo.launch.py][警告] 没找到 zhirong_maps 比赛地图（/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_control/maps/zhirong_maps/worlds/zhirong_arena.world），已回退到自带测试世界：/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_control/share/robot_control/worlds/test/gazebo_test.world。地图包构建完成后重新 colcon build 即可自动使用。
+1794908976.8480365 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794908976.8830130 [INFO] [bash-1]: process started with pid [46]
+1794908976.8831265 [INFO] [spawn_entity.py-2]: process started with pid [48]
+1794908976.8831792 [INFO] [robot_state_publisher-3]: process started with pid [50]
+1794908977.9065485 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 48]

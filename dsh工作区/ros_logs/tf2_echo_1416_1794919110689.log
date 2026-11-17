@@ -1,0 +1,2 @@
+[INFO] [1794919110.698015651] [tf2_echo]: Waiting for transform odom ->  base_footprint: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1794919120.616128824] [rclcpp]: signal_handler(SIGINT/SIGTERM)

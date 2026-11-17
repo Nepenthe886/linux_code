@@ -1,0 +1,7 @@
+[INFO] [1794910533.510081450] [spawn_robot]: Spawn Entity started
+[INFO] [1794910533.510339095] [spawn_robot]: Loading entity published on topic robot_description
+[INFO] [1794910533.511343263] [spawn_robot]: Waiting for entity xml on robot_description
+[INFO] [1794910533.631524206] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[INFO] [1794910533.631796530] [spawn_robot]: Waiting for service /spawn_entity
+[INFO] [1794910534.134404439] [spawn_robot]: Calling service /spawn_entity
+[INFO] [1794910534.319337133] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]

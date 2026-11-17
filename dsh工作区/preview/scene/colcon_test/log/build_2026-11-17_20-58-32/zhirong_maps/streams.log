@@ -1,0 +1,152 @@
+[0.005s] Invoking command in '/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_control:/opt/ros/humble /usr/bin/cmake /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps -DCMAKE_INSTALL_PREFIX=/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps
+[0.040s] -- The C compiler identification is GNU 11.4.0
+[0.075s] -- The CXX compiler identification is GNU 11.4.0
+[0.080s] -- Detecting C compiler ABI info
+[0.124s] -- Detecting C compiler ABI info - done
+[0.128s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.128s] -- Detecting C compile features
+[0.129s] -- Detecting C compile features - done
+[0.130s] -- Detecting CXX compiler ABI info
+[0.181s] -- Detecting CXX compiler ABI info - done
+[0.186s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.186s] -- Detecting CXX compile features
+[0.186s] -- Detecting CXX compile features - done
+[0.188s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.277s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.364s] -- Configuring done
+[0.366s] -- Generating done
+[0.367s] -- Build files have been written to: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps
+[0.370s] Invoked command in '/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_control:/opt/ros/humble /usr/bin/cmake /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps -DCMAKE_INSTALL_PREFIX=/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps
+[0.371s] Invoking command in '/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_control:/opt/ros/humble /usr/bin/cmake --build /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps -- -j16 -l16
+[0.395s] Invoked command in '/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_control:/opt/ros/humble /usr/bin/cmake --build /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps -- -j16 -l16
+[0.401s] Invoking command in '/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_control:/opt/ros/humble /usr/bin/cmake --install /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps
+[0.406s] -- Install configuration: ""
+[0.406s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/worlds
+[0.406s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world
+[0.406s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models
+[0.406s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/cell_grid
+[0.406s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/cell_grid/model.config
+[0.406s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/cell_grid/model.sdf
+[0.406s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ground_8x8
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ground_8x8/model.config
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ground_8x8/model.sdf
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/gate_post
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/gate_post/model.config
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/gate_post/model.sdf
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/wall_z_112x060
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/wall_z_112x060/model.config
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/wall_z_112x060/model.sdf
+[0.407s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/i_obstacle_089x049
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/i_obstacle_089x049/model.config
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/i_obstacle_089x049/model.sdf
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/arena_floor
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/arena_floor/model.config
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/arena_floor/model.sdf
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_yellow
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_yellow/model.config
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_yellow/model.sdf
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_095x061
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_095x061/model.config
+[0.408s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_095x061/model.sdf
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/t_wall_073x058
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/t_wall_073x058/model.config
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/t_wall_073x058/model.sdf
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_red
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_red/model.config
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_red/model.sdf
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/spawn_marker
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/spawn_marker/model.config
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/spawn_marker/model.sdf
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_114x048
+[0.409s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_114x048/model.config
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_114x048/model.sdf
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_hostage
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_hostage/model.config
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_hostage/model.sdf
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/boundary_red
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/boundary_red/model.config
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/boundary_red/model.sdf
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/touch_ring
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/touch_ring/model.config
+[0.410s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/touch_ring/model.sdf
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_orange_ramp1
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_orange_ramp1/model.config
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_orange_ramp1/model.sdf
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_130x052
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_130x052/model.config
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_130x052/model.sdf
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ramp_single_120
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ramp_single_120/model.config
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ramp_single_120/model.sdf
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/t_wall_143x057
+[0.411s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/t_wall_143x057/model.config
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/t_wall_143x057/model.sdf
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/a_frame_041x027
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/a_frame_041x027/model.config
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/a_frame_041x027/model.sdf
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/horiz_wall_100x006
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/horiz_wall_100x006/model.config
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/horiz_wall_100x006/model.sdf
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_chest
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_chest/model.config
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_chest/model.sdf
+[0.412s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/sign_out
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/sign_out/model.config
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/sign_out/model.sdf
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_113x049
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_113x049/model.config
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/l_wall_113x049/model.sdf
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_qr
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_qr/model.config
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/target_qr/model.sdf
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/thin_wall_085x008
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/thin_wall_085x008/model.config
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/thin_wall_085x008/model.sdf
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/red_barrier
+[0.413s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/red_barrier/model.config
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/red_barrier/model.sdf
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/sign_in
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/sign_in/model.config
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/sign_in/model.sdf
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_orange_ramp2
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_orange_ramp2/model.config
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/zone_orange_ramp2/model.sdf
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ramp_double_120
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ramp_double_120/model.config
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/models/ramp_double_120/model.sdf
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/launch
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/launch/zhirong_arena.launch.py
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/maps
+[0.414s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/maps/zhirong_arena.yaml
+[0.415s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/maps/zhirong_arena.pgm
+[0.415s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs
+[0.415s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification
+[0.415s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/arena_se_oblique.png
+[0.415s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/arena_overview.png
+[0.415s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/arena_sw_oblique.png
+[0.415s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/ramp2_closeup.png
+[0.416s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/arena_topdown.png
+[0.416s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/arena_robot_closeup.png
+[0.416s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/VERIFICATION_REPORT.md
+[0.416s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/README.md
+[0.416s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/compare_topdown_lead.png
+[0.417s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/sim_verification/compare_topdown.png
+[0.417s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/docs/plan.png
+[0.418s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/README.md
+[0.418s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/package.xml
+[0.418s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/ament_index/resource_index/package_run_dependencies/zhirong_maps
+[0.418s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/ament_index/resource_index/parent_prefix_path/zhirong_maps
+[0.418s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/environment/ament_prefix_path.sh
+[0.418s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/environment/ament_prefix_path.dsv
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/environment/path.sh
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/environment/path.dsv
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/local_setup.bash
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/local_setup.sh
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/local_setup.zsh
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/local_setup.dsv
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/package.dsv
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/ament_index/resource_index/packages/zhirong_maps
+[0.419s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/cmake/zhirong_mapsConfig.cmake
+[0.420s] -- Installing: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/cmake/zhirong_mapsConfig-version.cmake
+[0.420s] -- Up-to-date: /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/install/zhirong_maps/share/zhirong_maps/package.xml
+[0.421s] Invoked command in '/home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_control:/opt/ros/humble /usr/bin/cmake --install /home/nepenthe/zmf/linux_code/dsh工作区/preview/scene/colcon_test/build/zhirong_maps

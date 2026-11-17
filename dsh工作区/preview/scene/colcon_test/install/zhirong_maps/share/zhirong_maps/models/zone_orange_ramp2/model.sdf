@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="zone_orange_ramp2">
+    <static>true</static>
+    <link name="link">
+      <visual name="orange_disc"><pose>0 0 0.0046 0 0 0</pose><geometry><cylinder><radius>0.52</radius><length>0.002</length></cylinder></geometry><material><ambient>0.98 0.55 0.02 1</ambient><diffuse>0.98 0.55 0.02 1</diffuse><specular>0.02 0.02 0.02 1</specular><emissive>0 0 0 1</emissive></material></visual>
+    </link>
+  </model>
+</sdf>

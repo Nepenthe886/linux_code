@@ -1,0 +1,12 @@
+Floating-Point Precision Issues
+===============================
+
+Upstream says they probably will not support any architectures besides
+amd64: https://github.com/flexible-collision-library/fcl/issues/474
+
+Other architectures seem to suffer from various amounts of floating point
+precision issues. For now, we keep building libfcl on all Debian
+architectures, but be advised that in certain edge cases, the library
+may return wrong results
+
+ -- Timo Röhling <timo@gaussglocke.de>  Wed, 18 Nov 2020 23:01:40 +0100

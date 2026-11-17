@@ -1,0 +1,10 @@
+prefix=${pcfiledir}/../../../
+libdir=${prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+
+Name: gazebo
+Description: Gazebo Exported ODE Libraries
+Version: 11.10.2
+Requires:
+Libs: -Wl,-rpath,${libdir} -L${libdir} -lgazebo_ode
+CFlags: -I${includedir}/gazebo-11

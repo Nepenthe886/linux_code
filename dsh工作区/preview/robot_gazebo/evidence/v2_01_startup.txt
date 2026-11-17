@@ -1,0 +1,30 @@
+===== 启动后位姿 gz model -m zhirong_robot -p =====
+2.89998 1.5998 0 -0 0 3.14131
+
+===== 启动后 /odom =====
+header:
+  stamp:
+    sec: 3
+    nanosec: 697000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 2.8999841674976956
+      y: 1.5997548399965271
+      z: 4.370003839349046e-08
+    orientation:
+      x: -1.0024549847690086e-07
+      y: -2.9788025224586876e-07
+      z: 0.999999987242551
+      w: 0.00015973352570808154
+  covariance:
+
+===== TF odom->base_footprint =====
+[INFO] [1794909176.631642837] [tf2_echo]: Waiting for transform odom ->  base_footprint: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+At time 4.897000000
+- Translation: [2.900, 1.600, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 1.000, 0.000]
+- Rotation: in RPY (radian) [-0.000, 0.000, 3.141]
+- Rotation: in RPY (degree) [-0.000, 0.000, 179.988]

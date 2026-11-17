@@ -1,0 +1,14 @@
+1794912160.6290824 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/port_conflict/ros_logs/2026-11-17-18-42-40-628650-nepenthe-pc-134
+1794912160.6291518 [INFO] [launch]: Default logging verbosity is set to INFO
+1794912160.6659896 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794912160.6660478 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794912160.6961718 [INFO] [bash-1]: process started with pid [169]
+1794912160.6962390 [INFO] [spawn_entity.py-2]: process started with pid [171]
+1794912160.6962755 [INFO] [robot_state_publisher-3]: process started with pid [173]
+1794912161.9998541 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 171]
+1794912177.8245461 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1794912177.8255990 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794912177.8258946 [INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+1794912177.9289618 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 173]
+1794912178.0332139 [INFO] [bash-1]: process has finished cleanly [pid 169]
+1794912178.0334387 [INFO] [launch]: process[bash-1] was required: shutting down launched system

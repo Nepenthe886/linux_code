@@ -1,0 +1,6 @@
+#define TEST_INTEGRATION_PATH "/build/gazebo-9kRTn7/gazebo-11.10.2+dfsg/test/integration"
+#define TEST_REGRESSION_PATH "/build/gazebo-9kRTn7/gazebo-11.10.2+dfsg/test/regression"
+#define TEST_UNIT_PATH "/build/gazebo-9kRTn7/gazebo-11.10.2+dfsg/test/unit"
+#define TEST_PATH "/build/gazebo-9kRTn7/gazebo-11.10.2+dfsg/test"
+#define PROJECT_SOURCE_PATH "/build/gazebo-9kRTn7/gazebo-11.10.2+dfsg"
+#define PROJECT_BINARY_PATH "/build/gazebo-9kRTn7/gazebo-11.10.2+dfsg/obj-x86_64-linux-gnu"

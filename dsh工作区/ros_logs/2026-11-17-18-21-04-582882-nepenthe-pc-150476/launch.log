@@ -1,0 +1,13 @@
+1794910864.5833545 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-18-21-04-582882-nepenthe-pc-150476
+1794910864.5834250 [INFO] [launch]: Default logging verbosity is set to INFO
+1794910864.6207514 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794910864.6208146 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794910864.6514621 [INFO] [bash-1]: process started with pid [150486]
+1794910864.6515338 [INFO] [spawn_entity.py-2]: process started with pid [150488]
+1794910864.6515782 [INFO] [robot_state_publisher-3]: process started with pid [150490]
+1794910864.8130209 [ERROR] [bash-1]: process has died [pid 150486, exit code 255, cmd 'bash -c world="$1"; shift; if [ ! -f "$world" ]; then   echo "[gazebo.launch.py][错误] world 文件不存在: $world" >&2; exit 2; fi; unset DISPLAY; exec gzserver "$@" "$world" gazebo.launch.py /home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world --verbose -s libgazebo_ros_init.so -s libgazebo_ros_factory.so'].
+1794910864.8132482 [INFO] [launch]: process[bash-1] was required: shutting down launched system
+1794910864.8139522 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794910864.8141773 [INFO] [spawn_entity.py-2]: sending signal 'SIGINT' to process[spawn_entity.py-2]
+1794910864.8291051 [ERROR] [spawn_entity.py-2]: process has died [pid 150488, exit code -2, cmd '/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -topic robot_description -entity zhirong_robot -x 2.9 -y 1.6 -z 0.05 -Y 3.141592653589793 -timeout 120 -package_to_model --ros-args -r __node:=spawn_robot'].
+1794910864.9184346 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 150490]

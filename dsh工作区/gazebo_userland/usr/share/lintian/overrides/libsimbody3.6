@@ -1,0 +1,7 @@
+# Upstream has renamed the namespace. Full upstream answer is at:
+# https://github.com/simbody/simbody/issues/49#issuecomment-39047672 
+libsimbody3.6: embedded-library usr/lib/*/libSimTKcommon.so.3.6: tinyxml
+
+# Upstream thinks that makes no sense to package libraries independently
+# https://github.com/simbody/simbody/issues/49#issuecomment-27418566
+libsimbody3.6: package-name-doesnt-match-sonames libSimTKcommon3.6 libSimTKmath3.6 libSimTKsimbody3.6

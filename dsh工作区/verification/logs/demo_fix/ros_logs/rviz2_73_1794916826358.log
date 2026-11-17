@@ -1,0 +1,8 @@
+[INFO] [1794916826.443623095] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1794916826.443696216] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1794916826.478580316] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1794916826.618023160] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_base.stl]: 
+[ERROR] [1794916826.618129663] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_dome.stl]: 
+[ERROR] [1794916826.618183160] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_top.stl]: 
+[ERROR] [1794916826.618233157] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_base.stl]: 
+[INFO] [1794916856.996489862] [rclcpp]: signal_handler(SIGINT/SIGTERM)

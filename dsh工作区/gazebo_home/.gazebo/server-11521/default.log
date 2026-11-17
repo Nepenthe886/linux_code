@@ -1,0 +1,25 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1794916510 948740689) [Wrn] [gazebo_ros_init.cpp:178] 
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+
+
+(1794916510 972402994) [Msg] Waiting for master.
+(1794916510 981248612) [Msg] Connected to gazebo master @ http://127.0.0.1:11521
+(1794916510 981263799) [Msg] Publicized address: 10.126.62.118
+(1794916511 450081601) [Msg] Loading world file [/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world]
+(1794916511 527308073) Init world[zhirong_arena]

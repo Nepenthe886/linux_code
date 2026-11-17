@@ -1,0 +1,5 @@
+1794904089.5747430 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/ros_logs/2026-11-17-16-28-09-574253-nepenthe-pc-22
+1794904089.5748167 [INFO] [launch]: Default logging verbosity is set to INFO
+1794904089.6367908 [INFO] [robot_state_publisher-1]: process started with pid [24]
+1794904089.6368654 [INFO] [sim_node-2]: process started with pid [26]
+1794904089.6369016 [INFO] [gui_teleop-3]: process started with pid [28]

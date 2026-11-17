@@ -1,0 +1,4 @@
+not found: "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/local_setup.bash"
+[WARN] [1794910474.450895748] [gazebo_drive_check]: New publisher discovered on topic '/clock', offering incompatible QoS. No messages will be received from it. Last incompatible policy: RELIABILITY
+[1/5] 等待 /clock ...
+FAIL: 30s 内没有收到 /clock

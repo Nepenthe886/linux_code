@@ -1,0 +1,28 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1794909858 425303179) [Wrn] [gazebo_ros_init.cpp:178] 
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+
+
+(1794909858 451568458) [Msg] Waiting for master.
+(1794909858 457751086) [Msg] Connected to gazebo master @ http://127.0.0.1:11401
+(1794909858 457778416) [Msg] Publicized address: 10.126.62.118
+(1794909858 457970041) [Err] [RenderEngine.cc:749] Can't open display: 
+(1794909858 458012100) [Wrn] [RenderEngine.cc:89] Unable to create X window. Rendering will be disabled
+(1794909858 458043550) [Wrn] [RenderEngine.cc:292] Cannot initialize render engine since render path type is NONE. Ignore this warning ifrendering has been turned off on purpose.
+(1794909858 520366504) [Msg] Loading world file [/home/nepenthe/zmf/linux_code/dsh工作区/.tmp_test/mesh_test.world]
+(1794909858 768644305) Init world[default]

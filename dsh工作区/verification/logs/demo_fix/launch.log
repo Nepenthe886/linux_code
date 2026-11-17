@@ -1,0 +1,92 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/demo_fix/ros_logs/2026-11-17-20-00-26-163377-nepenthe-pc-30
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=true, rviz=true, teleop=gui）
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [bash-1]: process started with pid [63]
+[INFO] [spawn_entity.py-2]: process started with pid [65]
+[INFO] [robot_state_publisher-3]: process started with pid [67]
+[INFO] [gui_teleop-4]: process started with pid [69]
+[INFO] [gzclient-5]: process started with pid [71]
+[INFO] [rviz2-6]: process started with pid [73]
+[robot_state_publisher-3] [INFO] [1794916826.278197512] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794916826.278250019] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794916826.278255368] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794916826.278259077] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794916826.278262656] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794916826.278265675] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794916826.278268964] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794916826.278272044] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794916826.278275033] [robot_state_publisher]: got segment wheel_rear_right_link
+[gui_teleop-4] [INFO] [1794916826.434048913] [gui_teleop]: 参数：linear_speed=0.30 m/s, lateral_speed=0.30 m/s, angular_speed=1.00 rad/s, max_wheel_speed=30.0 rad/s, publish_rate=20.0 Hz, cmd_timeout=0.50 s, key_silence_timeout=1.20 s, focus_mode_default=False
+[gui_teleop-4] [INFO] [1794916826.437061812] [gui_teleop]: 键位：前进 W / ↑；后退 S / ↓；左平移 A / ←；右平移 D / →；左转 Q；右转 E；停止 空格；专注模式 K（仅 X11，全局键盘）
+[gui_teleop-4] [INFO] [1794916826.437306150] [gui_teleop]: 发布 /cmd_vel 与 /wheel_cmd (20 Hz)，订阅 /odom
+[rviz2-6] [INFO] [1794916826.443623095] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1794916826.443696216] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[spawn_entity.py-2] [INFO] [1794916826.472311779] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794916826.472569874] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794916826.473550317] [spawn_robot]: Waiting for entity xml on robot_description
+[rviz2-6] [INFO] [1794916826.478580316] [rviz2]: Stereo is NOT SUPPORTED
+[spawn_entity.py-2] [INFO] [1794916826.484602116] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794916826.484833197] [spawn_robot]: Waiting for service /spawn_entity
+[rviz2-6] [ERROR] [1794916826.618023160] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_base.stl]: 
+[rviz2-6] [ERROR] [1794916826.618129663] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_dome.stl]: 
+[rviz2-6] [ERROR] [1794916826.618183160] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_top.stl]: 
+[rviz2-6] [ERROR] [1794916826.618233157] [rviz2]: Error retrieving file [file:///home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/robot_description/share/robot_description/meshes/mid360_base.stl]: 
+[spawn_entity.py-2] [INFO] [1794916827.237762299] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794916827.461739065] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[bash-1] [INFO] [1794916827.469836291] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[bash-1] [INFO] [1794916827.470791260] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[bash-1] [INFO] [1794916827.471813572] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[bash-1] [INFO] [1794916827.476021039] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[bash-1] [INFO] [1794916827.476040814] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[bash-1] [INFO] [1794916827.476049052] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[bash-1] [INFO] [1794916827.476055860] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 65]
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.421: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.421: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.422: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.428: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.428: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.428: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:71): dconf-CRITICAL **: 20:00:28.429: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[INFO] [rviz2-6]: sending signal 'SIGINT' to process[rviz2-6]
+[INFO] [gzclient-5]: sending signal 'SIGINT' to process[gzclient-5]
+[INFO] [gui_teleop-4]: sending signal 'SIGINT' to process[gui_teleop-4]
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+[robot_state_publisher-3] [INFO] [1794916856.996490462] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-6] [INFO] [1794916856.996489862] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-6] [INFO] [1794916856.998078564] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-3] [INFO] [1794916856.998978309] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 67]
+[INFO] [gui_teleop-4]: process has finished cleanly [pid 69]
+[INFO] [rviz2-6]: process has finished cleanly [pid 73]
+[INFO] [bash-1]: process has finished cleanly [pid 63]
+[INFO] [launch]: process[bash-1] was required: shutting down launched system
+[ERROR] [gzclient-5]: process[gzclient-5] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [gzclient-5]: sending signal 'SIGTERM' to process[gzclient-5]
+[ERROR] [gzclient-5]: process has died [pid 71, exit code -15, cmd 'gzclient'].

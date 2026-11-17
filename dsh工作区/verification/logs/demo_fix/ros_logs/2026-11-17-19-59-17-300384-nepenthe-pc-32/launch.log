@@ -1,0 +1,27 @@
+1794916757.3008423 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/demo_fix/ros_logs/2026-11-17-19-59-17-300384-nepenthe-pc-32
+1794916757.3009112 [INFO] [launch]: Default logging verbosity is set to INFO
+1794916757.3132961 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=true, rviz=true, teleop=gui）
+1794916757.3804188 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794916757.3804798 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794916757.4131801 [INFO] [bash-1]: process started with pid [65]
+1794916757.4132600 [INFO] [spawn_entity.py-2]: process started with pid [67]
+1794916757.4133112 [INFO] [robot_state_publisher-3]: process started with pid [69]
+1794916757.4133468 [INFO] [gui_teleop-4]: process started with pid [71]
+1794916757.4133830 [INFO] [gzclient-5]: process started with pid [73]
+1794916757.4134147 [INFO] [rviz2-6]: process started with pid [75]
+1794916758.7151277 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 67]
+1794916788.1682045 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1794916788.1683781 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1794916788.1698539 [INFO] [rviz2-6]: sending signal 'SIGINT' to process[rviz2-6]
+1794916788.1702559 [INFO] [gzclient-5]: sending signal 'SIGINT' to process[gzclient-5]
+1794916788.1706839 [INFO] [gui_teleop-4]: sending signal 'SIGINT' to process[gui_teleop-4]
+1794916788.1711102 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794916788.1713879 [INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+1794916788.2739232 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 69]
+1794916788.3366249 [INFO] [gui_teleop-4]: process has finished cleanly [pid 71]
+1794916788.3840671 [INFO] [bash-1]: process has finished cleanly [pid 65]
+1794916788.3842239 [INFO] [launch]: process[bash-1] was required: shutting down launched system
+1794916788.3861489 [INFO] [rviz2-6]: process has finished cleanly [pid 75]
+1794916793.1748965 [ERROR] [gzclient-5]: process[gzclient-5] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1794916793.1751640 [INFO] [gzclient-5]: sending signal 'SIGTERM' to process[gzclient-5]
+1794916793.2062466 [ERROR] [gzclient-5]: process has died [pid 73, exit code -15, cmd 'gzclient'].

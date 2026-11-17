@@ -1,0 +1,20 @@
+[view_sim] 启动 Xvfb :99（软件 OpenGL 渲染，/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/usr/bin/Xvfb）...
+[view_sim] 启动仿真（headless + 相机渲染）...
+[view_sim] 等待 /clock  OK
+[view_sim] 添加观察相机 (0, -6.0, 5.2) ...
+[view_sim] 等待图像话题 /view_cam/image/image_raw  OK
+[view_sim] 在 DISPLAY=:1 打开 rqt_image_view ...
+
+============================ 实时查看已启动 ============================
+  画面窗口：rqt_image_view（DISPLAY=:1），话题 /view_cam/image/image_raw
+  数据话题：/clock /odom /joint_states /cmd_vel
+  拖动窗口即可看到机器人运动；Ctrl-C 结束并自动清理。
+  如需换视角：改 CAM_POS/CAM_PITCH/CAM_YAW 重新运行，例如
+    CAM_POS="-4.6 -4.6 4.4" CAM_PITCH=0.62 CAM_YAW=0.785 bash scripts/view_sim.sh
+=======================================================================
+
+[view_sim] 清理中 ...
+[view_sim] 已退出。
+
+[view_sim] 清理中 ...
+[view_sim] 已退出。

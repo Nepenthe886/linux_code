@@ -1,0 +1,2 @@
+[INFO] [1794908764.413866420] [overview_cam.camera_ros]: Publishing camera info to [/overview_cam/image/camera_info]
+[INFO] [1794908768.206248502] [rclcpp]: signal_handler(SIGINT/SIGTERM)

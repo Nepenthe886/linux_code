@@ -1,0 +1,20 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/ros_logs/2026-11-17-17-10-00-807022-nepenthe-pc-108
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [110]
+[INFO] [sim_node-2]: process started with pid [112]
+[robot_state_publisher-1] [INFO] [1794906600.882026391] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-1] [INFO] [1794906600.882077192] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1794906600.882082442] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1794906600.882086092] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-1] [INFO] [1794906600.882089552] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-1] [INFO] [1794906600.882092592] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-1] [INFO] [1794906600.882095672] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-1] [INFO] [1794906600.882098862] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-1] [INFO] [1794906600.882101792] [robot_state_publisher]: got segment wheel_rear_right_link
+[sim_node-2] [INFO] [1794906601.072584015] [mecanum_sim]: mecanum_sim 启动: r=0.065 m, bx=0.17 m, by=0.17 m, max_wheel_speed=30.0 rad/s, publish_rate=50.0 Hz, cmd_timeout=0.5 s, command_accel_limit=60.0 rad/s^2
+[sim_node-2] [INFO] [1794906601.072842879] [mecanum_sim]: 轮序固定 FL FR RL RR = wheel_front_left_joint, wheel_front_right_joint, wheel_rear_left_joint, wheel_rear_right_joint（axis=+Y，正轮速 -> 向车头 +X 滚动）
+[sim_node-2] [INFO] [1794906601.073062152] [mecanum_sim]: 订阅 /wheel_cmd [Float64MultiArray, rad/s] -> 发布 /joint_states, /odom, 广播 TF odom -> base_footprint
+[robot_state_publisher-1] [INFO] [1794906634.942509726] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[sim_node-2] [INFO] [1794906634.960341675] [mecanum_sim]: mecanum_sim 退出：已发布零速 joint_states，关闭 TF 广播
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 110]
+[INFO] [sim_node-2]: process has finished cleanly [pid 112]

@@ -1,0 +1,8 @@
+1794918856.6672258 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-20-34-16-666731-nepenthe-pc-27
+1794918856.6673012 [INFO] [launch]: Default logging verbosity is set to INFO
+1794918856.7041097 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794918856.7041733 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794918856.7347927 [INFO] [bash-1]: process started with pid [43]
+1794918856.7348702 [INFO] [spawn_entity.py-2]: process started with pid [45]
+1794918856.7349110 [INFO] [robot_state_publisher-3]: process started with pid [47]
+1794918977.1644349 [ERROR] [spawn_entity.py-2]: process has died [pid 45, exit code 1, cmd '/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -topic robot_description -entity zhirong_robot -x 2.9 -y 1.6 -z 0.05 -Y 3.141592653589793 -timeout 120 -package_to_model --ros-args -r __node:=spawn_robot'].

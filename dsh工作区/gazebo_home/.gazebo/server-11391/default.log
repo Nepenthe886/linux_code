@@ -1,0 +1,14 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1794919788 555335401) [Msg] Waiting for master.
+(1794919788 564895041) [Msg] Connected to gazebo master @ http://127.0.0.1:11391
+(1794919788 564915962) [Msg] Publicized address: 10.126.62.118
+(1794919788 565108808) [Err] [RenderEngine.cc:749] Can't open display: 
+(1794919788 565126188) [Wrn] [RenderEngine.cc:89] Unable to create X window. Rendering will be disabled
+(1794919788 565147739) [Wrn] [RenderEngine.cc:292] Cannot initialize render engine since render path type is NONE. Ignore this warning ifrendering has been turned off on purpose.
+(1794919788 949015774) [Msg] Loading world file [/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/worlds/zhirong_arena.world]
+(1794919789 26220143) Init world[zhirong_arena]

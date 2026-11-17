@@ -1,0 +1,4 @@
+[INFO] [1794906109.062299756] [mecanum_sim]: mecanum_sim 启动: r=0.065 m, bx=0.17 m, by=0.17 m, max_wheel_speed=30.0 rad/s, publish_rate=50.0 Hz, cmd_timeout=0.5 s, command_accel_limit=60.0 rad/s^2
+[INFO] [1794906109.062550810] [mecanum_sim]: 轮序固定 FL FR RL RR = wheel_front_left_joint, wheel_front_right_joint, wheel_rear_left_joint, wheel_rear_right_joint（axis=+Y，正轮速 -> 向车头 +X 滚动）
+[INFO] [1794906109.062777833] [mecanum_sim]: 订阅 /wheel_cmd [Float64MultiArray, rad/s] -> 发布 /joint_states, /odom, 广播 TF odom -> base_footprint
+[INFO] [1794906129.969751180] [mecanum_sim]: mecanum_sim 退出：已发布零速 joint_states，关闭 TF 广播

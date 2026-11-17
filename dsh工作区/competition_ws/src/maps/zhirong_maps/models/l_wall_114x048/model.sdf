@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="l_wall_114x048">
+    <static>true</static>
+    <link name="link">
+      <visual name="l_wall_114x048_body_0"><pose>0 0.21 0.275 0 0 0</pose><geometry><box><size>1.14 0.06 0.55</size></box></geometry><material><ambient>0.31 0.34 0.28 1</ambient><diffuse>0.31 0.34 0.28 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_0_0_0"><pose>-0.1227 0.2415 0.3683 0 0 0</pose><geometry><box><size>0.179 0.004 0.129</size></box></geometry><material><ambient>0.72 0.68 0.55 1</ambient><diffuse>0.72 0.68 0.55 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_0_0_1"><pose>0.0908 0.2415 0.2724 0 0 0</pose><geometry><box><size>0.23 0.004 0.145</size></box></geometry><material><ambient>0.16 0.18 0.16 1</ambient><diffuse>0.16 0.18 0.16 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_0_0_2"><pose>0.3032 0.2415 0.3011 0 0 0</pose><geometry><box><size>0.283 0.004 0.174</size></box></geometry><material><ambient>0.16 0.18 0.16 1</ambient><diffuse>0.16 0.18 0.16 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_0_1_0"><pose>-0.192 0.1785 0.3545 0 0 0</pose><geometry><box><size>0.291 0.004 0.195</size></box></geometry><material><ambient>0.72 0.68 0.55 1</ambient><diffuse>0.72 0.68 0.55 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_0_1_1"><pose>-0.0469 0.1785 0.1922 0 0 0</pose><geometry><box><size>0.241 0.004 0.177</size></box></geometry><material><ambient>0.72 0.68 0.55 1</ambient><diffuse>0.72 0.68 0.55 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_0_1_2"><pose>0.1148 0.1785 0.2933 0 0 0</pose><geometry><box><size>0.248 0.004 0.119</size></box></geometry><material><ambient>0.62 0.65 0.61 1</ambient><diffuse>0.62 0.65 0.61 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_body_1"><pose>0.54 0 0.275 0 0 0</pose><geometry><box><size>0.06 0.48 0.55</size></box></geometry><material><ambient>0.31 0.34 0.28 1</ambient><diffuse>0.31 0.34 0.28 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_1_0_0"><pose>0.5715 0.0614 0.4164 0 0 0</pose><geometry><box><size>0.004 0.257 0.18</size></box></geometry><material><ambient>0.8 0.77 0.66 1</ambient><diffuse>0.8 0.77 0.66 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="l_wall_114x048_camo_1_1_0"><pose>0.5085 0.043 0.1747 0 0 0</pose><geometry><box><size>0.004 0.268 0.123</size></box></geometry><material><ambient>0.45 0.48 0.42 1</ambient><diffuse>0.45 0.48 0.42 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <collision name="l_wall_114x048_col_0"><pose>0 0.21 0.275 0 0 0</pose><geometry><box><size>1.14 0.06 0.55</size></box></geometry><surface><friction><ode><mu>0.9</mu><mu2>0.9</mu2></ode></friction></surface></collision>
+      <collision name="l_wall_114x048_col_1"><pose>0.54 0 0.275 0 0 0</pose><geometry><box><size>0.06 0.48 0.55</size></box></geometry><surface><friction><ode><mu>0.9</mu><mu2>0.9</mu2></ode></friction></surface></collision>
+    </link>
+  </model>
+</sdf>

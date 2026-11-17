@@ -1,0 +1,17 @@
+1794908815.1572592 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-17-46-55-156759-nepenthe-pc-18
+1794908815.1573339 [INFO] [launch]: Default logging verbosity is set to INFO
+1794908815.1945994 [INFO] [launch.user]: [gazebo.launch.py][警告] 没找到 zhirong_maps 比赛地图（/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/worlds/zhirong_arena.world），已回退到自带测试世界：/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/robot/robot_control/worlds/test/gazebo_test.world。地图包构建完成后重新 colcon build 即可自动使用。
+1794908815.1946692 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794908815.2372200 [INFO] [bash-1]: process started with pid [34]
+1794908815.2373030 [INFO] [spawn_entity.py-2]: process started with pid [36]
+1794908815.2373388 [INFO] [robot_state_publisher-3]: process started with pid [38]
+1794908815.2374554 [ERROR] [bash-1]: process has died [pid 34, exit code 2, cmd 'bash -c world="$1"; shift; if [ ! -f "$world" ]; then   echo "[gazebo.launch.py][错误] world 文件不存在: $world" >&2; exit 2; fi; unset DISPLAY; exec gzserver "$@" "$world" gazebo.launch.py -s libgazebo_ros_init.so -s libgazebo_ros_factory.so /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/robot/robot_control/worlds/test/gazebo_test.world'].
+1794908815.2376685 [INFO] [launch]: process[bash-1] was required: shutting down launched system
+1794908815.2381907 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794908815.2383530 [INFO] [spawn_entity.py-2]: sending signal 'SIGINT' to process[spawn_entity.py-2]
+1794908820.2428579 [ERROR] [robot_state_publisher-3]: process[robot_state_publisher-3] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1794908820.2431796 [ERROR] [spawn_entity.py-2]: process[spawn_entity.py-2] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1794908820.2433758 [INFO] [robot_state_publisher-3]: sending signal 'SIGTERM' to process[robot_state_publisher-3]
+1794908820.2436979 [INFO] [spawn_entity.py-2]: sending signal 'SIGTERM' to process[spawn_entity.py-2]
+1794908820.3482311 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 38]
+1794908820.5982115 [ERROR] [spawn_entity.py-2]: process has died [pid 36, exit code 1, cmd '/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -topic robot_description -entity zhirong_robot -x 2.9 -y 1.6 -z 0.05 -Y 3.141592653589793 -timeout 120 --ros-args -r __node:=spawn_robot'].

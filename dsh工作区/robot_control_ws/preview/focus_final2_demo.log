@@ -1,0 +1,6 @@
+sent k -> enter focus mode
+focused other window: gui=0x2c000b6 other=0x3c00013 current_focus=0x2a00047
+held w 0.7s (GUI 无焦点, 专注模式开 -> 应输出前进)
+sent k -> exit focus mode
+held w 0.7s (GUI 无焦点, 专注模式关 -> 应被忽略)
+DEMO_DONE

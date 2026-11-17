@@ -1,0 +1,10 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/view_final/ros_logs/2026-11-17-19-24-51-983462-nepenthe-pc-27
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=true, rviz=true, teleop=gui）
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): gazebo.launch.py: 当前 DISPLAY 无法创建 OpenGL 上下文，gzclient（gui:=true） 会卡死（无响应）。
+  原因：显卡驱动/GLX 异常（如 NVIDIA 驱动未加载，nvidia-smi 报错）。
+  解决办法（任选其一）：
+    1) 无显示器方案（推荐，本机可用）：ros2 launch bring_up bring_up.launch.py
+       实时画面：bash scripts/view_sim.sh（用 Gazebo 相机 + rqt_image_view，不依赖本机 OpenGL）
+    2) 修复显卡驱动后重试（sudo ubuntu-drivers autoinstall 或重装 NVIDIA 驱动，重启 X）
+    3) 确认可用后跳过本检查：export ZHIRONG_SKIP_GL_CHECK=1

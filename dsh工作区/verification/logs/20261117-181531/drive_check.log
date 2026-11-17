@@ -1,0 +1,22 @@
+not found: "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/local_setup.bash"
+[1/5] 等待 /clock ...
+Traceback (most recent call last):
+  File "/home/nepenthe/zmf/linux_code/dsh工作区/verification/check_gazebo_drive.py", line 201, in <module>
+    sys.exit(main())
+  File "/home/nepenthe/zmf/linux_code/dsh工作区/verification/check_gazebo_drive.py", line 123, in main
+    rclpy.spin_once(node, timeout_sec=0.1)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 208, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+    result = coro.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 407, in _execute_subscription
+    await await_or_execute(sub.callback, msg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+    return callback(*args)
+TypeError: 'ROSClock' object is not callable

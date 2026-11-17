@@ -1,0 +1,8 @@
+[INFO] [1794908977.791356193] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[INFO] [1794908977.792470868] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[INFO] [1794908977.793587592] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[INFO] [1794908977.797525056] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[INFO] [1794908977.797542205] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[INFO] [1794908977.797549095] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[INFO] [1794908977.797555495] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [1794908985.010596953] [rclcpp]: signal_handler(SIGINT/SIGTERM)

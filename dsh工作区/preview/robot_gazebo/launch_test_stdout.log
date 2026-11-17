@@ -1,0 +1,166 @@
+launch pid=15
+[ok] 话题 /clock 出现（等待 1 x0.5s）
+[ok] 话题 /joint_states 出现（等待 1 x0.5s）
+[ok] 话题 /odom 出现（等待 1 x0.5s）
+=== launch log: 关键行 ===
+[INFO] [launch.user]: [gazebo.launch.py][警告] 没找到 zhirong_maps 比赛地图（/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/worlds/zhirong_arena.world），已回退到自带测试世界：/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/robot/robot_control/worlds/test/gazebo_test.world。地图包构建完成后重新 colcon build 即可自动使用。
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [spawn_entity.py-2]: process started with pid [33]
+[spawn_entity.py-2] [INFO] [1794908917.405601867] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794908917.405849719] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794908917.406855775] [spawn_robot]: Waiting for entity xml on robot_description
+[spawn_entity.py-2] [INFO] [1794908917.417779071] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794908917.418030653] [spawn_robot]: Waiting for service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794908917.670481396] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794908917.895797704] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 33]
+=== /clock 采样 ===
+clock:
+  sec: 2
+  nanosec: 100000000
+---
+=== /joint_states 采样 ===
+header:
+  stamp:
+    sec: 3
+    nanosec: 301000000
+  frame_id: ''
+name:
+- wheel_front_left_joint
+- wheel_front_right_joint
+- wheel_rear_left_joint
+- wheel_rear_right_joint
+position:
+- 0.03628357316081665
+=== /odom 初始 ===
+header:
+  stamp:
+    sec: 4
+    nanosec: 521000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 2.8996260715294326
+      y: 1.5984958354975207
+      z: -3.161711278898416e-08
+    orientation:
+      x: 2.200063653674795e-07
+      y: 8.163026015950041e-08
+      z: 0.9999999440922717
+      w: -0.00033438809601869237
+  covariance:
+  - 0.0001
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+=== TF odom -> base_footprint ===
+At time 5.721000000
+- Translation: [2.900, 1.598, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, 0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [0.000, 0.000, -3.141]
+=== 初始位姿（gz model -p: x y z roll pitch yaw）===
+2.89934 1.59749 -4e-06 -2.1e-05 1e-06 -3.14038
+=== 发送 /cmd_vel 前进 0.3 m/s x 3s ===
+--- 位姿 ---
+1.6178 1.59633 -1e-06 -7e-06 -2e-06 -3.13943
+--- /odom ---
+header:
+  stamp:
+    sec: 13
+    nanosec: 681000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 1.3695462884643408
+      y: 1.5962231434845713
+      z: -3.318832242360514e-08
+    orientation:
+      x: -4.5700387426789707e-08
+      y: -1.3555878338297195e-07
+      z: 0.9999992916142699
+      w: -0.001190281873360345
+  covariance:
+  - 0.0001
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+=== 发送 /cmd_vel 左移 -0.3 m/s x 3s ===
+--- 位姿 ---
+1.12328 0.570691 0 -0 -0 -3.13745
+--- /odom ---
+header:
+  stamp:
+    sec: 20
+    nanosec: 501000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 1.1233038294876554
+      y: 0.5707657334813334
+      z: 1.527436205295274e-08
+    orientation:
+      x: -6.960846514815321e-07
+      y: 6.4151652304973e-08
+      z: 0.9999977317116532
+      w: -0.002129922782587289
+  covariance:
+  - 0.0001
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+=== gzservice 模型列表 ===
+name: "zhirong_robot"
+id: 10
+is_static: false
+pose {
+  position {
+    x: 1.1233242188050152
+    y: 0.570828235229829
+    z: -5.7583926432736021e-08
+  }
+  orientation {
+    x: 2.7665177708185045e-07
+    y: 2.8179094232338977e-08
+=== launch log tail ===
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [gazebo.launch.py][警告] 没找到 zhirong_maps 比赛地图（/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/worlds/zhirong_arena.world），已回退到自带测试世界：/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/robot/robot_control/worlds/test/gazebo_test.world。地图包构建完成后重新 colcon build 即可自动使用。
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [bash-1]: process started with pid [31]
+[INFO] [spawn_entity.py-2]: process started with pid [33]
+[INFO] [robot_state_publisher-3]: process started with pid [35]
+[robot_state_publisher-3] [INFO] [1794908917.230393578] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794908917.230455596] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794908917.230461806] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794908917.230466396] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794908917.230470466] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794908917.230474056] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794908917.230477915] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794908917.230481655] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794908917.230485225] [robot_state_publisher]: got segment wheel_rear_right_link
+[spawn_entity.py-2] [INFO] [1794908917.405601867] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794908917.405849719] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794908917.406855775] [spawn_robot]: Waiting for entity xml on robot_description
+[spawn_entity.py-2] [INFO] [1794908917.417779071] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794908917.418030653] [spawn_robot]: Waiting for service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794908917.670481396] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794908917.895797704] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[bash-1] [INFO] [1794908917.906723340] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[bash-1] [INFO] [1794908917.907871791] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[bash-1] [INFO] [1794908917.909212957] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[bash-1] [INFO] [1794908917.913365938] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[bash-1] [INFO] [1794908917.913380008] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[bash-1] [INFO] [1794908917.913384778] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[bash-1] [INFO] [1794908917.913388567] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 33]

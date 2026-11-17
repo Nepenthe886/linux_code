@@ -1,0 +1,360 @@
+robot_state_publisher:
+  ros__parameters:
+    robot_description: "<?xml version=\"1.0\"?>\n<!--\n  Zhirong Cup omnidirectional\
+      \ robot - minimalist primitive-geometry URDF\n  ======================================================================\n\
+      \  Coordinate convention:\n    +X : forward (depth camera side)\n    +Y : left\n\
+      \    +Z : up\n    base_footprint : ground projection of the robot centre\n \
+      \   base_link      : geometric centre of the cylindrical body\n\n  Key dimensions\
+      \ (metres):\n    body cylinder          radius 0.250, height 0.200\n    body\
+      \ bottom / top      z = 0.140 / 0.340\n    wheel                  radius 0.065,\
+      \ width 0.040\n    wheel centres          x = +-0.170, y = +-0.170, z = 0.065\n\
+      \    Livox Mid-360          65 x 65 x 60 mm, on body top centre\n    depth camera\
+      \ (D435i)   90 x 25 x 25 mm, front face of body\n  ======================================================================\n\
+      -->\n<robot name=\"zhirong_omni_robot\">\n\n  <!-- ======================= materials\
+      \ ======================= -->\n  <material name=\"body_gray\">\n    <color rgba=\"\
+      0.76 0.79 0.83 1.0\"/>\n  </material>\n  <material name=\"accent_orange\">\n\
+      \    <color rgba=\"0.95 0.45 0.10 1.0\"/>\n  </material>\n  <material name=\"\
+      wheel_black\">\n    <color rgba=\"0.09 0.09 0.10 1.0\"/>\n  </material>\n  <material\
+      \ name=\"hub_gray\">\n    <color rgba=\"0.45 0.47 0.50 1.0\"/>\n  </material>\n\
+      \  <material name=\"wheel_plate\">\n    <color rgba=\"0.22 0.23 0.25 1.0\"/>\n\
+      \  </material>\n  <material name=\"roller_gray\">\n    <color rgba=\"0.40 0.41\
+      \ 0.44 1.0\"/>\n  </material>\n  <material name=\"lidar_black\">\n    <color\
+      \ rgba=\"0.05 0.05 0.06 1.0\"/>\n  </material>\n  <material name=\"lidar_blue\"\
+      >\n    <color rgba=\"0.04 0.28 0.60 1.0\"/>\n  </material>\n  <material name=\"\
+      lidar_silver\">\n    <color rgba=\"0.68 0.70 0.73 1.0\"/>\n  </material>\n \
+      \ <material name=\"camera_dark\">\n    <color rgba=\"0.15 0.16 0.18 1.0\"/>\n\
+      \  </material>\n  <material name=\"lens_blue\">\n    <color rgba=\"0.08 0.20\
+      \ 0.50 1.0\"/>\n  </material>\n\n  <!-- ======================= chassis =======================\
+      \ -->\n  <!-- base_footprint 是地面投影参考系，故意不给 <inertial>：\n       1) robot_state_publisher\
+      \ 用 KDL 解析 URDF，KDL 不支持「根 link 带惯性」\n          （会打印 The root link base_footprint\
+      \ has an inertia ... 警告）；\n       2) Gazebo Classic 的 URDF->SDF 转换会把固定关节子 link（base_link）的\n\
+      \          质量/惯性 lumped 进根 link，base_footprint 没惯性也能正常仿真\n          （已实测 spawn\
+      \ 无报错、落地高度正确）。\n       这也是 URDF/RViz 侧的既有约定，不要为了 Gazebo 在这里加惯性。 -->\n  <link\
+      \ name=\"base_footprint\"/>\n\n  <link name=\"base_link\">\n    <inertial>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <mass value=\"8.0\"/>\n\
+      \      <!-- solid cylinder: Ixx=Iyy=m(3r^2+h^2)/12, Izz=m r^2/2 -->\n      <inertia\
+      \ ixx=\"0.1516667\" ixy=\"0.0\" ixz=\"0.0\"\n               iyy=\"0.1516667\"\
+      \ iyz=\"0.0\" izz=\"0.25\"/>\n    </inertial>\n\n    <visual>\n      <origin\
+      \ xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <geometry>\n        <cylinder radius=\"\
+      0.25\" length=\"0.20\"/>\n      </geometry>\n      <material name=\"body_gray\"\
+      />\n    </visual>\n\n    <!-- thin orange accent band, purely cosmetic -->\n\
+      \    <visual>\n      <origin xyz=\"0 0 0.075\" rpy=\"0 0 0\"/>\n      <geometry>\n\
+      \        <cylinder radius=\"0.2515\" length=\"0.025\"/>\n      </geometry>\n\
+      \      <material name=\"accent_orange\"/>\n    </visual>\n\n    <collision>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <geometry>\n        <cylinder\
+      \ radius=\"0.25\" length=\"0.20\"/>\n      </geometry>\n    </collision>\n \
+      \ </link>\n\n  <joint name=\"base_footprint_joint\" type=\"fixed\">\n    <parent\
+      \ link=\"base_footprint\"/>\n    <child link=\"base_link\"/>\n    <origin xyz=\"\
+      0 0 0.24\" rpy=\"0 0 0\"/>\n  </joint>\n\n  <!-- ======================= wheels\
+      \ =======================\n       Four mecanum-style wheels, X layout (45 deg\
+      \ positions).\n       Wheel axle is parallel to Y, so every wheel uses axis\
+      \ \"0 1 0\".\n       For mecanum kinematics the four wheel speeds are the usual\n\
+      \       w_fl = ( vx - vy - (lx+ly)wz ) / r  ... etc.\n  ========================================================\
+      \ -->\n\n  <!-- front left -->\n  <link name=\"wheel_front_left_link\">\n  \
+      \  <inertial>\n      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <mass value=\"\
+      0.4\"/>\n      <!-- cylinder axis along Y -->\n      <inertia ixx=\"0.0004758\"\
+      \ ixy=\"0.0\" ixz=\"0.0\"\n               iyy=\"0.0008450\" iyz=\"0.0\" izz=\"\
+      0.0004758\"/>\n    </inertial>\n    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"\
+      1.57079633 0 0\"/>\n      <geometry>\n        <cylinder radius=\"0.05\" length=\"\
+      0.036\"/>\n      </geometry>\n      <material name=\"wheel_black\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0 0.0195 0\" rpy=\"1.57079633 0 0\"/>\n \
+      \     <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n   \
+      \   </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n   \
+      \ <visual>\n      <origin xyz=\"0 -0.0195 0\" rpy=\"1.57079633 0 0\"/>\n   \
+      \   <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n     \
+      \ </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n    <visual>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"1.57079633 0 0\"/>\n      <geometry>\n  \
+      \      <cylinder radius=\"0.026\" length=\"0.046\"/>\n      </geometry>\n  \
+      \    <material name=\"hub_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0 0 -0.054\" rpy=\"-1.57079633 0 -0.78539816\"/>\n      <geometry>\n\
+      \        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n \
+      \     <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0.03471053 0 -0.0413664\" rpy=\"-1.09896365 0 -0.65369072\"/>\n    \
+      \  <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n\
+      \      <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n     \
+      \ <origin xyz=\"0.05317962 0 -0.009377\" rpy=\"-0.80047729 0 -0.17193371\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n  \
+      \    </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n  \
+      \  <visual>\n      <origin xyz=\"0.04676537 0 0.027\" rpy=\"-0.91173829 0 0.46364761\"\
+      />\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n\
+      \      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0.01846909 0 0.0507434\" rpy=\"-1.32652972\
+      \ 0 0.75431697\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.01846909 0 0.0507434\" rpy=\"-1.81506293\
+      \ 0 0.75431697\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.04676537 0 0.027\" rpy=\"-2.22985436 0\
+      \ 0.46364761\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.05317962 0 -0.009377\" rpy=\"-2.34111536\
+      \ 0 -0.17193371\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.03471053 0 -0.0413664\" rpy=\"-2.042629\
+      \ 0 -0.65369072\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <collision>\n      <origin xyz=\"0 0 0\" rpy=\"1.57079632679 0 0\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.065\" length=\"0.040\"/>\n \
+      \     </geometry>\n    </collision>\n  </link>\n  <joint name=\"wheel_front_left_joint\"\
+      \ type=\"continuous\">\n    <parent link=\"base_link\"/>\n    <child link=\"\
+      wheel_front_left_link\"/>\n    <origin xyz=\"0.17 0.17 -0.175\" rpy=\"0 0 0\"\
+      />\n    <axis xyz=\"0 1 0\"/>\n    <limit effort=\"20.0\" velocity=\"30.0\"\
+      />\n    <dynamics damping=\"0.01\" friction=\"0.01\"/>\n  </joint>\n\n  <!--\
+      \ front right -->\n  <link name=\"wheel_front_right_link\">\n    <inertial>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <mass value=\"0.4\"/>\n\
+      \      <!-- cylinder axis along Y -->\n      <inertia ixx=\"0.0004758\" ixy=\"\
+      0.0\" ixz=\"0.0\"\n               iyy=\"0.0008450\" iyz=\"0.0\" izz=\"0.0004758\"\
+      />\n    </inertial>\n    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"1.57079633\
+      \ 0 0\"/>\n      <geometry>\n        <cylinder radius=\"0.05\" length=\"0.036\"\
+      />\n      </geometry>\n      <material name=\"wheel_black\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0 0.0195 0\" rpy=\"1.57079633 0 0\"/>\n \
+      \     <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n   \
+      \   </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n   \
+      \ <visual>\n      <origin xyz=\"0 -0.0195 0\" rpy=\"1.57079633 0 0\"/>\n   \
+      \   <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n     \
+      \ </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n    <visual>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"1.57079633 0 0\"/>\n      <geometry>\n  \
+      \      <cylinder radius=\"0.026\" length=\"0.046\"/>\n      </geometry>\n  \
+      \    <material name=\"hub_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0 0 -0.054\" rpy=\"-1.57079633 0 -2.35619449\"/>\n      <geometry>\n\
+      \        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n \
+      \     <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0.03471053 0 -0.0413664\" rpy=\"-1.09896365 0 -2.48790193\"/>\n    \
+      \  <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n\
+      \      <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n     \
+      \ <origin xyz=\"0.05317962 0 -0.009377\" rpy=\"-0.80047729 0 -2.96965894\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n  \
+      \    </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n  \
+      \  <visual>\n      <origin xyz=\"0.04676537 0 0.027\" rpy=\"-0.91173829 0 2.67794504\"\
+      />\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n\
+      \      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0.01846909 0 0.0507434\" rpy=\"-1.32652972\
+      \ 0 2.38727568\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.01846909 0 0.0507434\" rpy=\"-1.81506293\
+      \ 0 2.38727568\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.04676537 0 0.027\" rpy=\"-2.22985436 0\
+      \ 2.67794504\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.05317962 0 -0.009377\" rpy=\"-2.34111536\
+      \ 0 -2.96965894\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.03471053 0 -0.0413664\" rpy=\"-2.042629\
+      \ 0 -2.48790193\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <collision>\n      <origin xyz=\"0 0 0\" rpy=\"1.57079632679 0 0\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.065\" length=\"0.040\"/>\n \
+      \     </geometry>\n    </collision>\n  </link>\n  <joint name=\"wheel_front_right_joint\"\
+      \ type=\"continuous\">\n    <parent link=\"base_link\"/>\n    <child link=\"\
+      wheel_front_right_link\"/>\n    <origin xyz=\"0.17 -0.17 -0.175\" rpy=\"0 0\
+      \ 0\"/>\n    <axis xyz=\"0 1 0\"/>\n    <limit effort=\"20.0\" velocity=\"30.0\"\
+      />\n    <dynamics damping=\"0.01\" friction=\"0.01\"/>\n  </joint>\n\n  <!--\
+      \ rear left -->\n  <link name=\"wheel_rear_left_link\">\n    <inertial>\n  \
+      \    <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <mass value=\"0.4\"/>\n  \
+      \    <!-- cylinder axis along Y -->\n      <inertia ixx=\"0.0004758\" ixy=\"\
+      0.0\" ixz=\"0.0\"\n               iyy=\"0.0008450\" iyz=\"0.0\" izz=\"0.0004758\"\
+      />\n    </inertial>\n    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"1.57079633\
+      \ 0 0\"/>\n      <geometry>\n        <cylinder radius=\"0.05\" length=\"0.036\"\
+      />\n      </geometry>\n      <material name=\"wheel_black\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0 0.0195 0\" rpy=\"1.57079633 0 0\"/>\n \
+      \     <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n   \
+      \   </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n   \
+      \ <visual>\n      <origin xyz=\"0 -0.0195 0\" rpy=\"1.57079633 0 0\"/>\n   \
+      \   <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n     \
+      \ </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n    <visual>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"1.57079633 0 0\"/>\n      <geometry>\n  \
+      \      <cylinder radius=\"0.026\" length=\"0.046\"/>\n      </geometry>\n  \
+      \    <material name=\"hub_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0 0 -0.054\" rpy=\"-1.57079633 0 -0.78539816\"/>\n      <geometry>\n\
+      \        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n \
+      \     <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0.03471053 0 -0.0413664\" rpy=\"-1.09896365 0 -0.65369072\"/>\n    \
+      \  <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n\
+      \      <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n     \
+      \ <origin xyz=\"0.05317962 0 -0.009377\" rpy=\"-0.80047729 0 -0.17193371\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n  \
+      \    </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n  \
+      \  <visual>\n      <origin xyz=\"0.04676537 0 0.027\" rpy=\"-0.91173829 0 0.46364761\"\
+      />\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n\
+      \      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0.01846909 0 0.0507434\" rpy=\"-1.32652972\
+      \ 0 0.75431697\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.01846909 0 0.0507434\" rpy=\"-1.81506293\
+      \ 0 0.75431697\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.04676537 0 0.027\" rpy=\"-2.22985436 0\
+      \ 0.46364761\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.05317962 0 -0.009377\" rpy=\"-2.34111536\
+      \ 0 -0.17193371\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.03471053 0 -0.0413664\" rpy=\"-2.042629\
+      \ 0 -0.65369072\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <collision>\n      <origin xyz=\"0 0 0\" rpy=\"1.57079632679 0 0\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.065\" length=\"0.040\"/>\n \
+      \     </geometry>\n    </collision>\n  </link>\n  <joint name=\"wheel_rear_left_joint\"\
+      \ type=\"continuous\">\n    <parent link=\"base_link\"/>\n    <child link=\"\
+      wheel_rear_left_link\"/>\n    <origin xyz=\"-0.17 0.17 -0.175\" rpy=\"0 0 0\"\
+      />\n    <axis xyz=\"0 1 0\"/>\n    <limit effort=\"20.0\" velocity=\"30.0\"\
+      />\n    <dynamics damping=\"0.01\" friction=\"0.01\"/>\n  </joint>\n\n  <!--\
+      \ rear right -->\n  <link name=\"wheel_rear_right_link\">\n    <inertial>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <mass value=\"0.4\"/>\n\
+      \      <!-- cylinder axis along Y -->\n      <inertia ixx=\"0.0004758\" ixy=\"\
+      0.0\" ixz=\"0.0\"\n               iyy=\"0.0008450\" iyz=\"0.0\" izz=\"0.0004758\"\
+      />\n    </inertial>\n    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"1.57079633\
+      \ 0 0\"/>\n      <geometry>\n        <cylinder radius=\"0.05\" length=\"0.036\"\
+      />\n      </geometry>\n      <material name=\"wheel_black\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0 0.0195 0\" rpy=\"1.57079633 0 0\"/>\n \
+      \     <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n   \
+      \   </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n   \
+      \ <visual>\n      <origin xyz=\"0 -0.0195 0\" rpy=\"1.57079633 0 0\"/>\n   \
+      \   <geometry>\n        <cylinder radius=\"0.05\" length=\"0.003\"/>\n     \
+      \ </geometry>\n      <material name=\"wheel_plate\"/>\n    </visual>\n    <visual>\n\
+      \      <origin xyz=\"0 0 0\" rpy=\"1.57079633 0 0\"/>\n      <geometry>\n  \
+      \      <cylinder radius=\"0.026\" length=\"0.046\"/>\n      </geometry>\n  \
+      \    <material name=\"hub_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0 0 -0.054\" rpy=\"-1.57079633 0 -2.35619449\"/>\n      <geometry>\n\
+      \        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n \
+      \     <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n      <origin\
+      \ xyz=\"0.03471053 0 -0.0413664\" rpy=\"-1.09896365 0 -2.48790193\"/>\n    \
+      \  <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n      </geometry>\n\
+      \      <material name=\"roller_gray\"/>\n    </visual>\n    <visual>\n     \
+      \ <origin xyz=\"0.05317962 0 -0.009377\" rpy=\"-0.80047729 0 -2.96965894\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n  \
+      \    </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n  \
+      \  <visual>\n      <origin xyz=\"0.04676537 0 0.027\" rpy=\"-0.91173829 0 2.67794504\"\
+      />\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"0.028\"/>\n\
+      \      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0.01846909 0 0.0507434\" rpy=\"-1.32652972\
+      \ 0 2.38727568\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.01846909 0 0.0507434\" rpy=\"-1.81506293\
+      \ 0 2.38727568\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.04676537 0 0.027\" rpy=\"-2.22985436 0\
+      \ 2.67794504\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.05317962 0 -0.009377\" rpy=\"-2.34111536\
+      \ 0 -2.96965894\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"-0.03471053 0 -0.0413664\" rpy=\"-2.042629\
+      \ 0 -2.48790193\"/>\n      <geometry>\n        <cylinder radius=\"0.01\" length=\"\
+      0.028\"/>\n      </geometry>\n      <material name=\"roller_gray\"/>\n    </visual>\n\
+      \    <collision>\n      <origin xyz=\"0 0 0\" rpy=\"1.57079632679 0 0\"/>\n\
+      \      <geometry>\n        <cylinder radius=\"0.065\" length=\"0.040\"/>\n \
+      \     </geometry>\n    </collision>\n  </link>\n  <joint name=\"wheel_rear_right_joint\"\
+      \ type=\"continuous\">\n    <parent link=\"base_link\"/>\n    <child link=\"\
+      wheel_rear_right_link\"/>\n    <origin xyz=\"-0.17 -0.17 -0.175\" rpy=\"0 0\
+      \ 0\"/>\n    <axis xyz=\"0 1 0\"/>\n    <limit effort=\"20.0\" velocity=\"30.0\"\
+      />\n    <dynamics damping=\"0.01\" friction=\"0.01\"/>\n  </joint>\n\n  <!--\
+      \ ======================= Livox Mid-360 =======================\n       Link\
+      \ frame: centre of the mounting face (top of the body).\n       Device: 65 x\
+      \ 65 x 60 mm, weight 265 g.\n       Open-source STL device 60 mm -> top of lidar\
+      \ at z = 0.400.\n  ===============================================================\
+      \ -->\n  <link name=\"livox_mid360_link\">\n    <inertial>\n      <origin xyz=\"\
+      0 0 0.030\" rpy=\"0 0 0\"/>\n      <mass value=\"0.265\"/>\n      <!-- box approximation\
+      \ of the 65 x 65 x 60 mm device -->\n      <inertia ixx=\"0.0001727\" ixy=\"\
+      0.0\" ixz=\"0.0\"\n               iyy=\"0.0001727\" iyz=\"0.0\" izz=\"0.0001866\"\
+      />\n    </inertial>\n\n    <!-- Open-source Livox Mid-360 STL (MIT). The model\
+      \ is split by material:\n         silver heat-sink base, blue dome, black top\
+      \ cap. -->\n    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n    \
+      \  <geometry>\n        <mesh filename=\"model://robot_description/meshes/mid360_base.stl\"\
+      />\n      </geometry>\n      <material name=\"lidar_silver\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <geometry>\n\
+      \        <mesh filename=\"model://robot_description/meshes/mid360_dome.stl\"\
+      />\n      </geometry>\n      <material name=\"lidar_blue\"/>\n    </visual>\n\
+      \    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <geometry>\n\
+      \        <mesh filename=\"model://robot_description/meshes/mid360_top.stl\"\
+      />\n      </geometry>\n      <material name=\"lidar_black\"/>\n    </visual>\n\
+      \n    <collision>\n      <origin xyz=\"0 0 0.030\" rpy=\"0 0 0\"/>\n      <geometry>\n\
+      \        <box size=\"0.065 0.065 0.060\"/>\n      </geometry>\n    </collision>\n\
+      \  </link>\n  <joint name=\"livox_mid360_joint\" type=\"fixed\">\n    <parent\
+      \ link=\"base_link\"/>\n    <child link=\"livox_mid360_link\"/>\n    <origin\
+      \ xyz=\"0 0 0.10\" rpy=\"0 0 0\"/>\n  </joint>\n\n  <!-- =======================\
+      \ depth camera =======================\n       Intel RealSense D435i style:\
+      \ 90 x 25 x 25 mm.\n       Body centre at x = 0.263 (back face 0.2505), z =\
+      \ 0.270.\n       camera_link  : x forward, y left, z up (body axes)\n      \
+      \ camera_optical_frame : z forward, x right, y down (REP-103)\n  ===============================================================\
+      \ -->\n  <link name=\"camera_link\">\n    <inertial>\n      <origin xyz=\"0\
+      \ 0 0\" rpy=\"0 0 0\"/>\n      <mass value=\"0.09\"/>\n      <!-- box 0.025\
+      \ x 0.090 x 0.025 -->\n      <inertia ixx=\"0.0000654\" ixy=\"0.0\" ixz=\"0.0\"\
+      \n               iyy=\"0.0000094\" iyz=\"0.0\" izz=\"0.0000654\"/>\n    </inertial>\n\
+      \n    <visual>\n      <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n      <geometry>\n\
+      \        <box size=\"0.025 0.090 0.025\"/>\n      </geometry>\n      <material\
+      \ name=\"camera_dark\"/>\n    </visual>\n\n    <!-- dark front glass -->\n \
+      \   <visual>\n      <origin xyz=\"0.0135 0 0\" rpy=\"0 0 0\"/>\n      <geometry>\n\
+      \        <box size=\"0.002 0.074 0.018\"/>\n      </geometry>\n      <material\
+      \ name=\"lens_blue\"/>\n    </visual>\n\n    <!-- three lenses: left IR / RGB\
+      \ / right IR (dark ring + blue glass) -->\n    <visual>\n      <origin xyz=\"\
+      0.0160 -0.031 0\" rpy=\"0 1.57079632679 0\"/>\n      <geometry>\n        <cylinder\
+      \ radius=\"0.0070\" length=\"0.003\"/>\n      </geometry>\n      <material name=\"\
+      camera_dark\"/>\n    </visual>\n    <visual>\n      <origin xyz=\"0.0170 -0.031\
+      \ 0\" rpy=\"0 1.57079632679 0\"/>\n      <geometry>\n        <cylinder radius=\"\
+      0.0050\" length=\"0.003\"/>\n      </geometry>\n      <material name=\"lens_blue\"\
+      />\n    </visual>\n    <visual>\n      <origin xyz=\"0.0160 0.000 0\" rpy=\"\
+      0 1.57079632679 0\"/>\n      <geometry>\n        <cylinder radius=\"0.0070\"\
+      \ length=\"0.003\"/>\n      </geometry>\n      <material name=\"camera_dark\"\
+      />\n    </visual>\n    <visual>\n      <origin xyz=\"0.0170 0.000 0\" rpy=\"\
+      0 1.57079632679 0\"/>\n      <geometry>\n        <cylinder radius=\"0.0050\"\
+      \ length=\"0.003\"/>\n      </geometry>\n      <material name=\"lens_blue\"\
+      />\n    </visual>\n    <visual>\n      <origin xyz=\"0.0160 0.031 0\" rpy=\"\
+      0 1.57079632679 0\"/>\n      <geometry>\n        <cylinder radius=\"0.0070\"\
+      \ length=\"0.003\"/>\n      </geometry>\n      <material name=\"camera_dark\"\
+      />\n    </visual>\n    <visual>\n      <origin xyz=\"0.0170 0.031 0\" rpy=\"\
+      0 1.57079632679 0\"/>\n      <geometry>\n        <cylinder radius=\"0.0050\"\
+      \ length=\"0.003\"/>\n      </geometry>\n      <material name=\"lens_blue\"\
+      />\n    </visual>\n\n    <collision>\n      <origin xyz=\"0 0 0\" rpy=\"0 0\
+      \ 0\"/>\n      <geometry>\n        <box size=\"0.025 0.090 0.025\"/>\n     \
+      \ </geometry>\n    </collision>\n  </link>\n  <joint name=\"camera_joint\" type=\"\
+      fixed\">\n    <parent link=\"base_link\"/>\n    <child link=\"camera_link\"\
+      />\n    <origin xyz=\"0.263 0 0.03\" rpy=\"0 0 0\"/>\n  </joint>\n\n  <link\
+      \ name=\"camera_optical_frame\"/>\n  <joint name=\"camera_optical_joint\" type=\"\
+      fixed\">\n    <parent link=\"camera_link\"/>\n    <child link=\"camera_optical_frame\"\
+      />\n    <origin xyz=\"0.0185 0 0\" rpy=\"-1.57079632679 0 -1.57079632679\"/>\n\
+      \  </joint>\n\n  <!-- ==================================================================\n\
+      \       Gazebo Classic 11 集成（仅 Gazebo 使用，不影响 RViz 显示结构）\n       ··································································\n\
+      \       插件（ModelPlugin，写在 robot 级 <gazebo> 里）：\n         * libgazebo_ros_planar_move.so\n\
+      \             速度级平面运动：订阅 /cmd_vel(Twist)，发布 /odom 与\n             TF odom->base_footprint。参数名已按\
+      \ gazebo_ros 3.9 插件源码 /\n             gazebo_plugins 自带 demo world 核实：\n   \
+      \          update_rate / publish_rate / publish_odom / publish_odom_tf /\n \
+      \            odometry_frame / robot_base_frame / covariance_x|y|yaw。\n     \
+      \    * libgazebo_ros_joint_state_publisher.so\n             发布四个轮关节的 /joint_states（update_rate\
+      \ + 每个 joint_name）。\n       注意：libgazebo_ros_init.so / libgazebo_ros_factory.so\
+      \ 是 SystemPlugin，\n       必须由 gzserver 命令行 -s 加载（见 launch/gazebo.launch.py），不能写在这里。\n\
+      \       ================================================================== -->\n\
+      \n  <!-- 材质：Gazebo 不解析 URDF 顶部的 <material> 名字，需要逐 link 指定。\n       self_collide\
+      \ 保持 false（与 URDF 默认一致），避免轮子与底盘自碰撞。 -->\n  <gazebo reference=\"base_link\">\n\
+      \    <material>Gazebo/Grey</material>\n    <self_collide>false</self_collide>\n\
+      \  </gazebo>\n\n  <!-- 四个麦轮：planar_move 直接设置车体速度，轮子碰撞体不应与地面大力摩擦，\n       否则接触约束会和速度指令打架产生抖动/漂移；统一调低摩擦系数。\n\
+      \       轮子由关节状态发布器以 passive 关节形式驱动，不含电机模型。 -->\n  <gazebo reference=\"wheel_front_left_link\"\
+      >\n    <material>Gazebo/FlatBlack</material>\n    <mu1>0.1</mu1>\n    <mu2>0.1</mu2>\n\
+      \    <self_collide>false</self_collide>\n  </gazebo>\n  <gazebo reference=\"\
+      wheel_front_right_link\">\n    <material>Gazebo/FlatBlack</material>\n    <mu1>0.1</mu1>\n\
+      \    <mu2>0.1</mu2>\n    <self_collide>false</self_collide>\n  </gazebo>\n \
+      \ <gazebo reference=\"wheel_rear_left_link\">\n    <material>Gazebo/FlatBlack</material>\n\
+      \    <mu1>0.1</mu1>\n    <mu2>0.1</mu2>\n    <self_collide>false</self_collide>\n\
+      \  </gazebo>\n  <gazebo reference=\"wheel_rear_right_link\">\n    <material>Gazebo/FlatBlack</material>\n\
+      \    <mu1>0.1</mu1>\n    <mu2>0.1</mu2>\n    <self_collide>false</self_collide>\n\
+      \  </gazebo>\n\n  <gazebo reference=\"livox_mid360_link\">\n    <material>Gazebo/DarkGrey</material>\n\
+      \    <self_collide>false</self_collide>\n  </gazebo>\n  <gazebo reference=\"\
+      camera_link\">\n    <material>Gazebo/FlatBlack</material>\n    <self_collide>false</self_collide>\n\
+      \  </gazebo>\n  <gazebo reference=\"camera_optical_frame\">\n    <self_collide>false</self_collide>\n\
+      \  </gazebo>\n\n  <!-- 底盘速度级运动 + 里程计 / TF（odom -> base_footprint）。\n       /wheel_cmd\
+      \ 在本模式下不参与：teleop 发的 /cmd_vel 直接驱动车体。 -->\n  <gazebo>\n    <plugin name=\"gazebo_ros_planar_move\"\
+      \ filename=\"libgazebo_ros_planar_move.so\">\n      <ros>\n        <namespace>/</namespace>\n\
+      \      </ros>\n      <update_rate>50.0</update_rate>\n      <publish_rate>50.0</publish_rate>\n\
+      \      <publish_odom>true</publish_odom>\n      <publish_odom_tf>true</publish_odom_tf>\n\
+      \      <odometry_frame>odom</odometry_frame>\n      <robot_base_frame>base_footprint</robot_base_frame>\n\
+      \      <covariance_x>0.0001</covariance_x>\n      <covariance_y>0.0001</covariance_y>\n\
+      \      <covariance_yaw>0.01</covariance_yaw>\n    </plugin>\n  </gazebo>\n\n\
+      \  <!-- 轮关节状态：robot_state_publisher 需要 /joint_states 才能生成轮子 TF -->\n  <gazebo>\n\
+      \    <plugin name=\"gazebo_ros_joint_state_publisher\"\n            filename=\"\
+      libgazebo_ros_joint_state_publisher.so\">\n      <ros>\n        <namespace>/</namespace>\n\
+      \      </ros>\n      <update_rate>50.0</update_rate>\n      <joint_name>wheel_front_left_joint</joint_name>\n\
+      \      <joint_name>wheel_front_right_joint</joint_name>\n      <joint_name>wheel_rear_left_joint</joint_name>\n\
+      \      <joint_name>wheel_rear_right_joint</joint_name>\n    </plugin>\n  </gazebo>\n\
+      \n</robot>\n"
+    use_sim_time: true

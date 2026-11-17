@@ -1,0 +1,4 @@
+1794908987.1555066 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-17-49-47-154956-nepenthe-pc-260
+1794908987.1556003 [INFO] [launch]: Default logging verbosity is set to INFO
+1794908987.1935339 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/preview/robot_gazebo/fake_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794908987.1936238 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……

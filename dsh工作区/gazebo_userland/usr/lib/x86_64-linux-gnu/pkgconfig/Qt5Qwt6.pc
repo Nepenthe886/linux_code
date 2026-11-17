@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qwt
+
+
+Name: Qwt6
+Description: Qt Widgets for Technical Applications
+Version: 6.1.4
+Libs: -lqwt-qt5 
+Cflags: -I${includedir}
+Requires: Qt5Widgets Qt5Concurrent Qt5PrintSupport Qt5Svg Qt5OpenGL
+

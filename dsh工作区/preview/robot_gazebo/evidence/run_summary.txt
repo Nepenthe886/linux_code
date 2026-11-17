@@ -1,0 +1,4 @@
+launch_pid=27
+[ok] /odom ready after 2 x0.5s
+=== 前进 linear.x=0.3, 3s ===
+=== 横移 linear.y=0.3, 3s ===

@@ -1,0 +1,16 @@
+[1/5] 等待 /clock ...
+      OK /clock = 159.700000000
+[2/5] 等待 /odom /joint_states ...
+      OK /odom frame_id=odom child=base_footprint
+      OK /joint_states joints=['wheel_front_left_joint', 'wheel_front_right_joint', 'wheel_rear_left_joint', 'wheel_rear_right_joint']
+[3/5] 检查 TF odom->base_footprint ...
+      OK TF odom->base_footprint
+[4/5] 运动测试 ...
+      起点 odom: x=2.238 y=1.219 yaw=-1.894
+      前进 2s 后: 位移=0.293 m  -> OK
+      横移 2s 后: 位移=0.164 m  -> FAIL
+      自转 1.5s 后: yaw 变化=0.576 rad -> OK
+[5/5] 终点位姿: x=2.276 y=0.967 yaw=-1.080
+
+=== RESULT: FAIL ===
+ - 横移位移过小 0.164 m

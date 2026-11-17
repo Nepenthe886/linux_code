@@ -1,0 +1,1 @@
+[WARN] [1794910474.450895748] [gazebo_drive_check]: New publisher discovered on topic '/clock', offering incompatible QoS. No messages will be received from it. Last incompatible policy: RELIABILITY

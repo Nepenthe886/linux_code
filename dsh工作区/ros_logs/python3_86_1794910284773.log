@@ -1,0 +1,6 @@
+[INFO] [1794910284.805813861] [spawn_entity]: Spawn Entity started
+[INFO] [1794910284.806065495] [spawn_entity]: Loading entity XML from file /home/nepenthe/zmf/linux_code/dsh工作区/.tmp_test/urdf_model_uri.urdf
+[INFO] [1794910284.806851118] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[INFO] [1794910284.807064313] [spawn_entity]: Waiting for service /spawn_entity
+[INFO] [1794910284.809159548] [spawn_entity]: Calling service /spawn_entity
+[INFO] [1794910285.017680941] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [robot_m]

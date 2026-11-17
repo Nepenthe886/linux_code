@@ -1,0 +1,20 @@
+===== 前进后 gz model -p（期望 x +0.6, y≈0, yaw≈0）=====
+0.579759 0.001494 0 0 -0 0.001645
+
+===== 前进后 /odom =====
+header:
+  stamp:
+    sec: 8
+    nanosec: 681000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 0.5797544860081035
+      y: 0.0015107146947774255
+      z: 7.770491794456547e-08
+    orientation:
+      x: -5.461928292135663e-06
+      y: 5.2203027192612724e-06
+      z: 0.0009516931411710891

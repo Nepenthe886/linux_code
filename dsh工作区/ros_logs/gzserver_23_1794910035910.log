@@ -1,0 +1,13 @@
+[INFO] [1794910046.658191642] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[INFO] [1794910046.659330136] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[INFO] [1794910046.660352393] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[INFO] [1794910046.664085760] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[INFO] [1794910046.664104160] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[INFO] [1794910046.664109600] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[INFO] [1794910046.664114459] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [1794910053.120302480] [overview_cam.camera_ros]: Publishing camera info to [/overview_cam/image/camera_info]
+[INFO] [1794910058.140264703] [overview_cam.camera_ros]: Publishing camera info to [/overview_cam/image/camera_info]
+[INFO] [1794910063.358345168] [overview_cam.camera_ros]: Publishing camera info to [/overview_cam/image/camera_info]
+[INFO] [1794910068.383293693] [overview_cam.camera_ros]: Publishing camera info to [/overview_cam/image/camera_info]
+[INFO] [1794910073.406217828] [overview_cam.camera_ros]: Publishing camera info to [/overview_cam/image/camera_info]
+[INFO] [1794910078.014778138] [rclcpp]: signal_handler(SIGINT/SIGTERM)

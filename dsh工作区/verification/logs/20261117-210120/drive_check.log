@@ -1,0 +1,15 @@
+[1/5] 等待 /clock ...
+      OK /clock = 23.900000000
+[2/5] 等待 /odom /joint_states ...
+      OK /odom frame_id=odom child=base_footprint
+      OK /joint_states joints=['wheel_front_left_joint', 'wheel_front_right_joint', 'wheel_rear_left_joint', 'wheel_rear_right_joint']
+[3/5] 检查 TF odom->base_footprint ...
+      OK TF odom->base_footprint
+[4/5] 运动测试 ...
+      起点 odom: x=2.900 y=1.599 yaw=-3.141
+      前进 2s 后: 位移=0.579 m  -> OK
+      横移 2s 后: 位移=0.562 m  -> OK
+      自转 1.5s 后: yaw 变化=0.735 rad -> OK
+[5/5] 终点位姿: x=2.320 y=1.038 yaw=-2.407
+
+=== RESULT: PASS（仿真启动 + 全向运动控制闭环全部通过）===

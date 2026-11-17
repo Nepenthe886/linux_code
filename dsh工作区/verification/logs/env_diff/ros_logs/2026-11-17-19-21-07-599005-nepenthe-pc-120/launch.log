@@ -1,0 +1,9 @@
+1794914467.5997069 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/env_diff/ros_logs/2026-11-17-19-21-07-599005-nepenthe-pc-120
+1794914467.5998054 [INFO] [launch]: Default logging verbosity is set to INFO
+1794914467.6004746 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+1794914467.6424615 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794914467.6425266 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794914467.6779816 [INFO] [bash-1]: process started with pid [136]
+1794914467.6780882 [INFO] [spawn_entity.py-2]: process started with pid [138]
+1794914467.6781466 [INFO] [robot_state_publisher-3]: process started with pid [140]
+1794914469.0559366 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 138]

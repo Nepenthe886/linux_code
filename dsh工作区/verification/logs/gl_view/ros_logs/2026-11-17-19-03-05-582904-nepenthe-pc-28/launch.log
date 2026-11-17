@@ -1,0 +1,13 @@
+1794913385.5833764 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/gl_view/ros_logs/2026-11-17-19-03-05-582904-nepenthe-pc-28
+1794913385.5834451 [INFO] [launch]: Default logging verbosity is set to INFO
+1794913385.5847318 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=true, rviz=true, teleop=gui）
+1794913397.6309602 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794913397.6310611 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794913397.6646092 [INFO] [bash-1]: process started with pid [44]
+1794913397.6646943 [INFO] [spawn_entity.py-2]: process started with pid [46]
+1794913397.6647420 [INFO] [robot_state_publisher-3]: process started with pid [48]
+1794913397.6647747 [INFO] [gui_teleop-4]: process started with pid [50]
+1794913397.6648123 [INFO] [gzclient-5]: process started with pid [52]
+1794913397.6648500 [INFO] [rviz2-6]: process started with pid [54]
+1794913398.7720563 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 46]
+1794913433.1328514 [ERROR] [rviz2-6]: process has died [pid 54, exit code -6, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_control/share/robot_control/rviz/teleop.rviz --ros-args -r __node:=rviz2 --params-file /tmp/launch_params_mqzz0fu0'].

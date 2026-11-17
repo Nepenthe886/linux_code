@@ -1,0 +1,28 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/ros_logs/2026-11-17-17-09-38-475876-nepenthe-pc-21
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [25]
+[INFO] [sim_node-2]: process started with pid [27]
+[INFO] [gui_teleop-3]: process started with pid [29]
+[robot_state_publisher-1] [INFO] [1794906578.549773503] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-1] [INFO] [1794906578.549822774] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1794906578.549827904] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1794906578.549831584] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-1] [INFO] [1794906578.549835294] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-1] [INFO] [1794906578.549838804] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-1] [INFO] [1794906578.549841885] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-1] [INFO] [1794906578.549844815] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-1] [INFO] [1794906578.549847805] [robot_state_publisher]: got segment wheel_rear_right_link
+[gui_teleop-3] [INFO] [1794906578.708296003] [mecanum_gui]: 参数：linear_speed=0.30 m/s, lateral_speed=0.30 m/s, angular_speed=1.00 rad/s, max_wheel_speed=30.0 rad/s, publish_rate=20.0 Hz, cmd_timeout=0.50 s, key_silence_timeout=1.20 s, focus_mode_default=True
+[gui_teleop-3] [INFO] [1794906578.711174812] [mecanum_gui]: 键位：前进 W / ↑；后退 S / ↓；左平移 A / ←；右平移 D / →；左转 Q；右转 E；停止 空格；专注模式 K（仅 X11，全局键盘）
+[gui_teleop-3] [INFO] [1794906578.711420336] [mecanum_gui]: 发布 /cmd_vel 与 /wheel_cmd (20 Hz)，订阅 /odom
+[sim_node-2] [INFO] [1794906578.757566546] [mecanum_sim]: mecanum_sim 启动: r=0.065 m, bx=0.17 m, by=0.17 m, max_wheel_speed=30.0 rad/s, publish_rate=50.0 Hz, cmd_timeout=0.5 s, command_accel_limit=60.0 rad/s^2
+[sim_node-2] [INFO] [1794906578.757834081] [mecanum_sim]: 轮序固定 FL FR RL RR = wheel_front_left_joint, wheel_front_right_joint, wheel_rear_left_joint, wheel_rear_right_joint（axis=+Y，正轮速 -> 向车头 +X 滚动）
+[sim_node-2] [INFO] [1794906578.758055335] [mecanum_sim]: 订阅 /wheel_cmd [Float64MultiArray, rad/s] -> 发布 /joint_states, /odom, 广播 TF odom -> base_footprint
+[gui_teleop-3] [INFO] [1794906578.843164753] [mecanum_gui]: 默认进入专注模式（focus_mode_default=true）：启动后自动接管全局键盘，按 K 退出/重新进入；可用 launch 参数 focus_mode:=false 或 ros2 run robot_control gui_teleop --ros-args -p focus_mode_default:=false 关闭
+[gui_teleop-3] [WARN] [1794906579.094489986] [mecanum_gui]: 已进入专注模式：键盘被本程序接管，按 K 退出
+[gui_teleop-3] [WARN] [1794906585.216473540] [mecanum_gui]: 已退出专注模式
+[robot_state_publisher-1] [INFO] [1794906597.676888518] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[sim_node-2] [INFO] [1794906597.681073173] [mecanum_sim]: mecanum_sim 退出：已发布零速 joint_states，关闭 TF 广播
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 25]
+[INFO] [sim_node-2]: process has finished cleanly [pid 27]
+[INFO] [gui_teleop-3]: process has finished cleanly [pid 29]

@@ -1,0 +1,34 @@
+===== Gazebo 启动验收 20261117-181416 =====
+日志目录: /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/20261117-181416
+----- [1/6] colcon build -----
+[PASS] colcon build 成功
+Finished <<< zhirong_maps [0.89s]
+
+Summary: 3 packages finished [1.03s]
+----- [2/6] ros2 launch robot_control gazebo.launch.py -----
+launch pid=215
+ /clock 在 1s 后可用
+[PASS] gzserver 发布 /clock（仿真时钟运行）
+----- [3/6] 场景模型 & 机器人加载检查 -----
+[PASS] 场景+机器人关键模型全部加载（缺 0 个）
+ robot 初始位姿: 2.90015 1.59906 -0 1e-06 1e-06 -3.14122
+----- [4/6] /cmd_vel 全向运动闭环检查 -----
+[FAIL] 全向运动闭环（前进/横移/自转）
+not found: "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/local_setup.bash"
+[WARN] [1794910474.450895748] [gazebo_drive_check]: New publisher discovered on topic '/clock', offering incompatible QoS. No messages will be received from it. Last incompatible policy: RELIABILITY
+[1/5] 等待 /clock ...
+FAIL: 30s 内没有收到 /clock
+ robot 结束位姿: 2.89961 1.59422 0 2e-06 1e-06 -3.12949
+----- [5/6] 话题 & TF 汇总 -----
+  话题存在: /clock
+  话题存在: /odom
+  话题存在: /joint_states
+  话题存在: /cmd_vel
+  话题存在: /tf
+  话题存在: /robot_description
+  TF odom->base_footprint: OK
+----- [6/6] 收尾 -----
+残留 gzserver: 0
+
+===== 结果: PASS=3 FAIL=1 =====
+ACCEPTANCE: FAIL

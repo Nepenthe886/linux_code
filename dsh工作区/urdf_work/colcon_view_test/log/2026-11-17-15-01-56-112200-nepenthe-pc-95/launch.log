@@ -1,0 +1,4 @@
+1794898916.1126285 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/urdf_work/colcon_view_test/log/2026-11-17-15-01-56-112200-nepenthe-pc-95
+1794898916.1126995 [INFO] [launch]: Default logging verbosity is set to INFO
+1794898916.1719317 [INFO] [robot_state_publisher-1]: process started with pid [96]
+1794898916.1720021 [INFO] [zero_joint_state_publisher-2]: process started with pid [98]

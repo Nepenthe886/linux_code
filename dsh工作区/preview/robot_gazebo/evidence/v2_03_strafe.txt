@@ -1,0 +1,22 @@
+===== 横移后 gz model -p =====
+2.26464 1.21018 0 1e-06 0 -2.64792
+
+===== 横移后 /odom =====
+header:
+  stamp:
+    sec: 15
+    nanosec: 237000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 2.264564315619906
+      y: 1.2103719437640403
+      z: -4.529273440356807e-06
+    orientation:
+      x: 4.537646600420184e-06
+      y: -1.2413844002984737e-05
+      z: 0.9697418743934413
+      w: -0.24413253956242986
+  covariance:

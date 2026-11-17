@@ -1,0 +1,5 @@
+[console_scripts]
+gui_teleop = robot_control.gui_teleop:main
+sim_node = robot_control.sim_node:main
+teleop_keyboard = robot_control.teleop_keyboard:main
+

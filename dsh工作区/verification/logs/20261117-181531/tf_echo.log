@@ -1,0 +1,93 @@
+not found: "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/local_setup.bash"
+[INFO] [1794910550.717292879] [tf2_echo]: Waiting for transform odom ->  base_footprint: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+At time 17.517000000
+- Translation: [2.900, 1.599, -0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, 0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [0.000, 0.000, -3.141]
+- Rotation: in RPY (degree) [0.000, 0.000, -179.963]
+- Matrix:
+ -1.000  0.001 -0.000  2.900
+ -0.001 -1.000  0.000  1.599
+ -0.000  0.000  1.000 -0.000
+  0.000  0.000  0.000  1.000
+At time 18.517000000
+- Translation: [2.900, 1.599, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [-0.000, 0.000, -3.141]
+- Rotation: in RPY (degree) [-0.000, 0.000, -179.956]
+- Matrix:
+ -1.000  0.001 -0.000  2.900
+ -0.001 -1.000 -0.000  1.599
+ -0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 19.517000000
+- Translation: [2.900, 1.599, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [-0.000, -0.000, -3.141]
+- Rotation: in RPY (degree) [-0.000, -0.000, -179.963]
+- Matrix:
+ -1.000  0.001  0.000  2.900
+ -0.001 -1.000 -0.000  1.599
+  0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 20.517000000
+- Translation: [2.900, 1.599, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [-0.000, 0.000, -3.141]
+- Rotation: in RPY (degree) [-0.000, 0.000, -179.974]
+- Matrix:
+ -1.000  0.000 -0.000  2.900
+ -0.000 -1.000 -0.000  1.599
+ -0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 21.517000000
+- Translation: [2.900, 1.599, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [-0.000, -0.000, -3.141]
+- Rotation: in RPY (degree) [-0.000, -0.000, -179.979]
+- Matrix:
+ -1.000  0.000  0.000  2.900
+ -0.000 -1.000 -0.000  1.599
+  0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 22.517000000
+- Translation: [2.900, 1.599, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [-0.000, 0.000, -3.141]
+- Rotation: in RPY (degree) [-0.000, 0.000, -179.984]
+- Matrix:
+ -1.000  0.000 -0.000  2.900
+ -0.000 -1.000 -0.000  1.599
+ -0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 23.517000000
+- Translation: [2.900, 1.599, -0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, 0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [0.000, 0.000, -3.141]
+- Rotation: in RPY (degree) [0.002, 0.000, -179.976]
+- Matrix:
+ -1.000  0.000 -0.000  2.900
+ -0.000 -1.000  0.000  1.599
+ -0.000  0.000  1.000 -0.000
+  0.000  0.000  0.000  1.000
+At time 24.517000000
+- Translation: [2.900, 1.599, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [-0.000, -0.000, -3.141]
+- Rotation: in RPY (degree) [-0.000, -0.000, -179.963]
+- Matrix:
+ -1.000  0.001  0.000  2.900
+ -0.001 -1.000 -0.000  1.599
+  0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 25.517000000
+- Translation: [2.900, 1.599, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, 0.000, 1.000, -0.000]
+- Rotation: in RPY (radian) [0.000, 0.000, -3.141]
+- Rotation: in RPY (degree) [0.000, 0.000, -179.984]
+- Matrix:
+ -1.000  0.000 -0.000  2.900
+ -0.000 -1.000  0.000  1.599
+ -0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+[INFO] [1794910560.614955279] [rclcpp]: signal_handler(SIGINT/SIGTERM)

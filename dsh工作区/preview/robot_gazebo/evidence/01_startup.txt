@@ -1,0 +1,74 @@
+===== ros2 topic list =====
+/clock
+/cmd_vel
+/joint_states
+/odom
+/parameter_events
+/performance_metrics
+/robot_description
+/rosout
+/tf
+/tf_static
+
+===== /clock =====
+clock:
+  sec: 2
+  nanosec: 400000000
+---
+
+===== /joint_states (完整) =====
+header:
+  stamp:
+    sec: 3
+    nanosec: 260000000
+  frame_id: ''
+name:
+- wheel_front_left_joint
+- wheel_front_right_joint
+- wheel_rear_left_joint
+- wheel_rear_right_joint
+position:
+- 0.015004318649112669
+- 0.01724879581537664
+- -0.014912411703936534
+- -0.020781892661695167
+velocity:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+effort: []
+---
+
+===== TF odom -> base_footprint =====
+[INFO] [1794909099.765167631] [tf2_echo]: Waiting for transform odom ->  base_footprint: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+At time 4.460000000
+- Translation: [2.900, 1.600, -0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 1.000, 0.000]
+- Rotation: in RPY (radian) [-0.000, 0.000, 3.141]
+- Rotation: in RPY (degree) [-0.000, 0.001, 179.982]
+
+===== 初始位姿 gz model -p (x y z r p yaw) =====
+2.89997 1.59948 -0 -3e-06 2e-06 3.14128
+
+===== 初始 /odom =====
+header:
+  stamp:
+    sec: 8
+    nanosec: 180000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 2.9000202056781537
+      y: 1.599366641501474
+      z: -2.696637332627594e-06
+    orientation:
+      x: 1.215030094987642e-06
+      y: -9.441851370305011e-06
+      z: 0.9999999984064789
+      w: 5.564546122138461e-05
+  covariance:
+  - 0.0001
+  - 0.0

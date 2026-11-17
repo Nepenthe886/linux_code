@@ -1,0 +1,5 @@
+1794921452.0507395 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/ros_logs/2026-11-17-21-17-32-050245-nepenthe-pc-21
+1794921452.0508080 [INFO] [launch]: Default logging verbosity is set to INFO
+1794921452.0512836 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+1794921452.0693126 [ERROR] [launch]: Caught exception in launch (see debug for traceback): gazebo.launch.py: world 参数指定的文件不存在：/tmp/__no_such_world__.world
+  请传绝对路径，例如 world:=/path/to/zhirong_arena.world

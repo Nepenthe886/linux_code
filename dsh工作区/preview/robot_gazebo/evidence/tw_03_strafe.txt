@@ -1,0 +1,20 @@
+===== 横移后 gz model -p（期望 y +0.6, x≈不变, yaw≈0）=====
+0.579021 0.586895 -1e-05 0 -0 0.003791
+
+===== 横移后 /odom =====
+header:
+  stamp:
+    sec: 13
+    nanosec: 521000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 0.5790694541091445
+      y: 0.587063776743106
+      z: 9.297292899446141e-08
+    orientation:
+      x: -1.8454098669910967e-07
+      y: 5.597746149908889e-08
+      z: 0.0025259988777860676

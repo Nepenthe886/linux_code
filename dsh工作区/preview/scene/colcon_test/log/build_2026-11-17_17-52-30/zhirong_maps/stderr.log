@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:56 (file):
+  file INSTALL cannot find
+  "/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/README.md":
+  No such file or directory.
+
+

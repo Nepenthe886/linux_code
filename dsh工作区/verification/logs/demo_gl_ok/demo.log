@@ -1,0 +1,102 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/demo_gl_ok/ros_logs/2026-11-17-19-23-43-528602-nepenthe-pc-33
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=true, rviz=true, teleop=gui）
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [bash-1]: process started with pid [66]
+[INFO] [spawn_entity.py-2]: process started with pid [68]
+[INFO] [robot_state_publisher-3]: process started with pid [70]
+[INFO] [gui_teleop-4]: process started with pid [72]
+[INFO] [gzclient-5]: process started with pid [74]
+[INFO] [rviz2-6]: process started with pid [76]
+[robot_state_publisher-3] [INFO] [1794914623.645238742] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794914623.645291228] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794914623.645297089] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794914623.645301760] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794914623.645306340] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794914623.645310951] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794914623.645315341] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794914623.645319362] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794914623.645324112] [robot_state_publisher]: got segment wheel_rear_right_link
+[rviz2-6] [INFO] [1794914623.805119462] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1794914623.805204642] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[gui_teleop-4] [INFO] [1794914623.805567704] [gui_teleop]: 参数：linear_speed=0.30 m/s, lateral_speed=0.30 m/s, angular_speed=1.00 rad/s, max_wheel_speed=30.0 rad/s, publish_rate=20.0 Hz, cmd_timeout=0.50 s, key_silence_timeout=1.20 s, focus_mode_default=False
+[gui_teleop-4] [INFO] [1794914623.808692783] [gui_teleop]: 键位：前进 W / ↑；后退 S / ↓；左平移 A / ←；右平移 D / →；左转 Q；右转 E；停止 空格；专注模式 K（仅 X11，全局键盘）
+[gui_teleop-4] [INFO] [1794914623.808949533] [gui_teleop]: 发布 /cmd_vel 与 /wheel_cmd (20 Hz)，订阅 /odom
+[spawn_entity.py-2] [INFO] [1794914623.834995625] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794914623.835209990] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794914623.836235718] [spawn_robot]: Waiting for entity xml on robot_description
+[rviz2-6] [INFO] [1794914623.841151313] [rviz2]: Stereo is NOT SUPPORTED
+[spawn_entity.py-2] [INFO] [1794914623.847161773] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794914623.847394620] [spawn_robot]: Waiting for service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794914624.600401454] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794914624.830403209] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[bash-1] [INFO] [1794914624.839172715] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[bash-1] [INFO] [1794914624.840199512] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[bash-1] [INFO] [1794914624.841343303] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[bash-1] [INFO] [1794914624.845598901] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[bash-1] [INFO] [1794914624.845616793] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[bash-1] [INFO] [1794914624.845623624] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[bash-1] [INFO] [1794914624.845629605] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 68]
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.797: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.797: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.797: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.804: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.804: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.804: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.804: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.804: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.805: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.805: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.805: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.805: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.805: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[gzclient-5] 
+[gzclient-5] (gzclient:74): dconf-CRITICAL **: 19:23:45.805: unable to create file '/run/user/1000/dconf/user': 只读文件系统.  dconf will not work properly.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[INFO] [rviz2-6]: sending signal 'SIGINT' to process[rviz2-6]
+[INFO] [gzclient-5]: sending signal 'SIGINT' to process[gzclient-5]
+[INFO] [gui_teleop-4]: sending signal 'SIGINT' to process[gui_teleop-4]
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+[rviz2-6] [INFO] [1794914649.228989070] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[gui_teleop-4] Exception in thread mecanum_gui_ros:
+[gui_teleop-4] Traceback (most recent call last):
+[gui_teleop-4]   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+[robot_state_publisher-3] [INFO] [1794914649.229288153] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-6] [INFO] [1794914649.230691896] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-3] [INFO] [1794914649.231632479] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[gui_teleop-4]     self.run()
+[gui_teleop-4]   File "/usr/lib/python3.10/threading.py", line 953, in run
+[gui_teleop-4]     self._target(*self._args, **self._kwargs)
+[gui_teleop-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 323, in spin
+[gui_teleop-4]     self.spin_once()
+[gui_teleop-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 867, in spin_once
+[gui_teleop-4]     self._spin_once_impl(timeout_sec)
+[gui_teleop-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 848, in _spin_once_impl
+[gui_teleop-4]     handler, entity, node = self.wait_for_ready_callbacks(
+[gui_teleop-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+[gui_teleop-4]     return next(self._cb_iter)
+[gui_teleop-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 657, in _wait_for_ready_callbacks
+[gui_teleop-4]     wait_set = _rclpy.WaitSet(
+[gui_teleop-4] rclpy._rclpy_pybind11.RCLError: failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 70]
+[INFO] [gui_teleop-4]: process has finished cleanly [pid 72]
+[INFO] [rviz2-6]: process has finished cleanly [pid 76]
+[INFO] [bash-1]: process has finished cleanly [pid 66]
+[INFO] [launch]: process[bash-1] was required: shutting down launched system

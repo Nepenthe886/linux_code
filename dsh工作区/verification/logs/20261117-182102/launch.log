@@ -1,0 +1,44 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-18-21-04-582882-nepenthe-pc-150476
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [bash-1]: process started with pid [150486]
+[INFO] [spawn_entity.py-2]: process started with pid [150488]
+[INFO] [robot_state_publisher-3]: process started with pid [150490]
+[robot_state_publisher-3] [INFO] [1794910864.670388848] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794910864.670443317] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794910864.670448547] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794910864.670452537] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794910864.670455977] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794910864.670459076] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794910864.670462376] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794910864.670465436] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794910864.670468416] [robot_state_publisher]: got segment wheel_rear_right_link
+[bash-1] Gazebo multi-robot simulator, version 11.10.2
+[bash-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[bash-1] Released under the Apache 2 License.
+[bash-1] http://gazebosim.org
+[bash-1] 
+[bash-1] [1;31m[Err] [Master.cc:96] [0m[1;31mEXCEPTION: [0m[1;31mUnable to start server[bind: Address already in use]. There is probably another Gazebo process running.
+[bash-1] [0m[1;31m
+[bash-1] [0m[1;31m[0m[1;31m[0m[1;31m[Err] [Master.cc:96] [0m[1;31mEXCEPTION: [0m[1;31mUnable to start server[bind: Address already in use]. There is probably another Gazebo process running.
+[bash-1] [0m[1;31m
+[ERROR] [bash-1]: process has died [pid 150486, exit code 255, cmd 'bash -c world="$1"; shift; if [ ! -f "$world" ]; then   echo "[gazebo.launch.py][错误] world 文件不存在: $world" >&2; exit 2; fi; unset DISPLAY; exec gzserver "$@" "$world" gazebo.launch.py /home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world --verbose -s libgazebo_ros_init.so -s libgazebo_ros_factory.so'].
+[bash-1] [1;36m[0m[1;32m[0m
+[bash-1] [0m[1;31m[0m[1;31m[0m[1;33m[0m[1;31m[0m
+[INFO] [launch]: process[bash-1] was required: shutting down launched system
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[INFO] [spawn_entity.py-2]: sending signal 'SIGINT' to process[spawn_entity.py-2]
+[robot_state_publisher-3] [INFO] [1794910864.814031941] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[spawn_entity.py-2] Traceback (most recent call last):
+[spawn_entity.py-2]   File "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/lib/gazebo_ros/spawn_entity.py", line 372, in <module>
+[spawn_entity.py-2]     main()
+[spawn_entity.py-2]   File "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/lib/gazebo_ros/spawn_entity.py", line 363, in main
+[spawn_entity.py-2]     rclpy.init(args=args)
+[spawn_entity.py-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 88, in init
+[spawn_entity.py-2]     context.init(args, domain_id=domain_id)
+[spawn_entity.py-2]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 72, in init
+[spawn_entity.py-2]     self.__context = _rclpy.Context(
+[spawn_entity.py-2] KeyboardInterrupt
+[ERROR] [spawn_entity.py-2]: process has died [pid 150488, exit code -2, cmd '/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/lib/gazebo_ros/spawn_entity.py -topic robot_description -entity zhirong_robot -x 2.9 -y 1.6 -z 0.05 -Y 3.141592653589793 -timeout 120 -package_to_model --ros-args -r __node:=spawn_robot'].
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 150490]

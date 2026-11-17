@@ -1,0 +1,11 @@
+prefix=${pcfiledir}/../../../
+libdir=${prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+
+Name: gazebo
+Description: Gazebo Libraries
+Version: 11.10.2
+Requires: sdformat9 protobuf tbb ignition-math6 ignition-fuel_tools4 ignition-msgs5 ignition-transport8
+Libs: -Wl,-rpath,${prefix}/lib/x86_64-linux-gnu/gazebo-11/plugins -L${libdir} -L${libdir}/gazebo-11/plugins -lgazebo_transport -lgazebo_physics -lgazebo_sensors -lgazebo_rendering -lgazebo_gui -lgazebo_client -lgazebo_msgs -lgazebo_common -lgazebo -L/usr/lib/x86_64-linux-gnu -lboost_thread -lboost_system -lboost_filesystem -lboost_program_options -lboost_regex -lboost_iostreams -lboost_date_time 
+Libs.private: -L/usr/lib/x86_64-linux-gnu -lboost_thread -lboost_system -lboost_filesystem -lboost_program_options -lboost_regex -lboost_iostreams -lboost_date_time
+CFlags: -I${includedir}/gazebo-11 -I/usr/include -std=c++11

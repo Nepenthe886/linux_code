@@ -1,0 +1,6 @@
+launch_pid=27
+[ok] /odom ready after 2 x0.5s
+=== 前进 vx=0.3, 2.0s（确定性 publisher）===
+=== 横移 vy=0.3, 2.0s ===
+=== 组内 SIGINT（等价终端 Ctrl-C）===
+[ok] ros2 launch 已退出，用时 0.5s

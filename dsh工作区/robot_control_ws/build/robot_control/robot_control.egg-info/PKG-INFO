@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: robot-control
+Version: 0.1.0
+Summary: Mecanum-wheel teleoperation (WASD / arrow keys) and Tk GUI test panel for the Zhirong Cup robot
+Home-page: UNKNOWN
+Maintainer: Zhirong Cup Team
+Maintainer-email: nepenthe@example.com
+License: Apache-2.0
+Platform: UNKNOWN
+
+UNKNOWN
+

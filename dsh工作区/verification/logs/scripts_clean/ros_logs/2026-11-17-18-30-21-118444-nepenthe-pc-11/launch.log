@@ -1,0 +1,15 @@
+1794911421.1189473 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/scripts_clean/ros_logs/2026-11-17-18-30-21-118444-nepenthe-pc-11
+1794911421.1190171 [INFO] [launch]: Default logging verbosity is set to INFO
+1794911421.1605320 [INFO] [launch.user]: [gazebo.launch.py] 未检测到已 source 的 Gazebo 环境，已自动注入用户态 Gazebo 前缀：/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland（等价于 统一安装（推荐）：在工作空间根目录执行 sudo bash scripts/install_environment.sh；无 sudo 的临时方案：source tools/gazebo_env.sh（用户态安装，仅本机）；系统 apt 安装 Gazebo 的机器不会有此提示）
+1794911421.1605961 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794911421.1606297 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794911421.1909714 [INFO] [bash-1]: process started with pid [32]
+1794911421.1910357 [INFO] [spawn_entity.py-2]: process started with pid [34]
+1794911421.1910713 [INFO] [robot_state_publisher-3]: process started with pid [36]
+1794911422.5069563 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 34]
+1794911441.1479673 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1794911441.1489687 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794911441.1492591 [INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+1794911441.2525332 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 36]
+1794911441.3692002 [INFO] [bash-1]: process has finished cleanly [pid 32]
+1794911441.3694367 [INFO] [launch]: process[bash-1] was required: shutting down launched system

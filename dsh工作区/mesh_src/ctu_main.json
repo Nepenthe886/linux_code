@@ -1,0 +1,4 @@
+{
+	"status": 404,
+	"message": "Couldn't find version main for ctu-mrs/Mid360_simulation_plugin. Make sure you use a specific version number, and not a version range or an npm tag."
+}

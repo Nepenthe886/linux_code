@@ -1,0 +1,3 @@
+[INFO] [1794916826.434048913] [gui_teleop]: 参数：linear_speed=0.30 m/s, lateral_speed=0.30 m/s, angular_speed=1.00 rad/s, max_wheel_speed=30.0 rad/s, publish_rate=20.0 Hz, cmd_timeout=0.50 s, key_silence_timeout=1.20 s, focus_mode_default=False
+[INFO] [1794916826.437061812] [gui_teleop]: 键位：前进 W / ↑；后退 S / ↓；左平移 A / ←；右平移 D / →；左转 Q；右转 E；停止 空格；专注模式 K（仅 X11，全局键盘）
+[INFO] [1794916826.437306150] [gui_teleop]: 发布 /cmd_vel 与 /wheel_cmd (20 Hz)，订阅 /odom

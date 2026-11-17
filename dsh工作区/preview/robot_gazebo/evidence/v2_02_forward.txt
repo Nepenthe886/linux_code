@@ -1,0 +1,22 @@
+===== 前进后 gz model -p =====
+2.32048 1.59952 0 -0 -0 3.14031
+
+===== 前进后 /odom =====
+header:
+  stamp:
+    sec: 10
+    nanosec: 57000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 2.3204623533497046
+      y: 1.5995257768029145
+      z: 3.291485936585126e-08
+    orientation:
+      x: -4.903278283259423e-08
+      y: 1.4823169138408655e-07
+      z: 0.9999989763358008
+      w: 0.0014308484637592341
+  covariance:

@@ -1,0 +1,11 @@
+not found: "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/local_setup.bash"
+/clock
+/cmd_vel
+/joint_states
+/odom
+/parameter_events
+/performance_metrics
+/robot_description
+/rosout
+/tf
+/tf_static

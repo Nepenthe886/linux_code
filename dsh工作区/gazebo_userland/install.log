@@ -1,0 +1,218 @@
+=== [1/4] 解析依赖包列表 ===
+待安装包数量: 105
+=== [2/4] 下载 deb 包 ===
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 comerr-dev amd64 2.1-1.46.5-2ubuntu1.2 [41.0 kB]
+已下载 41.0 kB，耗时 0秒 (383 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 freeglut3-dev amd64 2.8.1-6 [126 kB]
+已下载 126 kB，耗时 0秒 (420 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 gazebo amd64 11.10.2+dfsg-1 [4,095 kB]
+已下载 4,095 kB，耗时 1秒 (4,810 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 gazebo-common all 11.10.2+dfsg-1 [35.7 MB]
+已下载 35.7 MB，耗时 5秒 (7,281 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 gazebo-plugin-base amd64 11.10.2+dfsg-1 [2,165 kB]
+已下载 2,165 kB，耗时 0秒 (5,108 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 krb5-multidev amd64 1.19.2-2ubuntu0.10 [125 kB]
+已下载 125 kB，耗时 0秒 (1,806 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libass9 amd64 1:0.15.2-1 [97.5 kB]
+已下载 97.5 kB，耗时 0秒 (1,246 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libavdevice58 amd64 7:4.4.2-0ubuntu0.22.04.1 [87.5 kB]
+已下载 87.5 kB，耗时 0秒 (1,762 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libavdevice-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [97.3 kB]
+已下载 97.3 kB，耗时 0秒 (1,553 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libavfilter7 amd64 7:4.4.2-0ubuntu0.22.04.1 [1,496 kB]
+已下载 1,496 kB，耗时 0秒 (5,451 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libavfilter-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [1,732 kB]
+已下载 1,732 kB，耗时 0秒 (6,194 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libbs2b0 amd64 3.1.0+dfsg-2.2build1 [10.2 kB]
+已下载 10.2 kB，耗时 0秒 (264 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/main amd64 libbsd-dev amd64 0.11.5-1 [168 kB]
+已下载 168 kB，耗时 0秒 (2,400 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libccd2 amd64 2.1-2 [21.8 kB]
+已下载 21.8 kB，耗时 0秒 (736 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libccd-dev amd64 2.1-2 [10.5 kB]
+已下载 10.5 kB，耗时 0秒 (277 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libdart6.12 amd64 6.12.1+dfsg4-11build2 [1,249 kB]
+已下载 1,249 kB，耗时 0秒 (5,679 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libdart-collision-bullet6.12 amd64 6.12.1+dfsg4-11build2 [42.8 kB]
+已下载 42.8 kB，耗时 0秒 (736 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libdart-dev amd64 6.12.1+dfsg4-11build2 [201 kB]
+已下载 201 kB，耗时 0秒 (2,477 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libdart-external-convhull-3d-dev amd64 6.12.1+dfsg4-11build2 [13.8 kB]
+已下载 13.8 kB，耗时 0秒 (345 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libdart-external-odelcpsolver6.12 amd64 6.12.1+dfsg4-11build2 [25.1 kB]
+已下载 25.1 kB，耗时 0秒 (497 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libdart-external-odelcpsolver-dev amd64 6.12.1+dfsg4-11build2 [15.2 kB]
+已下载 15.2 kB，耗时 0秒 (523 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libdart-utils6.12 amd64 6.12.1+dfsg4-11build2 [285 kB]
+已下载 285 kB，耗时 0秒 (3,020 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libfcl0.7 amd64 0.7.0-3 [922 kB]
+已下载 922 kB，耗时 0秒 (4,653 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libfcl-dev amd64 0.7.0-3 [235 kB]
+已下载 235 kB，耗时 0秒 (2,903 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libflite1 amd64 2.2-3 [13.7 MB]
+已下载 13.7 MB，耗时 3秒 (5,282 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libfreeimage3 amd64 3.18.0+ds2-6ubuntu5.1 [294 kB]
+已下载 294 kB，耗时 0秒 (1,639 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libfreeimage-dev amd64 3.18.0+ds2-6ubuntu5.1 [371 kB]
+已下载 371 kB，耗时 0秒 (1,530 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libgazebo11 amd64 11.10.2+dfsg-1 [8,734 kB]
+已下载 8,734 kB，耗时 1秒 (6,588 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libgazebo-dev amd64 11.10.2+dfsg-1 [756 kB]
+已下载 756 kB，耗时 0秒 (2,679 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libgssrpc4 amd64 1.19.2-2ubuntu0.10 [58.7 kB]
+已下载 58.7 kB，耗时 0秒 (1,029 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libgts-dev amd64 0.7.6+darcs121130-5 [193 kB]
+已下载 193 kB，耗时 0秒 (3,251 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-3 amd64 3.14.0+dfsg-5 [140 kB]
+已下载 140 kB，耗时 0秒 (847 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-av3 amd64 3.14.0+dfsg-5 [43.5 kB]
+已下载 43.5 kB，耗时 0秒 (313 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-av-dev amd64 3.14.0+dfsg-5 [14.5 kB]
+已下载 14.5 kB，耗时 0秒 (130 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-core-dev amd64 3.14.0+dfsg-5 [113 kB]
+已下载 113 kB，耗时 0秒 (577 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-dev amd64 3.14.0+dfsg-5 [51.1 kB]
+已下载 51.1 kB，耗时 0秒 (356 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-events3 amd64 3.14.0+dfsg-5 [52.3 kB]
+已下载 52.3 kB，耗时 0秒 (339 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-graphics3 amd64 3.14.0+dfsg-5 [243 kB]
+已下载 243 kB，耗时 1秒 (425 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-graphics-dev amd64 3.14.0+dfsg-5 [14.6 kB]
+已下载 14.6 kB，耗时 0秒 (105 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-common3-profiler3 amd64 3.14.0+dfsg-5 [32.9 kB]
+已下载 32.9 kB，耗时 0秒 (198 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-fuel-tools4-4 amd64 4.4.0+ds-3build1 [191 kB]
+已下载 191 kB，耗时 0秒 (671 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-fuel-tools4-dev amd64 4.4.0+ds-3build1 [27.8 kB]
+已下载 27.8 kB，耗时 0秒 (240 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-msgs5-5 amd64 5.8.1+ds-2 [738 kB]
+已下载 738 kB，耗时 0秒 (2,310 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-msgs5-dev amd64 5.8.1+ds-2 [280 kB]
+已下载 280 kB，耗时 0秒 (1,405 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-transport8-8 amd64 8.2.1+ds-2 [289 kB]
+已下载 289 kB，耗时 0秒 (1,062 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libignition-transport8-dev amd64 8.2.1+ds-2 [67.8 kB]
+已下载 67.8 kB，耗时 0秒 (467 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libjxr0 amd64 1.2~git20170615.f752187-5 [174 kB]
+已下载 174 kB，耗时 0秒 (1,849 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libkadm5clnt-mit12 amd64 1.19.2-2ubuntu0.10 [41.9 kB]
+已下载 41.9 kB，耗时 0秒 (805 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libkadm5srv-mit12 amd64 1.19.2-2ubuntu0.10 [54.7 kB]
+已下载 54.7 kB，耗时 0秒 (1,318 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libkdb5-10 amd64 1.19.2-2ubuntu0.10 [40.5 kB]
+已下载 40.5 kB，耗时 0秒 (797 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libkrb5-dev amd64 1.19.2-2ubuntu0.10 [12.0 kB]
+已下载 12.0 kB，耗时 0秒 (268 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 liblilv-0-0 amd64 0.24.12-2 [42.8 kB]
+已下载 42.8 kB，耗时 0秒 (380 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/main amd64 libmd-dev amd64 1.0.4-1build1 [40.0 kB]
+已下载 40.0 kB，耗时 0秒 (602 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libmysofa1 amd64 1.2.1~dfsg0-1 [1,157 kB]
+已下载 1,157 kB，耗时 0秒 (5,191 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libnorm-dev amd64 1.5.9+dfsg-2 [389 kB]
+已下载 389 kB，耗时 0秒 (3,738 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 liboctomap1.9 amd64 1.9.7+dfsg-3 [80.4 kB]
+已下载 80.4 kB，耗时 0秒 (1,736 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 liboctomap-dev amd64 1.9.7+dfsg-3 [1,164 kB]
+已下载 1,164 kB，耗时 0秒 (6,325 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libode8 amd64 2:0.16.2-1 [387 kB]
+已下载 387 kB，耗时 0秒 (3,357 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libogre-1.9.0v5 amd64 1.9.0+dfsg1-12.1ubuntu1 [2,523 kB]
+已下载 2,523 kB，耗时 0秒 (5,692 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libogre-1.9-dev amd64 1.9.0+dfsg1-12.1ubuntu1 [955 kB]
+已下载 955 kB，耗时 0秒 (5,253 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libopenal1 amd64 1:1.19.1-2build3 [535 kB]
+已下载 535 kB，耗时 0秒 (4,346 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libopenal-data all 1:1.19.1-2build3 [164 kB]
+已下载 164 kB，耗时 0秒 (1,654 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libpgm-dev amd64 5.3.128~dfsg-2 [193 kB]
+已下载 193 kB，耗时 0秒 (2,409 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libpocketsphinx3 amd64 0.8.0+real5prealpha+1-14ubuntu1 [132 kB]
+已下载 132 kB，耗时 0秒 (2,408 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libpostproc55 amd64 7:4.4.2-0ubuntu0.22.04.1 [60.1 kB]
+已下载 60.1 kB，耗时 0秒 (465 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libpostproc-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [60.9 kB]
+已下载 60.9 kB，耗时 0秒 (1,097 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libprotobuf-dev amd64 3.12.4-1ubuntu7.22.04.6 [1,347 kB]
+已下载 1,347 kB，耗时 0秒 (5,249 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libprotobuf-lite23 amd64 3.12.4-1ubuntu7.22.04.6 [209 kB]
+已下载 209 kB，耗时 0秒 (3,098 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libprotoc23 amd64 3.12.4-1ubuntu7.22.04.6 [662 kB]
+已下载 662 kB，耗时 0秒 (3,713 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libprotoc-dev amd64 3.12.4-1ubuntu7.22.04.6 [999 kB]
+已下载 999 kB，耗时 0秒 (5,688 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libqtpropertybrowser5 amd64 5.0.2-3 [256 kB]
+已下载 256 kB，耗时 0秒 (1,316 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libqwt-qt5-6 amd64 6.1.4-2 [418 kB]
+已下载 418 kB，耗时 0秒 (3,660 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libqwt-qt5-dev amd64 6.1.4-2 [98.7 kB]
+已下载 98.7 kB，耗时 0秒 (540 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 librubberband2 amd64 2.0.0-2 [90.0 kB]
+已下载 90.0 kB，耗时 0秒 (1,489 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libsdformat9-9 amd64 9.7.0+ds-1 [442 kB]
+已下载 442 kB，耗时 0秒 (2,116 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libsdformat9-dev amd64 9.7.0+ds-1 [54.1 kB]
+已下载 54.1 kB，耗时 0秒 (361 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libserd-0-0 amd64 0.30.10-2 [40.8 kB]
+已下载 40.8 kB，耗时 0秒 (828 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libsimbody3.6 amd64 3.6.1+dfsg-7build1 [3,324 kB]
+已下载 3,324 kB，耗时 1秒 (5,875 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libsimbody-dev amd64 3.6.1+dfsg-7build1 [2,718 kB]
+已下载 2,718 kB，耗时 0秒 (7,244 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/main amd64 libsodium-dev amd64 1.0.18-1ubuntu0.22.04.1 [185 kB]
+已下载 185 kB，耗时 0秒 (2,781 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libsord-0-0 amd64 0.16.8-2 [21.2 kB]
+已下载 21.2 kB，耗时 0秒 (524 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libsphinxbase3 amd64 0.8+5prealpha+1-13build1 [126 kB]
+已下载 126 kB，耗时 0秒 (1,391 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libspnav0 amd64 0.2.3-1 [8,552 B]
+已下载 8,552 B，耗时 0秒 (205 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libsratom-0-0 amd64 0.6.8-1 [17.0 kB]
+已下载 17.0 kB，耗时 0秒 (540 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libtar0 amd64 1.2.20-8ubuntu0.22.04.1 [19.7 kB]
+已下载 19.7 kB，耗时 0秒 (161 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 libtar-dev amd64 1.2.20-8ubuntu0.22.04.1 [37.8 kB]
+已下载 37.8 kB，耗时 0秒 (282 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libtinyobjloader1 amd64 2.0.0~rc5+dfsg1-5build1 [63.9 kB]
+已下载 63.9 kB，耗时 0秒 (418 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libtinyobjloader-dev amd64 2.0.0~rc5+dfsg1-5build1 [244 kB]
+已下载 244 kB，耗时 0秒 (1,331 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 liburdfdom-model3.0 amd64 3.0.1-1 [43.9 kB]
+已下载 43.9 kB，耗时 0秒 (972 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 liburdfdom-world3.0 amd64 3.0.1-1 [42.9 kB]
+已下载 42.9 kB，耗时 0秒 (660 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libvidstab1.1 amd64 1.1.0-2 [35.0 kB]
+已下载 35.0 kB，耗时 0秒 (421 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libzimg2 amd64 3.0.3+ds1-1 [241 kB]
+已下载 241 kB，耗时 0秒 (2,844 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libzip4 amd64 1.7.3-1ubuntu2 [55.0 kB]
+已下载 55.0 kB，耗时 0秒 (879 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libzip-dev amd64 1.7.3-1ubuntu2 [157 kB]
+已下载 157 kB，耗时 0秒 (2,468 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libzmq3-dev amd64 4.3.4-2 [530 kB]
+已下载 530 kB，耗时 0秒 (3,941 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 libzzip-0-13 amd64 0.13.72+dfsg.1-1.1 [27.0 kB]
+已下载 27.0 kB，耗时 0秒 (444 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy-updates/universe amd64 protobuf-compiler amd64 3.12.4-1ubuntu7.22.04.6 [29.2 kB]
+已下载 29.2 kB，耗时 0秒 (651 kB/s)
+获取:1 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-camera-calibration-parsers amd64 3.1.13-1jammy.20260907.222729 [54.9 kB]
+已下载 54.9 kB，耗时 0秒 (254 kB/s)
+获取:1 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-camera-info-manager amd64 3.1.13-1jammy.20260907.223124 [42.7 kB]
+已下载 42.7 kB，耗时 0秒 (236 kB/s)
+获取:1 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-gazebo-dev amd64 3.9.0-1jammy.20260304.090426 [8,048 B]
+已下载 8,048 B，耗时 0秒 (25.2 kB/s)
+获取:1 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-gazebo-msgs amd64 3.9.0-1jammy.20260907.213014 [509 kB]
+已下载 509 kB，耗时 0秒 (1,852 kB/s)
+获取:1 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-gazebo-plugins amd64 3.9.0-1jammy.20260915.221351 [1,601 kB]
+已下载 1,601 kB，耗时 0秒 (4,048 kB/s)
+获取:1 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-gazebo-ros amd64 3.9.0-1jammy.20260907.222900 [519 kB]
+已下载 519 kB，耗时 0秒 (1,901 kB/s)
+获取:1 https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64 ros-humble-gazebo-ros-pkgs amd64 3.9.0-1jammy.20260915.233200 [7,082 B]
+已下载 7,082 B，耗时 0秒 (35.3 kB/s)
+获取:1 http://repo.huaweicloud.com/ubuntu jammy/universe amd64 sdformat9-sdf all 9.7.0+ds-1 [57.1 kB]
+已下载 57.1 kB，耗时 0秒 (352 kB/s)
+下载完成。失败: 无
+=== [3/4] 解包到前缀 /home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland ===
+解包 deb 数量: 105
+=== [4/4] 生成环境脚本 ===
+=== 安装脚本结束 ===

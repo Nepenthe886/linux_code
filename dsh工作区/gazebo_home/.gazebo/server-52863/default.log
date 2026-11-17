@@ -1,0 +1,28 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1794920481 963296891) [Wrn] [gazebo_ros_init.cpp:178] 
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+
+
+(1794920481 986922444) [Msg] Waiting for master.
+(1794920481 996164707) [Msg] Connected to gazebo master @ http://127.0.0.1:52863
+(1794920481 996181187) [Msg] Publicized address: 10.126.62.118
+(1794920481 996378240) [Err] [RenderEngine.cc:749] Can't open display: 
+(1794920481 996433360) [Wrn] [RenderEngine.cc:89] Unable to create X window. Rendering will be disabled
+(1794920481 996474521) [Wrn] [RenderEngine.cc:292] Cannot initialize render engine since render path type is NONE. Ignore this warning ifrendering has been turned off on purpose.
+(1794920482 380306011) [Msg] Loading world file [/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world]
+(1794920482 460815293) Init world[zhirong_arena]

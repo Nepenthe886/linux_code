@@ -1,0 +1,11 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1794916412 205625690) [Msg] Waiting for master.
+(1794916412 215214353) [Msg] Connected to gazebo master @ http://127.0.0.1:11512
+(1794916412 215231733) [Msg] Publicized address: 10.126.62.118
+(1794916412 668258188) [Msg] Loading world file [/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world]
+(1794916412 742453997) Init world[zhirong_arena]

@@ -1,0 +1,69 @@
+not found: "/home/nepenthe/zmf/linux_code/dsh工作区/gazebo_userland/opt/ros/humble/local_setup.bash"
+=== ros2 pkg prefix robot_control ===
+/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_control
+=== launch --show-args ===
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'world':
+        世界文件绝对路径；留空自动解析 zhirong_maps 的 zhirong_arena.world，找不到时回退本包 worlds/test/gazebo_test.world
+        (default: '')
+
+    'x':
+        spawn 的 x 坐标 [m]（默认地图入口外侧出生点）
+        (default: '2.9')
+
+    'y':
+        spawn 的 y 坐标 [m]
+        (default: '1.6')
+
+    'z':
+        spawn 的 z 坐标 [m]：模型根 link base_footprint 离地高度，给 0.05~0.1 让轮子自然落地
+        (default: '0.05')
+
+    'yaw':
+        spawn 的偏航角 yaw [rad]（默认 π，面向场内）
+        (default: '3.141592653589793')
+
+    'use_sim_time':
+        是否使用 /clock 仿真时间（Gazebo 模式必须 true）
+        (default: 'true')
+
+    'gui':
+        是否启动 gzclient（无显示环境保持 false）
+        (default: 'false')
+
+=== 安装版默认启动（world 自动 -> 回退自带测试世界）===
+[ok] /odom 出现
+clock:
+  sec: 1
+  nanosec: 300000000
+---
+2.89993 1.59962 0 -0 -0 -3.14149
+--- 前进 0.3m/s 2s ---
+1.8186 1.59948 0 -0 -0 -3.14135
+header:
+  stamp:
+    sec: 7
+    nanosec: 279000000
+  frame_id: odom
+child_frame_id: base_footprint
+pose:
+  pose:
+    position:
+      x: 1.5671815301544427
+      y: 1.5995651066583452
+      z: 2.2147429917795947e-08
+    orientation:
+      x: -2.828859611424346e-07
+      y: 9.12665483284896e-08
+      z: 0.9999999469639946
+[INFO] [launch.user]: [gazebo.launch.py][警告] 没找到 zhirong_maps 比赛地图（/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_control/maps/zhirong_maps/worlds/zhirong_arena.world），已回退到自带测试世界：/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_control/share/robot_control/worlds/test/gazebo_test.world。地图包构建完成后重新 colcon build 即可自动使用。
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+=== ZHIRONG_MAPS_ROOT 模拟地图包 -> 自动解析 zhirong_maps world ===
+[ok] /odom 出现
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/preview/robot_gazebo/fake_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+=== world:= 不存在的路径 -> 清晰报错 ===
+exit=1
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): gazebo.launch.py: world 参数指定的文件不存在：/tmp/does_not_exist.world
+  请传绝对路径，例如 world:=/path/to/zhirong_arena.world

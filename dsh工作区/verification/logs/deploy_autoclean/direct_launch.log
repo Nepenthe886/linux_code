@@ -1,0 +1,7 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/deploy_autoclean/ros_logs/2026-11-17-18-43-33-948272-nepenthe-pc-63
+[INFO] [launch]: Default logging verbosity is set to INFO
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): gazebo.launch.py: Gazebo master 端口 127.0.0.1:11408 已被占用，通常是有上一次的 gzserver 没有退出（会导致新 gzserver 以 255 退出）。
+  解决办法（任选其一）：
+    1) 结束残留进程： pkill -x gzserver ; pkill -x gzclient
+    2) 使用工作空间封装脚本（会自动清理残留）： bash scripts/run_sim.sh
+    3) 换一个 master 端口： export GAZEBO_MASTER_URI=http://127.0.0.1:11346

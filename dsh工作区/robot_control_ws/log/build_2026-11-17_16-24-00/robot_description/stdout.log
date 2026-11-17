@@ -1,0 +1,44 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/build/robot_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/urdf/omni_robot.urdf
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/launch/display.launch.py
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/launch/view_robot.launch.py
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/rviz/omni_robot.rviz
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/meshes/LICENSE_mid360.txt
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/meshes/mid360_base.stl
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/meshes/mid360_dome.stl
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/meshes/mid360_top.stl
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/scripts/zero_joint_states.py
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/environment/path.sh
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/environment/path.dsv
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/local_setup.bash
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/local_setup.sh
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/local_setup.zsh
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/local_setup.dsv
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/package.dsv
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+-- Symlinking: /home/nepenthe/zmf/linux_code/dsh工作区/robot_control_ws/install/robot_description/share/robot_description/package.xml

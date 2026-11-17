@@ -1,0 +1,56 @@
+[models] 30 个模型 -> /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models
+[world ] worlds/zhirong_arena.world
+[map   ] maps/zhirong_arena.pgm  160x160 px, 占用 1610 px (4.0 m^2)
+[自检] 跨单元格墙（与图 2 一致）：wall_l_130_052(A2)、wall_l_113_049(A3)、wall_t_073_058_sw(C1)、wall_z_112_060(C2)、ramp_2(C2)、wall_l_114_048(C4)、ramp_1(B3)、obstacle_i_089_049(D2)、red_barrier_left(D1)
+
+[自检]
+  全部通过：障碍均在 8m 地面内、互不重叠、块归属正确、目标/圆环高度合法、出生点在红边界外、斜坡2 为 Λ 形；桔区半径与斜坡 footprint 一致。
+
+[分块布局摘要]
+  A1     : wall_l_095_061
+  A2     : wall_l_130_052
+  A3     : wall_l_113_049
+  A4     : （空）
+  B1     : wall_t_073_058_nw
+  B2     : （空）
+  B3     : ramp_1
+  B4     : （空）
+  C1     : wall_t_073_058_sw
+  C2     : wall_z_112_060、ramp_2
+  C3     : （空）
+  C4     : wall_l_114_048
+  D1     : red_barrier_left
+  D2     : obstacle_i_089_049
+  D3     : red_barrier_right
+  D4     : （空）
+  红线外    : wall_a_frame_041_027、wall_horiz_100x006、wall_thin_085_008、wall_t_143_057
+
+[障碍世界位姿]
+  wall_l_095_061         cell=A1     model=l_wall_095x061     pos=(-1.905, 1.729) yaw=0.000 bbox=(-2.38,1.42)-(-1.43,2.03)
+  wall_l_130_052         cell=A2     model=l_wall_130x052     pos=(-0.256, 2.531) yaw=0.000 bbox=(-0.91,2.27)-(0.39,2.79)
+  wall_l_113_049         cell=A3     model=l_wall_113x049     pos=( 1.280, 1.460) yaw=0.000 bbox=(0.71,1.21)-(1.84,1.71)
+  wall_a_frame_041_027   cell=OUT-NE model=a_frame_041x027    pos=( 3.050, 2.100) yaw=0.000 bbox=(2.82,1.95)-(3.28,2.25)
+  wall_horiz_100x006     cell=OUT-NE model=horiz_wall_100x006 pos=( 3.341, 2.749) yaw=0.000 bbox=(2.84,2.72)-(3.84,2.78)
+  wall_t_073_058_nw      cell=B1     model=t_wall_073x058     pos=(-2.012, 0.649) yaw=0.000 bbox=(-2.38,0.36)-(-1.65,0.94)
+  wall_t_073_058_sw      cell=C1     model=t_wall_073x058     pos=(-2.041,-1.126) yaw=0.000 bbox=(-2.41,-1.42)-(-1.68,-0.84)
+  wall_z_112_060         cell=C2     model=wall_z_112x060     pos=(-0.140,-0.400) yaw=0.000 bbox=(-0.70,-0.70)-(0.42,-0.10)
+  ramp_2                 cell=C2     model=ramp_double_120    pos=(-0.650,-1.230) yaw=0.000 bbox=(-1.15,-1.73)-(-0.15,-0.73)
+  wall_l_114_048         cell=C4     model=l_wall_114x048     pos=( 1.731,-1.189) yaw=0.000 bbox=(1.16,-1.43)-(2.30,-0.95)
+  ramp_1                 cell=B3     model=ramp_single_120    pos=( 0.980, 0.254) yaw=0.000 bbox=(0.43,-0.25)-(1.53,0.75)
+  wall_thin_085_008      cell=OUT-E  model=thin_wall_085x008  pos=( 2.657, 0.632) yaw=0.000 bbox=(2.23,0.59)-(3.08,0.67)
+  obstacle_i_089_049     cell=D2     model=i_obstacle_089x049 pos=(-0.285,-2.097) yaw=0.000 bbox=(-0.73,-2.34)-(0.16,-1.85)
+  red_barrier_left       cell=D1     model=red_barrier        pos=(-1.300,-2.100) yaw=0.000 bbox=(-1.45,-2.46)-(-1.15,-1.74)
+  red_barrier_right      cell=D3     model=red_barrier        pos=( 0.591,-2.100) yaw=0.000 bbox=(0.44,-2.46)-(0.74,-1.74)
+  wall_t_143_057         cell=OUT-SE model=t_wall_143x057     pos=( 3.215,-2.030) yaw=0.000 bbox=(2.50,-2.31)-(3.93,-1.74)
+
+[红色边界]
+  chain0: (-2.59,0.09) -> (-2.59,2.08) -> (-1.23,2.08) -> (-1.23,2.67) -> (0.37,2.67) -> (0.37,2.21)
+  chain1: (0.61,1.44) -> (0.61,1.31) -> (1.93,1.31) -> (1.93,-0.91) -> (2.50,-0.91) -> (2.50,-1.47) -> (0.90,-1.47) -> (0.90,-2.56) -> (-1.50,-2.56) -> (-1.49,-1.49) -> (-2.59,-1.48) -> (-2.59,-0.71)
+  入口缺口 0.80 m: (0.37,2.21) - (0.61,1.44)
+  出口缺口 0.80 m: (-2.59,-0.71) - (-2.59,0.09)
+  出生点 spawn = (2.90, 1.60, z=0.05, yaw=3.14)
+
+[斜坡 / 桔区]
+  ramp_1 单面 footprint 1.1×1.0 m，rise 0.18 m，坡角 9.29°，坡向 +x，pitch=-0.1622
+  ramp_2 双面 Λ footprint 1.0×1.0 m，rise 0.18 m（每侧坡 0.5 m），坡角 19.80°，西板 pitch=-0.3456 / 东板 pitch=+0.3456
+  桔区半径：ramp1 0.56 m / ramp2 0.52 m

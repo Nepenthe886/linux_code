@@ -1,0 +1,24 @@
+1794914623.5290842 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/demo_gl_ok/ros_logs/2026-11-17-19-23-43-528602-nepenthe-pc-33
+1794914623.5291541 [INFO] [launch]: Default logging verbosity is set to INFO
+1794914623.5301757 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=true, rviz=true, teleop=gui）
+1794914623.5968430 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794914623.5969186 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794914623.6293979 [INFO] [bash-1]: process started with pid [66]
+1794914623.6294885 [INFO] [spawn_entity.py-2]: process started with pid [68]
+1794914623.6295450 [INFO] [robot_state_publisher-3]: process started with pid [70]
+1794914623.6296010 [INFO] [gui_teleop-4]: process started with pid [72]
+1794914623.6296487 [INFO] [gzclient-5]: process started with pid [74]
+1794914623.6296847 [INFO] [rviz2-6]: process started with pid [76]
+1794914624.9527321 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 68]
+1794914649.2291224 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1794914649.2292976 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1794914649.2306223 [INFO] [rviz2-6]: sending signal 'SIGINT' to process[rviz2-6]
+1794914649.2309363 [INFO] [gzclient-5]: sending signal 'SIGINT' to process[gzclient-5]
+1794914649.2312546 [INFO] [gui_teleop-4]: sending signal 'SIGINT' to process[gui_teleop-4]
+1794914649.2315788 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794914649.2318773 [INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+1794914649.3345530 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 70]
+1794914649.3726113 [INFO] [gui_teleop-4]: process has finished cleanly [pid 72]
+1794914649.4270959 [INFO] [rviz2-6]: process has finished cleanly [pid 76]
+1794914649.4466155 [INFO] [bash-1]: process has finished cleanly [pid 66]
+1794914649.4467838 [INFO] [launch]: process[bash-1] was required: shutting down launched system

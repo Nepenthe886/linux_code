@@ -1,0 +1,4 @@
+1794908989.3579824 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-17-49-49-357494-nepenthe-pc-270
+1794908989.3580565 [INFO] [launch]: Default logging verbosity is set to INFO
+1794908989.3745749 [ERROR] [launch]: Caught exception in launch (see debug for traceback): gazebo.launch.py: world 参数指定的文件不存在：/tmp/does_not_exist.world
+  请传绝对路径，例如 world:=/path/to/zhirong_arena.world

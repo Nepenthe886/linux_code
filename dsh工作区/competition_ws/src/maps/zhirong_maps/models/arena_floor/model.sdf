@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="arena_floor">
+    <static>true</static>
+    <link name="link">
+      <visual name="asphalt"><pose>0 0 0.001 0 0 0</pose><geometry><box><size>5.5 5.5 0.002</size></box></geometry><material><ambient>0.4 0.39 0.37 1</ambient><diffuse>0.4 0.39 0.37 1</diffuse><specular>0.01 0.01 0.01 1</specular><emissive>0 0 0 1</emissive></material></visual>
+    </link>
+  </model>
+</sdf>

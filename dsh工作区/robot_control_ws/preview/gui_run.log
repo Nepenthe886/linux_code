@@ -1,0 +1,2 @@
+[INFO] [1794903436.994595480] [mecanum_gui]: 键位：前进 W / ↑；后退 S / ↓；左平移 A / ←；右平移 D / →；左转 Q；右转 E；停止 空格
+[INFO] [1794903436.994843850] [mecanum_gui]: 发布 /cmd_vel 与 /wheel_cmd (20 Hz)，订阅 /odom

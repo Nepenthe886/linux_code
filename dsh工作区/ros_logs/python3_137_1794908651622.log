@@ -1,0 +1,6 @@
+[INFO] [1794908651.654806890] [spawn_entity]: Spawn Entity started
+[INFO] [1794908651.655036180] [spawn_entity]: Loading entity XML from file /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/robot/robot_description/urdf/omni_robot.urdf
+[INFO] [1794908651.655670274] [spawn_entity]: Waiting for service /spawn_entity, timeout = 60
+[INFO] [1794908651.655881895] [spawn_entity]: Waiting for service /spawn_entity
+[INFO] [1794908651.659097931] [spawn_entity]: Calling service /spawn_entity
+[INFO] [1794908651.740656829] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]

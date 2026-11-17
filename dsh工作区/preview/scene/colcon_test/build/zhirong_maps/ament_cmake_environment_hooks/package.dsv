@@ -1,0 +1,4 @@
+source;share/zhirong_maps/local_setup.bash
+source;share/zhirong_maps/local_setup.dsv
+source;share/zhirong_maps/local_setup.sh
+source;share/zhirong_maps/local_setup.zsh

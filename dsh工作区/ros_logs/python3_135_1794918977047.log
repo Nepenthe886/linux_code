@@ -1,0 +1,6 @@
+[INFO] [1794918977.078965621] [spawn_entity]: Spawn Entity started
+[INFO] [1794918977.079207230] [spawn_entity]: Loading entity XML from file /home/nepenthe/zmf/linux_code/dsh工作区/verification/shots/urdf_gazebo.urdf
+[INFO] [1794918977.079980923] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[INFO] [1794918977.080201023] [spawn_entity]: Waiting for service /spawn_entity
+[INFO] [1794918977.582964279] [spawn_entity]: Calling service /spawn_entity
+[INFO] [1794918977.753835894] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
