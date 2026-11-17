@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="i_obstacle_089x049">
+    <static>true</static>
+    <link name="link">
+      <visual name="i_obstacle_089x049_body_0"><pose>0 0.195 0.275 0 0 0</pose><geometry><box><size>0.89 0.1 0.55</size></box></geometry><material><ambient>0.8 0.08 0.07 1</ambient><diffuse>0.8 0.08 0.07 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_0_0_0"><pose>0.2083 0.2465 0.3804 0 0 0</pose><geometry><box><size>0.268 0.004 0.162</size></box></geometry><material><ambient>0.72 0.08 0.06 1</ambient><diffuse>0.72 0.08 0.06 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_0_0_1"><pose>0.0844 0.2465 0.2013 0 0 0</pose><geometry><box><size>0.152 0.004 0.181</size></box></geometry><material><ambient>0.92 0.18 0.12 1</ambient><diffuse>0.92 0.18 0.12 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_0_1_0"><pose>0.1109 0.1435 0.1635 0 0 0</pose><geometry><box><size>0.284 0.004 0.16</size></box></geometry><material><ambient>0.6 0.05 0.05 1</ambient><diffuse>0.6 0.05 0.05 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_0_1_1"><pose>0.2888 0.1435 0.2366 0 0 0</pose><geometry><box><size>0.223 0.004 0.167</size></box></geometry><material><ambient>0.92 0.18 0.12 1</ambient><diffuse>0.92 0.18 0.12 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_body_1"><pose>0 0 0.275 0 0 0</pose><geometry><box><size>0.14 0.49 0.55</size></box></geometry><material><ambient>0.8 0.08 0.07 1</ambient><diffuse>0.8 0.08 0.07 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_1_0_0"><pose>0.0715 0.0155 0.146 0 0 0</pose><geometry><box><size>0.004 0.204 0.121</size></box></geometry><material><ambient>0.6 0.05 0.05 1</ambient><diffuse>0.6 0.05 0.05 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_1_1_0"><pose>-0.0715 0.0322 0.3192 0 0 0</pose><geometry><box><size>0.004 0.262 0.137</size></box></geometry><material><ambient>0.92 0.18 0.12 1</ambient><diffuse>0.92 0.18 0.12 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_body_2"><pose>0 -0.195 0.275 0 0 0</pose><geometry><box><size>0.89 0.1 0.55</size></box></geometry><material><ambient>0.8 0.08 0.07 1</ambient><diffuse>0.8 0.08 0.07 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_2_0_0"><pose>-0.2977 -0.1435 0.166 0 0 0</pose><geometry><box><size>0.172 0.004 0.165</size></box></geometry><material><ambient>0.6 0.05 0.05 1</ambient><diffuse>0.6 0.05 0.05 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_2_0_1"><pose>0.2153 -0.1435 0.2305 0 0 0</pose><geometry><box><size>0.245 0.004 0.172</size></box></geometry><material><ambient>0.6 0.05 0.05 1</ambient><diffuse>0.6 0.05 0.05 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_2_1_0"><pose>-0.143 -0.2465 0.2345 0 0 0</pose><geometry><box><size>0.266 0.004 0.19</size></box></geometry><material><ambient>0.92 0.18 0.12 1</ambient><diffuse>0.92 0.18 0.12 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="i_obstacle_089x049_camo_2_1_1"><pose>0.1267 -0.2465 0.4032 0 0 0</pose><geometry><box><size>0.266 0.004 0.119</size></box></geometry><material><ambient>0.6 0.05 0.05 1</ambient><diffuse>0.6 0.05 0.05 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <collision name="i_obstacle_089x049_col_0"><pose>0 0.195 0.275 0 0 0</pose><geometry><box><size>0.89 0.1 0.55</size></box></geometry><surface><friction><ode><mu>0.9</mu><mu2>0.9</mu2></ode></friction></surface></collision>
+      <collision name="i_obstacle_089x049_col_1"><pose>0 0 0.275 0 0 0</pose><geometry><box><size>0.14 0.49 0.55</size></box></geometry><surface><friction><ode><mu>0.9</mu><mu2>0.9</mu2></ode></friction></surface></collision>
+      <collision name="i_obstacle_089x049_col_2"><pose>0 -0.195 0.275 0 0 0</pose><geometry><box><size>0.89 0.1 0.55</size></box></geometry><surface><friction><ode><mu>0.9</mu><mu2>0.9</mu2></ode></friction></surface></collision>
+    </link>
+  </model>
+</sdf>

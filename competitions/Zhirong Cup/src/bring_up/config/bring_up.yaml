@@ -1,0 +1,14 @@
+# bring_up 一键启动默认参数（launch 文件里也有同样的默认值，此处用于集中查看/修改）
+bring_up:
+  world: ''            # '' = 自动解析 zhirong_maps 的 worlds/zhirong_arena.world
+  x: 2.90              # 机器人出生点（入口外侧，面向场内）
+  y: 1.60
+  z: 0.05
+  yaw: 3.141592653589793
+  model_name: zhirong_robot
+  gui: false           # 启动 gzclient（需要可用显示器/OpenGL）
+  rviz: false          # 启动 RViz2
+  teleop: none         # none / keyboard / gui
+  use_sim_time: true
+  verbose: false
+  pause: false

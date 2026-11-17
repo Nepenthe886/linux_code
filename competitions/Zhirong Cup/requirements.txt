@@ -1,0 +1,30 @@
+# =============================================================================
+# 戎智杯反恐搜救赛项 —— Python 依赖（统一通过 pip / requirements.txt 安装）
+#
+# 安装方式（推荐，自动建带系统站点包的 venv）：
+#   bash scripts/setup_python_env.sh
+# 等价手工：
+#   python3 -m venv --system-site-packages .venv && .venv/bin/pip install -r requirements.txt
+#
+# 注意：ROS 2（rclpy/launch/消息包）与 Gazebo（gzserver/gazebo_ros）是系统级二进制
+# 依赖，不能通过 pip 安装，由 scripts/install_environment.sh（apt + rosdep）统一安装；
+# 本文件只负责 Python 侧依赖，二者合起来才是完整环境。
+# =============================================================================
+
+# --- 基础数值 / 视觉 / 配置 ---
+numpy>=1.21,<2.0           # 数值计算（点云/图像/仿真校验脚本）
+scipy>=1.8                 # 连通域、几何计算
+opencv-python>=4.5         # 相机图像、二维码/目标识别实验
+PyYAML>=5.4                # 参数/地图 yaml 读写
+Pillow>=9.0                # 截图（xwd→png）、平面图渲染
+matplotlib>=3.5            # docs/plan.png 俯视布置图生成
+
+# --- 测试 ---
+pytest>=7.0,<8.0           # robot_control/test 单元测试（ROS launch_testing 插件兼容上限 <8）
+pytest-timeout>=2.1        # 超时保护（可选）
+
+# --- 可选（按需取消注释） ---
+# transforms3d>=0.4        # TF/姿态换算辅助
+# pandas>=1.4              # 测试数据统计
+# scikit-learn>=1.1        # 目标识别算法
+# open3d>=0.17             # 点云处理

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>zhirong_maps</name>
+  <version>0.1.0</version>
+  <description>
+    “戎智杯”反恐搜救赛项 Gazebo Classic 11 比赛场景（地图）包：
+    按《3.反恐搜救赛项规则》图 2 复现 5 m × 5 m、16 单元格场地，
+    含军绿迷彩 L/T/工型障碍、单面/双面斜坡、黄/桔/红三区、目标板、圆环触碰点、
+    入口/出口标牌与出口外侧出生点。全部模型用 box/cylinder 等 primitive 拼装，
+    不依赖外部 mesh/纹理/fuel，离线可加载。
+  </description>
+  <maintainer email="scene-builder@zhirong.local">scene-builder</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

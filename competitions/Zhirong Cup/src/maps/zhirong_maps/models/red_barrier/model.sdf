@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="red_barrier">
+    <static>true</static>
+    <link name="link">
+      <visual name="red_barrier_body_0"><pose>0 0 0.275 0 0 0</pose><geometry><box><size>0.3 0.72 0.55</size></box></geometry><material><ambient>0.8 0.08 0.07 1</ambient><diffuse>0.8 0.08 0.07 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="red_barrier_camo_0_0_0"><pose>0.1515 -0.0322 0.3235 0 0 0</pose><geometry><box><size>0.004 0.288 0.118</size></box></geometry><material><ambient>0.6 0.05 0.05 1</ambient><diffuse>0.6 0.05 0.05 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="red_barrier_camo_0_0_1"><pose>0.1515 -0.1658 0.1817 0 0 0</pose><geometry><box><size>0.004 0.17 0.166</size></box></geometry><material><ambient>0.92 0.18 0.12 1</ambient><diffuse>0.92 0.18 0.12 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="red_barrier_camo_0_1_0"><pose>-0.1515 -0.004 0.4235 0 0 0</pose><geometry><box><size>0.004 0.189 0.169</size></box></geometry><material><ambient>0.72 0.08 0.06 1</ambient><diffuse>0.72 0.08 0.06 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <visual name="red_barrier_camo_0_1_1"><pose>-0.1515 -0.131 0.2116 0 0 0</pose><geometry><box><size>0.004 0.178 0.105</size></box></geometry><material><ambient>0.92 0.18 0.12 1</ambient><diffuse>0.92 0.18 0.12 1</diffuse><specular>0.05 0.05 0.05 1</specular><emissive>0 0 0 1</emissive></material></visual>
+      <collision name="red_barrier_col_0"><pose>0 0 0.275 0 0 0</pose><geometry><box><size>0.3 0.72 0.55</size></box></geometry><surface><friction><ode><mu>0.9</mu><mu2>0.9</mu2></ode></friction></surface></collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!-- 空模型：本目录只用于让 Gazebo 解析 model://robot_description/meshes/* -->
+<sdf version="1.6">
+  <model name="robot_description"/>
+</sdf>

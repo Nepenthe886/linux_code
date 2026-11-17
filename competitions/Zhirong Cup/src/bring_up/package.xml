@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>bring_up</name>
+  <version>0.1.0</version>
+  <description>
+    戎智杯反恐搜救赛项 —— 一键启动包（bringup）：
+    一条命令拉起 Gazebo 比赛场景（zhirong_maps）、机器人模型（robot_description）、
+    robot_state_publisher、Gazebo 插件（planar_move / joint_state_publisher）、
+    可选遥控与 RViz。
+  </description>
+  <maintainer email="nepenthe@example.com">Zhirong Cup Team</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 一键启动所依赖的工作空间内包 -->
+  <exec_depend>robot_control</exec_depend>
+  <exec_depend>robot_description</exec_depend>
+  <exec_depend>zhirong_maps</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
