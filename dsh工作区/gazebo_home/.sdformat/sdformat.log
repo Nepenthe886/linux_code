@@ -1,172 +1,172 @@
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/ground_8x8/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/ground_8x8/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/arena_floor/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/arena_floor/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/cell_grid/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/cell_grid/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/boundary_red/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/boundary_red/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_yellow/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/zone_yellow/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_orange_ramp1/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/zone_orange_ramp1/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_orange_ramp2/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/zone_orange_ramp2/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/zone_red/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/zone_red/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_095x061/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/l_wall_095x061/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_130x052/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/l_wall_130x052/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_113x049/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/l_wall_113x049/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/a_frame_041x027/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/a_frame_041x027/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/horiz_wall_100x006/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/horiz_wall_100x006/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/t_wall_073x058/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/t_wall_073x058/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/t_wall_073x058/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/t_wall_073x058/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/wall_z_112x060/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/wall_z_112x060/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/ramp_double_120/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/ramp_double_120/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/l_wall_114x048/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/l_wall_114x048/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/ramp_single_120/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/ramp_single_120/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/thin_wall_085x008/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/thin_wall_085x008/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/i_obstacle_089x049/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/i_obstacle_089x049/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/red_barrier/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/red_barrier/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/red_barrier/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/red_barrier/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/t_wall_143x057/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/t_wall_143x057/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_hostage/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/target_hostage/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_chest/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/target_chest/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_qr/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/target_qr/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_hostage/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/target_hostage/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_qr/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/target_qr/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/target_chest/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/target_chest/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/touch_ring/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/touch_ring/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/touch_ring/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/touch_ring/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/touch_ring/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/touch_ring/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/sign_in/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/sign_in/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/sign_out/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/sign_out/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/gate_post/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/gate_post/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/gate_post/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/gate_post/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/gate_post/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
-Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/src/maps/zhirong_maps/models/spawn_marker/model.sdf].
+Dbg [parser.cc:574] Converting a deprecated source[/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/src/maps/zhirong_maps/models/spawn_marker/model.sdf].
 Dbg [Converter.cc:68] Version[1.6] to Version[1.7]
   Please use the gz sdf tool to update your SDF files.
     $ gz sdf -c [sdf_file]
@@ -180,6 +180,9 @@ Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not con
 Dbg [parser_urdf.cc:1515] extension [<self_collide>false</self_collide>] not converted from URDF, probably already in SDF format.
 Dbg [parser_urdf.cc:1515] extension [<plugin name="gazebo_ros_planar_move" filename="libgazebo_ros_planar_move.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><publish_rate>50.0</publish_rate><publish_odom>true</publish_odom><publish_odom_tf>true</publish_odom_tf><odometry_frame>odom</odometry_frame><robot_base_frame>base_footprint</robot_base_frame><covariance_x>0.0001</covariance_x><covariance_y>0.0001</covariance_y><covariance_yaw>0.01</covariance_yaw></plugin>] not converted from URDF, probably already in SDF format.
 Dbg [parser_urdf.cc:1515] extension [<plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so"><ros><namespace>/</namespace></ros><update_rate>50.0</update_rate><joint_name>wheel_front_left_joint</joint_name><joint_name>wheel_front_right_joint</joint_name><joint_name>wheel_rear_left_joint</joint_name><joint_name>wheel_rear_right_joint</joint_name></plugin>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<sensor name="livox_mid360_imu" type="imu"><always_on>true</always_on><update_rate>200</update_rate><imu><angular_velocity><x><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></z></angular_velocity><linear_acceleration><x><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></z></linear_acceleration></imu><plugin name="livox_mid360_imu" filename="libgazebo_ros_imu_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/imu</remapping></ros><initial_orientation_as_reference>false</initial_orientation_as_reference><frame_name>livox_mid360_link</frame_name></plugin></sensor>] not converted from URDF, probably already in SDF format.
+Dbg [parser_urdf.cc:1515] extension [<sensor name="livox_mid360_ray" type="ray"><always_on>true</always_on><update_rate>10</update_rate><visualize>false</visualize><ray><scan><horizontal><samples>240</samples><resolution>1</resolution><min_angle>-3.14159265</min_angle><max_angle>3.14159265</max_angle></horizontal><vertical><samples>8</samples><resolution>1</resolution><min_angle>-0.122173</min_angle><max_angle>0.907571</max_angle></vertical></scan><range><!-- 0.35 m &#36215;&#65306;&#36807;&#28388;&#38647;&#36798;&#33258;&#36523;/&#36710;&#20307;&#36817;&#22330;&#36974;&#25377;&#65288;&#36710;&#20307;&#21040;&#38647;&#36798;&#32422; 0.25~0.3 m&#65289;&#65292;
+               &#30495;&#23454; Mid-360 &#30450;&#21306; 0.1 m&#65292;&#20223;&#30495;&#37324;&#30041; 0.35 m &#26356;&#21033;&#20110;&#24314;&#22270;/&#36991;&#38556;&#31639;&#27861; --><min>0.35</min><max>40.0</max><resolution>0.01</resolution></range></ray><plugin name="livox_mid360_ray" filename="libgazebo_ros_ray_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/lidar</remapping></ros><output_type>sensor_msgs/PointCloud2</output_type><min_intensity>0.0</min_intensity><frame_name>livox_mid360_link</frame_name></plugin></sensor>] not converted from URDF, probably already in SDF format.
 Dbg [parser_urdf.cc:422] Fixed Joint Reduction: extension lumping from [camera_optical_frame] to [camera_link]
 Dbg [parser_urdf.cc:2477]   REDUCE EXTENSION: moving reference from [camera_optical_frame] to [camera_link]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
@@ -194,6 +197,10 @@ Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_opti
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<sensor name="livox_mid360_imu" type="imu"><always_on>true</always_on><update_rate>200</update_rate><imu><angular_velocity><x><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></z></angular_velocity><linear_acceleration><x><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></z></linear_acceleration></imu><plugin name="livox_mid360_imu" filename="libgazebo_ros_imu_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/imu</remapping></ros><initial_orientation_as_reference>false</initial_orientation_as_reference><frame_name>livox_mid360_link</frame_name></plugin></sensor>]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<sensor name="livox_mid360_ray" type="ray"><always_on>true</always_on><update_rate>10</update_rate><visualize>false</visualize><ray><scan><horizontal><samples>240</samples><resolution>1</resolution><min_angle>-3.14159265</min_angle><max_angle>3.14159265</max_angle></horizontal><vertical><samples>8</samples><resolution>1</resolution><min_angle>-0.122173</min_angle><max_angle>0.907571</max_angle></vertical></scan><range><!-- 0.35 m &#36215;&#65306;&#36807;&#28388;&#38647;&#36798;&#33258;&#36523;/&#36710;&#20307;&#36817;&#22330;&#36974;&#25377;&#65288;&#36710;&#20307;&#21040;&#38647;&#36798;&#32422; 0.25~0.3 m&#65289;&#65292;
+               &#30495;&#23454; Mid-360 &#30450;&#21306; 0.1 m&#65292;&#20223;&#30495;&#37324;&#30041; 0.35 m &#26356;&#21033;&#20110;&#24314;&#22270;/&#36991;&#38556;&#31639;&#27861; --><min>0.35</min><max>40.0</max><resolution>0.01</resolution></range></ray><plugin name="livox_mid360_ray" filename="libgazebo_ros_ray_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/lidar</remapping></ros><output_type>sensor_msgs/PointCloud2</output_type><min_intensity>0.0</min_intensity><frame_name>livox_mid360_link</frame_name></plugin></sensor>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_optical_frame]-->[camera_link]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_optical_frame] with [camera_link]
@@ -216,6 +223,10 @@ Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<sensor name="livox_mid360_imu" type="imu"><always_on>true</always_on><update_rate>200</update_rate><imu><angular_velocity><x><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></z></angular_velocity><linear_acceleration><x><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></z></linear_acceleration></imu><plugin name="livox_mid360_imu" filename="libgazebo_ros_imu_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/imu</remapping></ros><initial_orientation_as_reference>false</initial_orientation_as_reference><frame_name>livox_mid360_link</frame_name></plugin></sensor>]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<sensor name="livox_mid360_ray" type="ray"><always_on>true</always_on><update_rate>10</update_rate><visualize>false</visualize><ray><scan><horizontal><samples>240</samples><resolution>1</resolution><min_angle>-3.14159265</min_angle><max_angle>3.14159265</max_angle></horizontal><vertical><samples>8</samples><resolution>1</resolution><min_angle>-0.122173</min_angle><max_angle>0.907571</max_angle></vertical></scan><range><!-- 0.35 m &#36215;&#65306;&#36807;&#28388;&#38647;&#36798;&#33258;&#36523;/&#36710;&#20307;&#36817;&#22330;&#36974;&#25377;&#65288;&#36710;&#20307;&#21040;&#38647;&#36798;&#32422; 0.25~0.3 m&#65289;&#65292;
+               &#30495;&#23454; Mid-360 &#30450;&#21306; 0.1 m&#65292;&#20223;&#30495;&#37324;&#30041; 0.35 m &#26356;&#21033;&#20110;&#24314;&#22270;/&#36991;&#38556;&#31639;&#27861; --><min>0.35</min><max>40.0</max><resolution>0.01</resolution></range></ray><plugin name="livox_mid360_ray" filename="libgazebo_ros_ray_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/lidar</remapping></ros><output_type>sensor_msgs/PointCloud2</output_type><min_intensity>0.0</min_intensity><frame_name>livox_mid360_link</frame_name></plugin></sensor>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [camera_link]-->[base_link]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [camera_link] with [base_link]
@@ -278,6 +289,10 @@ Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[bas
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<sensor name="livox_mid360_imu" type="imu"><always_on>true</always_on><update_rate>200</update_rate><imu><angular_velocity><x><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></z></angular_velocity><linear_acceleration><x><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></z></linear_acceleration></imu><plugin name="livox_mid360_imu" filename="libgazebo_ros_imu_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/imu</remapping></ros><initial_orientation_as_reference>false</initial_orientation_as_reference><frame_name>livox_mid360_link</frame_name></plugin><pose>0 0 0.1 0 -0 0</pose></sensor>]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<sensor name="livox_mid360_ray" type="ray"><always_on>true</always_on><update_rate>10</update_rate><visualize>false</visualize><ray><scan><horizontal><samples>240</samples><resolution>1</resolution><min_angle>-3.14159265</min_angle><max_angle>3.14159265</max_angle></horizontal><vertical><samples>8</samples><resolution>1</resolution><min_angle>-0.122173</min_angle><max_angle>0.907571</max_angle></vertical></scan><range><!-- 0.35 m &#36215;&#65306;&#36807;&#28388;&#38647;&#36798;&#33258;&#36523;/&#36710;&#20307;&#36817;&#22330;&#36974;&#25377;&#65288;&#36710;&#20307;&#21040;&#38647;&#36798;&#32422; 0.25~0.3 m&#65289;&#65292;
+               &#30495;&#23454; Mid-360 &#30450;&#21306; 0.1 m&#65292;&#20223;&#30495;&#37324;&#30041; 0.35 m &#26356;&#21033;&#20110;&#24314;&#22270;/&#36991;&#38556;&#31639;&#27861; --><min>0.35</min><max>40.0</max><resolution>0.01</resolution></range></ray><plugin name="livox_mid360_ray" filename="libgazebo_ros_ray_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/lidar</remapping></ros><output_type>sensor_msgs/PointCloud2</output_type><min_intensity>0.0</min_intensity><frame_name>livox_mid360_link</frame_name></plugin><pose>0 0 0.1 0 -0 0</pose></sensor>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [livox_mid360_link] with [base_link]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [livox_mid360_link]-->[base_link]: [<self_collide>false</self_collide>]
@@ -333,6 +348,10 @@ Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] 
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
+Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<sensor name="livox_mid360_imu" type="imu"><always_on>true</always_on><update_rate>200</update_rate><imu><angular_velocity><x><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></z></angular_velocity><linear_acceleration><x><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></x><y><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></y><z><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></z></linear_acceleration></imu><plugin name="livox_mid360_imu" filename="libgazebo_ros_imu_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/imu</remapping></ros><initial_orientation_as_reference>false</initial_orientation_as_reference><frame_name>livox_mid360_link</frame_name></plugin><pose>0 0 0.34 0 -0 0</pose></sensor>]
+Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<sensor name="livox_mid360_ray" type="ray"><always_on>true</always_on><update_rate>10</update_rate><visualize>false</visualize><ray><scan><horizontal><samples>240</samples><resolution>1</resolution><min_angle>-3.14159265</min_angle><max_angle>3.14159265</max_angle></horizontal><vertical><samples>8</samples><resolution>1</resolution><min_angle>-0.122173</min_angle><max_angle>0.907571</max_angle></vertical></scan><range><!-- 0.35 m &#36215;&#65306;&#36807;&#28388;&#38647;&#36798;&#33258;&#36523;/&#36710;&#20307;&#36817;&#22330;&#36974;&#25377;&#65288;&#36710;&#20307;&#21040;&#38647;&#36798;&#32422; 0.25~0.3 m&#65289;&#65292;
+               &#30495;&#23454; Mid-360 &#30450;&#21306; 0.1 m&#65292;&#20223;&#30495;&#37324;&#30041; 0.35 m &#26356;&#21033;&#20110;&#24314;&#22270;/&#36991;&#38556;&#31639;&#27861; --><min>0.35</min><max>40.0</max><resolution>0.01</resolution></range></ray><plugin name="livox_mid360_ray" filename="libgazebo_ros_ray_sensor.so"><ros><namespace>/</namespace><remapping>~/out:=/livox/lidar</remapping></ros><output_type>sensor_msgs/PointCloud2</output_type><min_intensity>0.0</min_intensity><frame_name>livox_mid360_link</frame_name></plugin><pose>0 0 0.34 0 -0 0</pose></sensor>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]
 Dbg [parser_urdf.cc:2551]         INITIAL STRING link [base_link]-->[base_footprint]: [<self_collide>false</self_collide>]
 Dbg [parser_urdf.cc:2543]   STRING REPLACE: instances of _link name [base_link] with [base_footprint]

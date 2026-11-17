@@ -1,0 +1,20 @@
+1794926109.1690004 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-22-35-09-168517-nepenthe-pc-31
+1794926109.1690702 [INFO] [launch]: Default logging verbosity is set to INFO
+1794926109.1697230 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+1794926109.2111707 [INFO] [launch.user]: [gazebo.launch.py] 未附加 Gazebo 传感器（lidar_sensors:=false）
+1794926109.2112222 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794926109.2112532 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794926109.2414014 [INFO] [launch.user]: [bring_up] 启动 Livox Mid-360 合成数据源（/livox/lidar, /livox/imu；robot_state_publicer）
+1794926109.2450726 [INFO] [bash-1]: process started with pid [33]
+1794926109.2451379 [INFO] [spawn_entity.py-2]: process started with pid [35]
+1794926109.2451735 [INFO] [robot_state_publisher-3]: process started with pid [37]
+1794926109.2452030 [INFO] [mid360_sim-4]: process started with pid [39]
+1794926110.5515118 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 35]
+1794926126.6913707 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1794926126.6924493 [INFO] [mid360_sim-4]: sending signal 'SIGINT' to process[mid360_sim-4]
+1794926126.6927202 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794926126.6930783 [INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+1794926126.7974918 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 37]
+1794926126.8389955 [ERROR] [mid360_sim-4]: process has died [pid 39, exit code 1, cmd '/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_state_publicer/lib/robot_state_publicer/mid360_sim --ros-args -r __node:=mid360_sim --params-file /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_state_publicer/share/robot_state_publicer/config/mid360_sim.yaml --params-file /tmp/launch_params_uw_ef5ek'].
+1794926126.9155180 [INFO] [bash-1]: process has finished cleanly [pid 33]
+1794926126.9157367 [INFO] [launch]: process[bash-1] was required: shutting down launched system

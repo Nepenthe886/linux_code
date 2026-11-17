@@ -263,10 +263,6 @@ class TeleopPanel:
         self._keys: set[str] = set()
         self._pending_release: dict[str, float] = {}
         self._last_key_activity = time.monotonic()
-        #: 专注模式（全局键盘抓取）是否开启：开启时按键状态由
-        #: ``sync_global_keys()`` 按物理键盘位图精确同步，不再依赖自动重复
-        #: 事件续命，也不做静默/失焦超时清理。
-        self._global_capture = False
         self._publish_period = 1.0 / self.publish_rate
         self._next_publish = 0.0
         self._publish_count = 0
@@ -392,64 +388,6 @@ class TeleopPanel:
             return
         self._pending_release[keysym] = time.monotonic() + self.release_grace_s
 
-    # ------------------------------------------------------------------ #
-    # 专注模式（全局键盘）：按物理键盘位图精确同步，支持真正的长按
-    # ------------------------------------------------------------------ #
-    def set_global_capture(self, enabled: bool) -> None:
-        """标记当前是否由专注模式的全局键盘抓取接管按键状态。
-
-        专注模式下 X11 自动重复事件可能缺失/不稳定，因此按键状态改由
-        :meth:`sync_global_keys` 用物理键盘位图精确维护：物理按住就一直动，
-        物理松开就立即停；此时不再做静默/失焦超时清理（否则长按会被误停）。
-        """
-        self._global_capture = bool(enabled)
-        self._last_key_activity = time.monotonic()
-        if not enabled:
-            self._pending_release.clear()
-
-    @property
-    def global_capture(self) -> bool:
-        """是否处于专注模式的全局键盘接管状态。"""
-        return self._global_capture
-
-    def sync_global_keys(self, keys) -> None:
-        """用物理按键集合精确同步按键状态（专注模式专用）。
-
-        与事件驱动的 :meth:`on_key_press` / :meth:`on_key_release` 不同，这里
-        直接以 X 服务器键盘位图为准设置集合，不需要自动重复事件续命，因此
-        长按可以一直保持；物理松开后最多一个轮询周期（约 30 ms）就停车。
-        空格/ESC 仍然立即急停。
-        """
-        if self._closed:
-            return
-        names: set[str] = set()
-        emergency_stop = False
-        for key in keys:
-            if not isinstance(key, str):
-                continue
-            if key in ("Escape", "Esc"):
-                emergency_stop = True
-                continue
-            action = key_action(key)
-            if action is None:
-                continue
-            if action == "stop":
-                emergency_stop = True
-                continue
-            names.add(key)
-        if emergency_stop:
-            self.stop_motion()
-            return
-        now = time.monotonic()
-        if names == self._keys:
-            self._last_key_activity = now
-            return
-        self._keys = names
-        self._pending_release.clear()
-        self._last_key_activity = now
-        self.publish_now()
-        self._redraw()
-
     def stop_motion(self) -> None:
         """立即清除所有按键并发布零速（急停 / 失焦 / 关窗使用）。"""
         if self._closed:
@@ -557,7 +495,6 @@ class TeleopPanel:
         changed = self._apply_due_releases(current)
         if (
             self._keys
-            and not self._global_capture
             and self.key_silence_timeout > 0.0
             and (current - self._last_key_activity) > self.key_silence_timeout
         ):
@@ -572,7 +509,6 @@ class TeleopPanel:
             changed = True
         if (
             self._keys
-            and not self._global_capture
             and self.cmd_timeout > 0.0
             and (current - self._last_key_activity) > self.cmd_timeout
             and not self._window_has_focus()
@@ -1516,35 +1452,7 @@ class FocusModeController:
                 break
             self._dispatch(name, pressed, ctrl)
             processed += 1
-        if self._active:
-            self._sync_physical_keys()
         return processed
-
-    def pressed_keys(self):
-        """查询当前物理按住的按键集合；抓取实现不支持时返回 ``None``。"""
-        grab = self._grab
-        if grab is None:
-            return None
-        getter = getattr(grab, "pressed_keys", None)
-        if getter is None:
-            return None
-        try:
-            return getter()
-        except Exception:
-            return None
-
-    def _sync_physical_keys(self) -> None:
-        """专注模式下用物理键盘状态精确同步面板按键（长按不依赖自动重复）。"""
-        panel = self._panel
-        if panel is None or panel.closed:
-            return
-        keys = self.pressed_keys()
-        if keys is None:
-            return
-        try:
-            panel.sync_global_keys(keys)
-        except Exception as exc:  # pragma: no cover - 极端 Tk 异常
-            self._log(f"同步物理按键失败：{exc}")
 
     def _dispatch(self, name: str, pressed: bool, ctrl: bool) -> None:
         """在 Tk 主线程把全局按键分发给面板（``k`` 用于切换专注模式）。"""
@@ -1647,16 +1555,13 @@ class FocusModeController:
             self._active = False
             reason = message or "专注模式启动失败"
             self._log(reason)
-            self._set_panel_global_capture(False)
             self._set_panel_focus_mode(False, reason)
             return False
         self._active = True
         self._last_toggle_time = time.monotonic()
         self._log(message or "已进入专注模式")
-        self._set_panel_global_capture(True)
         self._set_panel_focus_mode(True, message)
         self.start_polling()
-        self._sync_physical_keys()
         return True
 
     def disable(self, message: str = "已退出专注模式") -> None:
@@ -1672,7 +1577,6 @@ class FocusModeController:
             except Exception as exc:  # pragma: no cover - 极端 X11 错误
                 self._log(f"退出专注模式时释放键盘失败：{exc}")
         self._drain_queue()
-        self._set_panel_global_capture(False)
         if was_active:
             self._log(message)
         if was_active or self._panel is not None:
@@ -1705,15 +1609,6 @@ class FocusModeController:
     # ------------------------------------------------------------------ #
     # 内部工具
     # ------------------------------------------------------------------ #
-    def _set_panel_global_capture(self, enabled: bool) -> None:
-        panel = self._panel
-        if panel is None:
-            return
-        try:
-            panel.set_global_capture(enabled)
-        except tk.TclError:  # pragma: no cover
-            pass
-
     def _set_panel_focus_mode(self, enabled: bool, message: str = "") -> None:
         panel = self._panel
         if panel is None:

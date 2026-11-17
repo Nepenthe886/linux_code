@@ -12,3 +12,4 @@ bring_up:
   use_sim_time: true
   verbose: false
   pause: false
+  lidar: true         # 启动 Mid-360 激光雷达/IMU 模拟（/livox/lidar、/livox/imu）

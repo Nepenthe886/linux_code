@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating robot_state_publicer.egg-info
+writing robot_state_publicer.egg-info/PKG-INFO
+writing dependency_links to robot_state_publicer.egg-info/dependency_links.txt
+writing entry points to robot_state_publicer.egg-info/entry_points.txt
+writing requirements to robot_state_publicer.egg-info/requires.txt
+writing top-level names to robot_state_publicer.egg-info/top_level.txt
+writing manifest file 'robot_state_publicer.egg-info/SOURCES.txt'
+reading manifest file 'robot_state_publicer.egg-info/SOURCES.txt'
+writing manifest file 'robot_state_publicer.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/lib/python3.10/site-packages/robot-state-publicer.egg-link (link to .)
+Installing mid360_sim script to /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/lib/robot_state_publicer
+
+Installed /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer
+running symlink_data
+creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index
+creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index/resource_index
+creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index/resource_index/packages
+symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/resource/robot_state_publicer -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index/resource_index/packages
+symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/package.xml -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer
+creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/launch
+symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/launch/mid360_sim.launch.py -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/launch
+creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/config
+symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/config/mid360_sim.yaml -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/config

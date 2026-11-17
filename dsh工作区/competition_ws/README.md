@@ -17,6 +17,7 @@ competition_ws/
 │   └── robot/
 │       ├── robot_description/    # 机器人 URDF（含 Gazebo 插件/材质/摩擦标签）
 │       ├── robot_control/        # 遥控/GUI、Gazebo launch、单测、文档
+│       ├── robot_state_publicer/ # Mid-360 激光雷达 + IMU 模拟（/livox/lidar、/livox/imu）
 │       └── INTERFACE.md          # 内部接口契约（话题/TF/参数/launch 约定）
 └── requirements.txt              # Python 侧依赖（ROS 依赖见 package.xml / scripts）
 ```
@@ -76,6 +77,10 @@ bash scripts/view_sim.sh
 启动后 `gzserver` 加载 `src/maps/zhirong_maps/worlds/zhirong_arena.world`，
 机器人 spawn 在入口外侧 `(2.90, 1.60, yaw=π)`，发布 `/clock`、`/joint_states`、
 `/odom` 与 TF `odom→base_footprint`；向 `/cmd_vel` 发速度即可运动。
+同时 `bring_up` 默认启用 Mid-360 激光雷达/IMU（`lidar_sim:=gazebo`）：
+`/livox/lidar`（Gazebo ray 传感器对比赛场景的真实射线，PointCloud2 10 Hz）、
+`/livox/imu`（200 Hz）、`/livix/lidar`（别名），frame 为 URDF 的 `livox_mid360_link`；
+`lidar_sim:=python` 时改用 `robot_state_publicer` 的合成点云/IMU。
 
 验收脚本（构建 + 启动 + 话题/TF + 全向运动 + 模型加载 + 清理）在开发工作区
 `dsh工作区/verification/`，实测报告见

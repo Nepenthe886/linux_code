@@ -1,0 +1,10 @@
+[INFO] [1794925762.592877630] [robot_state_publisher]: got segment base_footprint
+[INFO] [1794925762.592933006] [robot_state_publisher]: got segment base_link
+[INFO] [1794925762.592938126] [robot_state_publisher]: got segment camera_link
+[INFO] [1794925762.592941716] [robot_state_publisher]: got segment camera_optical_frame
+[INFO] [1794925762.592945096] [robot_state_publisher]: got segment livox_mid360_link
+[INFO] [1794925762.592948186] [robot_state_publisher]: got segment wheel_front_left_link
+[INFO] [1794925762.592951615] [robot_state_publisher]: got segment wheel_front_right_link
+[INFO] [1794925762.592954595] [robot_state_publisher]: got segment wheel_rear_left_link
+[INFO] [1794925762.592957575] [robot_state_publisher]: got segment wheel_rear_right_link
+[INFO] [1794925779.981837522] [rclcpp]: signal_handler(SIGINT/SIGTERM)

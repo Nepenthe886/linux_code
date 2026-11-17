@@ -25,6 +25,11 @@ setup(
             os.path.join("share", package_name, "launch"),
             glob("launch/*.launch.py"),
         ),
+        # Gazebo 传感器片段（gazebo.launch.py 在 lidar_sensors:=true 时拼进 URDF）
+        (
+            os.path.join("share", package_name, "config"),
+            glob("config/*.xml"),
+        ),
         (
             os.path.join("share", package_name, "rviz"),
             glob("rviz/*.rviz"),

@@ -1,0 +1,54 @@
+===== Gazebo 启动验收 20261117-222421 =====
+日志目录: /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/20261117-222421
+启动前 gzserver 残留: 0
+0
+----- [1/6] 跳过 colcon build（SKIP_BUILD=1，使用已有 install）-----
+----- [2/6] ros2 launch bring_up bring_up.launch.py（含 Mid-360 雷达）-----
+launch pid=36
+ /clock 在 1s 后可用
+[PASS] gzserver 发布 /clock（仿真时钟运行）
+----- [2b] Mid-360 激光雷达/IMU 数据检查 -----
+ /livox/lidar 在 1s 后可用
+[PASS] Mid-360 点云话题 /livox/lidar 有数据
+[PASS] Mid-360 点云/IMU 帧率、frame、点结构检查
+LIDAR frame=livox_mid360_link width=20000 point_step=26 rate=10.8
+LIDAR 时间戳与 /clock 偏差=0.027s（仿真时间）
+IMU   frame=livox_mid360_link rate=158.7 samples=400
+ALIAS /livix/lidar=OK (n=56)
+----- [3/6] 场景模型 & 机器人加载检查 -----
+[PASS] 场景+机器人关键模型全部加载（缺 0 个）
+ robot 初始位姿: 2.90001 1.5986 0 -0 -0 3.1413
+----- [4/6] /cmd_vel 全向运动闭环检查 -----
+[PASS] 全向运动闭环（前进/横移/自转）
+[1/5] 等待 /clock ...
+      OK /clock = 29.800000000
+[2/5] 等待 /odom /joint_states ...
+      OK /odom frame_id=odom child=base_footprint
+      OK /joint_states joints=['wheel_front_left_joint', 'wheel_front_right_joint', 'wheel_rear_left_joint', 'wheel_rear_right_joint']
+[3/5] 检查 TF odom->base_footprint ...
+      OK TF odom->base_footprint
+[4/5] 运动测试 ...
+      起点 odom: x=2.900 y=1.599 yaw=3.142
+      前进 2s 后: 位移=0.579 m  -> OK
+      横移 2s 后: 位移=0.562 m  -> OK
+      自转 1.5s 后: yaw 变化=0.734 rad -> OK
+[5/5] 终点位姿: x=2.320 y=1.038 yaw=-2.408
+
+=== RESULT: PASS（仿真启动 + 全向运动控制闭环全部通过）===
+ robot 结束位姿: 2.31959 1.03793 0 0 0 -2.40788
+----- [5/6] 话题 & TF 汇总 -----
+  话题存在: /clock
+  话题存在: /odom
+  话题存在: /joint_states
+  话题存在: /cmd_vel
+  话题存在: /tf
+  话题存在: /robot_description
+  话题存在: /livox/lidar
+  话题存在: /livox/imu
+  话题存在: /livix/lidar
+  TF odom->base_footprint: OK
+----- [6/6] 收尾 -----
+残留 gzserver: 0
+
+===== 结果: PASS=5 FAIL=0 =====
+ACCEPTANCE: PASS

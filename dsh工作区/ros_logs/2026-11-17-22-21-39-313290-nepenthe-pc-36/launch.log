@@ -1,0 +1,11 @@
+1794925299.3137329 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-22-21-39-313290-nepenthe-pc-36
+1794925299.3138022 [INFO] [launch]: Default logging verbosity is set to INFO
+1794925299.3148677 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+1794925299.3534002 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794925299.3534572 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794925299.3827765 [INFO] [launch.user]: [bring_up] 启动 Livox Mid-360 激光雷达/IMU 模拟（/livox/lidar, /livox/imu）
+1794925299.3862598 [INFO] [bash-1]: process started with pid [46]
+1794925299.3863246 [INFO] [spawn_entity.py-2]: process started with pid [48]
+1794925299.3863618 [INFO] [robot_state_publisher-3]: process started with pid [50]
+1794925299.3863919 [INFO] [mid360_sim-4]: process started with pid [52]
+1794925300.6978509 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 48]

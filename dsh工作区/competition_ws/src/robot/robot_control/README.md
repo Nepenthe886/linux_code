@@ -399,6 +399,7 @@ ros2 launch robot_control gazebo.launch.py teleop:=keyboard
 | `verbose` | `false` | 给 gzserver 加 `--verbose` |
 | `model_name` | `zhirong_robot` | Gazebo 模型名（`gz model -m zhirong_robot -i` 可查位姿） |
 | `pause` | `false` | gzserver 是否以暂停状态启动 |
+| `lidar_sensors` | `true` | 是否给机器人附加 Mid-360 Gazebo 传感器（ray -> `/livox/lidar` 真实场景点云、imu -> `/livox/imu` 200 Hz；传感器块见 `config/livox_mid360_sensors.xml`，随 URDF spawn） |
 
 ### 话题 / TF / 插件
 

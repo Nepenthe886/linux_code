@@ -1,0 +1,4 @@
+[console_scripts]
+livix_relay = robot_state_publicer.livix_relay:main
+mid360_sim = robot_state_publicer.mid360_sim_node:main
+

@@ -1,0 +1,4 @@
+LIDAR frame=livox_mid360_link width=20000 point_step=26 rate=10.8
+LIDAR 时间戳与 /clock 偏差=0.027s（仿真时间）
+IMU   frame=livox_mid360_link rate=158.7 samples=400
+ALIAS /livix/lidar=OK (n=56)

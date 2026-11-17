@@ -324,33 +324,6 @@ def test_load_robot_description_keeps_package_urls(launch_module):
     assert root.get("name") == "zhirong_omni_robot"
 
 
-def test_robot_description_for_rviz_uses_space_free_paths(launch_module):
-    """RViz 版 URDF：package:// 改写成 /tmp 无空格 file://，网格确实可读。
-
-    回归：工作区路径含空格（".../Zhirong Cup/..."）时，RViz2 会把 package://
-    解析成未编码的 file:// 导致 LiDAR 网格读取失败、机器人缺部件。
-    """
-    import re
-    import shutil
-
-    raw = launch_module._load_robot_description(ROBOT_DESCRIPTION_ROOT)
-    rviz_urdf, assets_dir = launch_module._robot_description_for_rviz(
-        raw, ROBOT_DESCRIPTION_ROOT
-    )
-    try:
-        assert "package://robot_description/" not in rviz_urdf
-        assert "file://" in rviz_urdf
-        assert " " not in assets_dir, "RViz 资产目录不能含空格"
-        match = re.search(r'file://([^"]+\.stl)', rviz_urdf)
-        assert match, "URDF 里应还有 STL 网格引用"
-        assert os.path.isfile(match.group(1)), match.group(1)
-        # 每个 file:// 路径都不应含空格，否则 RViz 读取会失败
-        for url in re.findall(r'file://([^"]+)', rviz_urdf):
-            assert " " not in url, url
-    finally:
-        shutil.rmtree(assets_dir, ignore_errors=True)
-
-
 def test_robot_models_dir_has_mid360_meshes(launch_module):
     """robot_control/models/robot_description 提供 model:// 网格解析目录。"""
     models = launch_module._robot_models_dir(PACKAGE_ROOT)
@@ -359,6 +332,43 @@ def test_robot_models_dir_has_mid360_meshes(launch_module):
     for name in ("mid360_base.stl", "mid360_top.stl", "mid360_dome.stl"):
         assert os.path.isfile(os.path.join(mesh_dir, name)), name
     assert os.path.isfile(os.path.join(models, "robot_description", "model.config"))
+
+
+def test_lidar_sensors_snippet_is_valid(launch_module):
+    """Mid-360 Gazebo 传感器片段：合法 XML、挂在 livox_mid360_link、含 ray+imu 插件。"""
+    path = launch_module._lidar_sensors_path()
+    with open(path, encoding="utf-8") as handle:
+        text = handle.read()
+    root = ET.fromstring("<wrap>" + text + "</wrap>")
+    gazebo = root.find("gazebo")
+    assert gazebo is not None
+    assert gazebo.get("reference") == "livox_mid360_link"
+    sensors = {sensor.get("name"): sensor.get("type") for sensor in gazebo.findall("sensor")}
+    assert sensors == {
+        "livox_mid360_imu": "imu",
+        "livox_mid360_ray": "ray",
+    }, sensors
+    plugins = [p.get("filename") for p in gazebo.iter("plugin")]
+    assert "libgazebo_ros_imu_sensor.so" in plugins
+    assert "libgazebo_ros_ray_sensor.so" in plugins
+    # 点云输出类型必须是 PointCloud2（供 /livox/lidar 消费）
+    assert "sensor_msgs/PointCloud2" in text
+
+
+def test_load_robot_description_can_append_lidar_sensors(launch_module):
+    """lidar_sensors:=true 时 URDF 末尾追加 Gazebo 传感器块，且仍是合法 XML。"""
+    plain = launch_module._load_robot_description(ROBOT_DESCRIPTION_ROOT)
+    with_sensors = launch_module._load_robot_description(ROBOT_DESCRIPTION_ROOT, sensors=True)
+    assert "livox_mid360_ray" not in plain
+    assert "livox_mid360_ray" in with_sensors
+    assert "livox_mid360_imu" in with_sensors
+    assert "package://robot_description/meshes/" in with_sensors
+    assert "file://" not in with_sensors
+    # 追加后仍是一个合法的 URDF（robot 根、link 数量不变）
+    root_plain = ET.fromstring(plain)
+    root_sensors = ET.fromstring(with_sensors)
+    assert root_sensors.tag == "robot"
+    assert len(root_plain.findall("link")) == len(root_sensors.findall("link"))
 
 
 def test_model_path_env_includes_robot_and_maps_models(launch_module, monkeypatch, tmp_path):

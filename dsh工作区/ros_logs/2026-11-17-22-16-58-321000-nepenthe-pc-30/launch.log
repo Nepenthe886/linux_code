@@ -1,0 +1,19 @@
+1794925018.3214777 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-22-16-58-321000-nepenthe-pc-30
+1794925018.3215466 [INFO] [launch]: Default logging verbosity is set to INFO
+1794925018.3221896 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+1794925018.3603692 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794925018.3604183 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794925018.3902471 [INFO] [launch.user]: [bring_up] 启动 Livox Mid-360 激光雷达/IMU 模拟（/livox/lidar, /livox/imu）
+1794925018.3936312 [INFO] [bash-1]: process started with pid [32]
+1794925018.3937109 [INFO] [spawn_entity.py-2]: process started with pid [34]
+1794925018.3937583 [INFO] [robot_state_publisher-3]: process started with pid [36]
+1794925018.3937948 [INFO] [mid360_sim-4]: process started with pid [38]
+1794925019.6948631 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 34]
+1794925045.9010780 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1794925045.9021146 [INFO] [mid360_sim-4]: sending signal 'SIGINT' to process[mid360_sim-4]
+1794925045.9023898 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794925045.9027321 [INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+1794925046.0074141 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 36]
+1794925046.0424778 [ERROR] [mid360_sim-4]: process has died [pid 38, exit code 1, cmd '/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_state_publicer/lib/robot_state_publicer/mid360_sim --ros-args -r __node:=mid360_sim --params-file /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_state_publicer/share/robot_state_publicer/config/mid360_sim.yaml --params-file /tmp/launch_params_r9j6023h'].
+1794925046.1202643 [INFO] [bash-1]: process has finished cleanly [pid 32]
+1794925046.1204796 [INFO] [launch]: process[bash-1] was required: shutting down launched system

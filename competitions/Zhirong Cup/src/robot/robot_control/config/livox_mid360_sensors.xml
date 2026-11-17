@@ -1,0 +1,75 @@
+  <!-- ====================================================================
+       Mid-360 传感器（由 gazebo.launch.py 在 lidar_sensors:=true 时拼接
+       到 robot_description 的 </robot> 之前，随机器人一起 spawn）。
+
+       数据源是**比赛场景的真实射线结果**：
+         * ray（CPU 射线，无需渲染，headless gzserver 可用）-> /livox/lidar
+           （sensor_msgs/PointCloud2，10 Hz，360°×24 线，0.1~40 m）
+         * imu（200 Hz，含重力）-> /livox/imu（sensor_msgs/Imu）
+       两者 frame 均为传感器父 link ``livox_mid360_link``（由插件默认取父 link）。
+       另见 robot_state_publicer：合成点云/IMU 版本（bring_up lidar_sim:=python）。
+       ==================================================================== -->
+  <gazebo reference="livox_mid360_link">
+    <sensor name="livox_mid360_imu" type="imu">
+      <always_on>true</always_on>
+      <update_rate>200</update_rate>
+      <imu>
+        <angular_velocity>
+          <x><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></x>
+          <y><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></y>
+          <z><noise type="gaussian"><mean>0</mean><stddev>0.0002</stddev></noise></z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></x>
+          <y><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></y>
+          <z><noise type="gaussian"><mean>0</mean><stddev>0.002</stddev></noise></z>
+        </linear_acceleration>
+      </imu>
+      <plugin name="livox_mid360_imu" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+          <namespace>/</namespace>
+          <remapping>~/out:=/livox/imu</remapping>
+        </ros>
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+        <frame_name>livox_mid360_link</frame_name>
+      </plugin>
+    </sensor>
+
+    <sensor name="livox_mid360_ray" type="ray">
+      <always_on>true</always_on>
+      <update_rate>10</update_rate>
+      <visualize>false</visualize>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>240</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14159265</min_angle>
+            <max_angle>3.14159265</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>8</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.122173</min_angle>
+            <max_angle>0.907571</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <!-- 0.35 m 起：过滤雷达自身/车体近场遮挡（车体到雷达约 0.25~0.3 m），
+               真实 Mid-360 盲区 0.1 m，仿真里留 0.35 m 更利于建图/避障算法 -->
+          <min>0.35</min>
+          <max>40.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+      <plugin name="livox_mid360_ray" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <namespace>/</namespace>
+          <remapping>~/out:=/livox/lidar</remapping>
+        </ros>
+        <output_type>sensor_msgs/PointCloud2</output_type>
+        <min_intensity>0.0</min_intensity>
+        <frame_name>livox_mid360_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>

@@ -1,0 +1,37 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/lidar_rviz_ros/2026-11-17-22-39-37-930483-nepenthe-pc-38
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+[INFO] [launch.user]: [gazebo.launch.py] 已附加 Mid-360 Gazebo 传感器：/livox/lidar（真实场景射线，10 Hz、360°×24 线）、/livox/imu（200 Hz）
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [launch.user]: [bring_up] 激光雷达数据源=gazebo（Gazebo ray 传感器真实场景点云 + 200 Hz IMU）
+[INFO] [bash-1]: process started with pid [40]
+[INFO] [spawn_entity.py-2]: process started with pid [42]
+[INFO] [robot_state_publisher-3]: process started with pid [44]
+[INFO] [livix_relay-4]: process started with pid [46]
+[robot_state_publisher-3] [INFO] [1794926378.024658283] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794926378.024725099] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794926378.024732438] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794926378.024737588] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794926378.024742548] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794926378.024747097] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794926378.024751957] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794926378.024756427] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794926378.024760366] [robot_state_publisher]: got segment wheel_rear_right_link
+[livix_relay-4] [INFO] [1794926378.168916725] [livix_relay]: 别名转发：/livox/lidar -> /livix/lidar
+[spawn_entity.py-2] [INFO] [1794926378.176305847] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794926378.176531694] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794926378.177493865] [spawn_robot]: Waiting for entity xml on robot_description
+[spawn_entity.py-2] [INFO] [1794926378.188881937] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794926378.189146741] [spawn_robot]: Waiting for service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794926378.942058877] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794926379.548246982] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[bash-1] [INFO] [1794926379.657307873] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[bash-1] [INFO] [1794926379.658328102] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[bash-1] [INFO] [1794926379.659400947] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[bash-1] [INFO] [1794926379.663955951] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[bash-1] [INFO] [1794926379.663969611] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[bash-1] [INFO] [1794926379.663974340] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[bash-1] [INFO] [1794926379.663978110] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 42]
+[bash-1] [INFO] [1794926407.444842558] [rclcpp]: signal_handler(SIGINT/SIGTERM)

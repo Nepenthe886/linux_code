@@ -120,8 +120,6 @@ try:  # pragma: no cover - 依赖运行平台
     _x11.XStringToKeysym.argtypes = [c_char_p]
     _x11.XKeysymToKeycode.restype = c_uint
     _x11.XKeysymToKeycode.argtypes = [c_void_p, c_ulong]
-    _x11.XQueryKeymap.argtypes = [c_void_p, c_char_p]
-    _x11.XQueryKeymap.restype = c_int
     _HAS_X11 = True
 except (OSError, AttributeError):  # 非 X11 平台：模块仍可导入，但不可用
     _x11 = None
@@ -193,9 +191,6 @@ class X11KeyboardGrab:
         self._stop_event = threading.Event()
         self._active = False
         self._lock = threading.Lock()
-        # Xlib 的 Display 连接不是线程安全的：后台读线程与 pressed_keys()
-        # 查询共用同一个连接，必须用这把锁串行化。
-        self._x_lock = threading.Lock()
 
     # ------------------------------------------------------------------ #
     # 状态
@@ -281,41 +276,6 @@ class X11KeyboardGrab:
         self._active = False
 
     # ------------------------------------------------------------------ #
-    # 物理按键状态查询（专注模式下不依赖 X11 自动重复）
-    # ------------------------------------------------------------------ #
-    def pressed_keys(self) -> Optional[frozenset]:
-        """查询当前**物理上仍按住**的按键名集合（``XQueryKeymap``）。
-
-        专注模式里 X11 自动重复事件可能缺失/不稳定（不同桌面、远程输入、
-        虚拟键盘都可能如此），只靠自动重复刷新会误判长按已松开。这里直接
-        查询 X 服务器的键盘位图，得到真实按键状态，调用方可用它精确同步
-        运动状态：物理按住就一直动，物理松开就立即停。
-
-        返回 ``None`` 表示当前不可查询（未激活 / 显示连接不可用）。
-        """
-        with self._x_lock:
-            display = self._display
-            if display is None or not self._active:
-                return None
-            try:
-                bits = ctypes.create_string_buffer(32)  # 256 bit = 256 keycode
-                if not _x11.XQueryKeymap(display, bits):
-                    return None
-                keycodes = keymap_bits_to_keycodes(bits.raw[:32])
-                names: set[str] = set()
-                for keycode in keycodes:
-                    try:
-                        keysym = _x11.XkbKeycodeToKeysym(display, keycode, 0, 0)
-                    except Exception:
-                        continue
-                    name = _keysym_to_name(keysym)
-                    if name is not None:
-                        names.add(name)
-            except Exception:  # pragma: no cover - 连接断开时保守返回
-                return None
-        return frozenset(names)
-
-    # ------------------------------------------------------------------ #
     # 后台读线程
     # ------------------------------------------------------------------ #
     def _run(self) -> None:  # pragma: no cover - 需要真实 X11 才能跑
@@ -332,21 +292,19 @@ class X11KeyboardGrab:
                     break
                 if not readable:
                     continue
-                with self._x_lock:
-                    while _x11.XPending(display):
-                        _x11.XNextEvent(display, ctypes.cast(buffer, c_void_p))
-                        self._dispatch_event(buffer, display)
+                while _x11.XPending(display):
+                    _x11.XNextEvent(display, ctypes.cast(buffer, c_void_p))
+                    self._dispatch_event(buffer, display)
         finally:
-            with self._x_lock:
-                try:
-                    _x11.XUngrabKeyboard(display, _CURRENT_TIME)
-                    _x11.XSync(display, 0)
-                except Exception:
-                    pass
-                try:
-                    _x11.XCloseDisplay(display)
-                except Exception:
-                    pass
+            try:
+                _x11.XUngrabKeyboard(display, _CURRENT_TIME)
+                _x11.XSync(display, 0)
+            except Exception:
+                pass
+            try:
+                _x11.XCloseDisplay(display)
+            except Exception:
+                pass
             self._display = None
             self._active = False
 
@@ -371,16 +329,6 @@ class X11KeyboardGrab:
 
             self._logger("警告：专注模式按键回调异常：")
             traceback.print_exc()
-
-
-def keymap_bits_to_keycodes(bits: bytes) -> frozenset:
-    """把 ``XQueryKeymap`` 的 32 字节键盘位图解码成按下的 keycode 集合。"""
-    keycodes = set()
-    for byte_index, value in enumerate(bits):
-        for bit_index in range(8):
-            if value & (1 << bit_index):
-                keycodes.add(byte_index * 8 + bit_index)
-    return frozenset(keycodes)
 
 
 def _keysym_to_name(keysym: int) -> Optional[str]:

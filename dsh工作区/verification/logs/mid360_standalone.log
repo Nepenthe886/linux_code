@@ -1,0 +1,4 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/verification/logs/standalone_ros/2026-11-17-22-23-06-339281-nepenthe-pc-19
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mid360_sim-1]: process started with pid [21]
+[mid360_sim-1] [INFO] [1794925386.553948219] [mid360_sim]: Mid-360 simulator: 20000 pts @ 10 Hz on /livox/lidar (+ alias /livix/lidar), IMU 200 Hz on /livox/imu, frame=livox_frame

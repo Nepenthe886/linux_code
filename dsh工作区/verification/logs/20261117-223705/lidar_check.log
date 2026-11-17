@@ -1,0 +1,7 @@
+模式=gazebo
+LIDAR frame=livox_mid360_link width=385 point_step=16 rate=10.0
+  点云范围 x[-1.05,5.26] y[-2.39,3.84] z[-0.34,0.21]
+LIDAR 时间戳与 /clock 偏差=0.053s
+IMU   frame=livox_mid360_link rate=199.9 samples=1061
+ALIAS /livix/lidar=OK (n=53)
+RESULT: PASS

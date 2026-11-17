@@ -3,7 +3,8 @@
 
 等价于::
 
-    ros2 launch bring_up bring_up.launch.py gui:=true rviz:=true teleop:=gui
+    ros2 launch bring_up bring_up.launch.py gui:=true rviz:=true teleop:=gui lidar:=true
+（默认同时启动 Mid-360 激光雷达/IMU 模拟，``lidar:=false`` 可关）
 
 用法::
 
@@ -43,6 +44,11 @@ def generate_launch_description() -> LaunchDescription:
         DeclareLaunchArgument("verbose", default_value="false", description="gzserver --verbose"),
         DeclareLaunchArgument("model_name", default_value="zhirong_robot", description="机器人模型名"),
         DeclareLaunchArgument("pause", default_value="false", description="gzserver 暂停启动"),
+        DeclareLaunchArgument("lidar", default_value="true", description="启用激光雷达/IMU（false=off）"),
+        DeclareLaunchArgument(
+            "lidar_sim", default_value="gazebo",
+            description="雷达数据源：gazebo=真实场景射线点云+200Hz IMU / python=合成点云 / off",
+        ),
     ]
     include = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(_bring_up_launch()),
@@ -59,6 +65,8 @@ def generate_launch_description() -> LaunchDescription:
             "verbose": LaunchConfiguration("verbose"),
             "model_name": LaunchConfiguration("model_name"),
             "pause": LaunchConfiguration("pause"),
+            "lidar": LaunchConfiguration("lidar"),
+            "lidar_sim": LaunchConfiguration("lidar_sim"),
         }.items(),
     )
     return LaunchDescription(args + [include])

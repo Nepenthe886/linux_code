@@ -445,6 +445,14 @@ ARG_SPECS = (
         choices=("none", "keyboard", "gui"),
     ),
     LaunchArgSpec(
+        "lidar_sensors",
+        "true",
+        "是否给机器人附加 Gazebo 传感器：Mid-360 射线点云 /livox/lidar（10 Hz、360°×24 线，"
+        "真实比赛场景射线）+ 200 Hz IMU /livox/imu（lidar_sensors:=false 关闭；"
+        "合成数据源见 bring_up 的 lidar_sim:=python）",
+        choices=("true", "false"),
+    ),
+    LaunchArgSpec(
         "verbose",
         "false",
         "是否给 gzserver 加 --verbose",
@@ -516,7 +524,25 @@ def _robot_description_root() -> str:
     )
 
 
-def _load_robot_description(package_root: str) -> str:
+def _lidar_sensors_path() -> str:
+    """返回 Mid-360 传感器 SDF 片段的路径（随包安装到 share/config/）。"""
+    root = _robot_control_root()
+    path = os.path.join(root, "config", "livox_mid360_sensors.xml")
+    if not os.path.isfile(path):
+        # 源码树未安装时回退到源码相对路径（launch 文件位于 <root>/launch/）
+        fallback = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config",
+            "livox_mid360_sensors.xml",
+        )
+        if os.path.isfile(fallback):
+            return fallback
+        raise RuntimeError(
+            "gazebo.launch.py: 找不到 Mid-360 传感器片段 {}（请先 colcon build robot_control）".format(path)
+        )
+    return path
+
+
+def _load_robot_description(package_root: str, sensors: bool = False) -> str:
     """读取 URDF 原文（保留 ``package://`` 网格 URI，不做绝对路径重写）。
 
     网格解析策略：URDF 里 ``package://robot_description/meshes/*.stl`` 由
@@ -531,7 +557,18 @@ def _load_robot_description(package_root: str) -> str:
     """
     urdf_path = os.path.join(package_root, _URDF_RELATIVE_PATH)
     with open(urdf_path, "r", encoding="utf-8") as handle:
-        return handle.read()
+        urdf = handle.read()
+    if not sensors:
+        return urdf
+    # 把 Mid-360 的 <gazebo reference="livox_mid360_link"> 传感器块追加到 </robot> 之前：
+    # 这样 spawn 出的 SDF 里带 ray/imu 传感器，点云来自比赛场景的真实射线。
+    snippet_path = _lidar_sensors_path()
+    with open(snippet_path, "r", encoding="utf-8") as handle:
+        snippet = handle.read()
+    closing = "</robot>"
+    if urdf.count(closing) != 1:
+        raise RuntimeError("gazebo.launch.py: URDF 中 </robot> 标记数量异常")
+    return urdf.replace(closing, snippet + "\n" + closing, 1)
 
 
 def _robot_models_dir(robot_control_root: str) -> str:
@@ -720,7 +757,8 @@ def _launch_setup(context):
     cfg = context.launch_configurations
     _check_master_port_free()
     robot_control_root = _robot_control_root()
-    robot_description = _load_robot_description(_robot_description_root())
+    lidar_sensors = str(cfg.get("lidar_sensors", "true")).lower() in ("1", "true", "yes", "on")
+    robot_description = _load_robot_description(_robot_description_root(), sensors=lidar_sensors)
     rviz_config_path = os.path.join(robot_control_root, _RVIZ_RELATIVE_PATH)
 
     resolved_world = _resolve_world(cfg.get("world", ""), robot_control_root)
@@ -750,6 +788,18 @@ def _launch_setup(context):
 
     if gazebo_env_note:
         actions.append(LogInfo(msg=gazebo_env_note))
+
+    if lidar_sensors:
+        actions.append(
+            LogInfo(
+                msg="[gazebo.launch.py] 已附加 Mid-360 Gazebo 传感器："
+                "/livox/lidar（真实场景射线，10 Hz、360°×24 线）、/livox/imu（200 Hz）"
+            )
+        )
+    else:
+        actions.append(
+            LogInfo(msg="[gazebo.launch.py] 未附加 Gazebo 传感器（lidar_sensors:=false）")
+        )
 
     # ---- world 来源提示（回退时给 warning，不刷屏） ----
     if resolved_world["source"] == "fallback":

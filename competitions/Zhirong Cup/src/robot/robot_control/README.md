@@ -194,11 +194,6 @@ DISPLAY=:1 python3 -m robot_control.gui_teleop --ros-args -p focus_mode_default:
 队列 -> `FocusModeController` 用 `root.after(30)` 在 Tk 主线程分发；`K` 走
 切换逻辑而不是运动映射。关闭窗口 / `Ctrl-C` / 失焦保护都会先释放键盘抓取再退出。
 
-**长按（前进/后退/平移）**：专注模式下不再依赖系统键盘“自动重复”事件，而是
-每 30 ms 用 `XQueryKeymap` 查询 X 服务器的物理键盘位图，按真实按键状态同步
-运动指令：**物理按住就一直走，物理松开立即停**（即使系统关闭了键盘重复或
-自动重复事件丢失也照样能长按）。
-
 安全提示（重要）：
 
 - 由于**默认开启**，GUI 一启动就会接管键盘：启动前请确认机器人处于安全测试
@@ -404,6 +399,7 @@ ros2 launch robot_control gazebo.launch.py teleop:=keyboard
 | `verbose` | `false` | 给 gzserver 加 `--verbose` |
 | `model_name` | `zhirong_robot` | Gazebo 模型名（`gz model -m zhirong_robot -i` 可查位姿） |
 | `pause` | `false` | gzserver 是否以暂停状态启动 |
+| `lidar_sensors` | `true` | 是否给机器人附加 Mid-360 Gazebo 传感器（ray -> `/livox/lidar` 真实场景点云、imu -> `/livox/imu` 200 Hz；传感器块见 `config/livox_mid360_sensors.xml`，随 URDF spawn） |
 
 ### 话题 / TF / 插件
 

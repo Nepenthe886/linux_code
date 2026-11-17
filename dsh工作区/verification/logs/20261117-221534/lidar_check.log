@@ -1,0 +1,4 @@
+LIDAR frame=livox_mid360_link width=20000 point_step=26 rate=11.2
+IMU   frame=livox_mid360_link rate=20.2 samples=120
+  IMU 频率异常: 20.2 Hz（期望 200 Hz）
+ALIAS /livix/lidar=OK (n=60)

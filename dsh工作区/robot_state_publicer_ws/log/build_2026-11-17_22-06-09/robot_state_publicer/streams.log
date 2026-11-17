@@ -1,0 +1,28 @@
+[0.422s] Invoking command in '/home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer': PYTHONPATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/build --no-deps symlink_data
+[0.555s] running develop
+[0.626s] running egg_info
+[0.626s] creating robot_state_publicer.egg-info
+[0.626s] writing robot_state_publicer.egg-info/PKG-INFO
+[0.626s] writing dependency_links to robot_state_publicer.egg-info/dependency_links.txt
+[0.626s] writing entry points to robot_state_publicer.egg-info/entry_points.txt
+[0.626s] writing requirements to robot_state_publicer.egg-info/requires.txt
+[0.626s] writing top-level names to robot_state_publicer.egg-info/top_level.txt
+[0.626s] writing manifest file 'robot_state_publicer.egg-info/SOURCES.txt'
+[0.627s] reading manifest file 'robot_state_publicer.egg-info/SOURCES.txt'
+[0.627s] writing manifest file 'robot_state_publicer.egg-info/SOURCES.txt'
+[0.628s] running build_ext
+[0.628s] Creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/lib/python3.10/site-packages/robot-state-publicer.egg-link (link to .)
+[0.628s] Installing mid360_sim script to /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/lib/robot_state_publicer
+[0.628s] 
+[0.628s] Installed /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer
+[0.628s] running symlink_data
+[0.628s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index
+[0.628s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index/resource_index
+[0.628s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index/resource_index/packages
+[0.629s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/resource/robot_state_publicer -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/ament_index/resource_index/packages
+[0.629s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/package.xml -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer
+[0.629s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/launch
+[0.629s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/launch/mid360_sim.launch.py -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/launch
+[0.629s] creating /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/config
+[0.629s] symbolically linking /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/config/mid360_sim.yaml -> /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/share/robot_state_publicer/config
+[0.641s] Invoked command in '/home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer' returned '0': PYTHONPATH=/home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/install/robot_state_publicer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nepenthe/zmf/linux_code/dsh工作区/robot_state_publicer_ws/build/robot_state_publicer/build --no-deps symlink_data

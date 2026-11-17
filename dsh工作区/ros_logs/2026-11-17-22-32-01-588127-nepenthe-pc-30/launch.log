@@ -1,0 +1,17 @@
+1794925921.5885682 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-22-32-01-588127-nepenthe-pc-30
+1794925921.5886369 [INFO] [launch]: Default logging verbosity is set to INFO
+1794925921.5891857 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+1794925921.6286781 [INFO] [launch.user]: [gazebo.launch.py] 已附加 Mid-360 Gazebo 传感器：/livox/lidar（真实场景射线，10 Hz、360°×24 线）、/livox/imu（200 Hz）
+1794925921.6287313 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794925921.6287625 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794925921.6608336 [INFO] [launch.user]: [bring_up] 激光雷达数据源=gazebo（Gazebo ray 传感器真实场景点云 + 200 Hz IMU）
+1794925921.6622999 [INFO] [bash-1]: process started with pid [32]
+1794925921.6623576 [INFO] [spawn_entity.py-2]: process started with pid [34]
+1794925921.6623917 [INFO] [robot_state_publisher-3]: process started with pid [36]
+1794925923.3526235 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 34]
+1794925939.3618073 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1794925939.3628256 [INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+1794925939.3631513 [INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+1794925939.4673917 [INFO] [robot_state_publisher-3]: process has finished cleanly [pid 36]
+1794925939.5261090 [INFO] [bash-1]: process has finished cleanly [pid 32]
+1794925939.5262790 [INFO] [launch]: process[bash-1] was required: shutting down launched system

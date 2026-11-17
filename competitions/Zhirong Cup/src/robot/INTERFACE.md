@@ -53,6 +53,9 @@ src/robot_control/
 | `/wheel_cmd` | `std_msgs/msg/Float64MultiArray` | teleop/GUI -> sim/driver | 四轮角速度指令 [rad/s]，顺序 FL, FR, RL, RR；`layout.dim[0].label = "wheel_fl, wheel_fr, wheel_rl, wheel_rr"` |
 | `/joint_states` | `sensor_msgs/msg/JointState` | sim -> robot_state_publisher | 四个轮关节的 `position`（rad，连续累积可回绕）与 `velocity`（rad/s） |
 | `/odom` | `nav_msgs/msg/Odometry` | sim -> RViz/外部 | `frame_id=odom`, `child_frame_id=base_footprint`，含 pose/twist |
+| `/livox/lidar` | `sensor_msgs/msg/PointCloud2` | 激光雷达 -> 感知/定位 | 默认 Gazebo ray 传感器对比赛场景的真实射线（10 Hz、240×8 线、0.35–40 m，`frame_id=livox_mid360_link`）；`lidar_sim:=python` 时为合成点云（20000 点/帧、`point_step=26`） |
+| `/livox/imu` | `sensor_msgs/msg/Imu` | 激光雷达 -> 感知/定位 | 默认 Gazebo imu 传感器 200 Hz；python 模式为合成 IMU ~150–160 Hz；`frame_id=livox_mid360_link`，含重力 9.80665 |
+| `/livix/lidar` | `sensor_msgs/msg/PointCloud2` | 同 `/livox/lidar` | 按需求文档拼写保留的别名话题 |
 | TF `odom -> base_footprint` | `tf2` | sim -> RViz | 模拟底盘积分位姿；`base_footprint -> base_link` 由 robot_state_publisher 发布 |
 
 键盘 -> 车体速度统一调用 `mecanum.keys_to_body()`，轮速统一调用

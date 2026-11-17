@@ -10,7 +10,9 @@
 2. 机器人 ``robot_description``（URDF + Gazebo 插件）spawn 到入口外侧出生点；
 3. ``robot_state_publisher`` 发布 URDF→TF 树；
 4. Gazebo 插件发布 ``/clock``、``/joint_states``、``/odom``、TF ``odom->base_footprint``；
-5. 可选：``teleop:=keyboard|gui`` 遥控、``rviz:=true``、``gui:=true``（gzclient）。
+5. Mid-360 激光雷达 + IMU 模拟（``robot_state_publicer``）：``/livox/lidar``（10 Hz）、
+   ``/livox/imu``（~150-200 Hz），``lidar:=false`` 可关；
+6. 可选：``teleop:=keyboard|gui`` 遥控、``rviz:=true``、``gui:=true``（gzclient）。
 
 本 launch 是对 ``robot_control`` 包内 ``gazebo.launch.py`` 的**统一入口封装**：
 默认参数/话题/插件行为与它保持一致，参数名一一透传，便于比赛现场只用一条命令。
@@ -44,6 +46,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, LogInfo, OpaqueFunction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 
 
 #: 与 robot_control/gazebo.launch.py 完全一致的一键启动参数（名字/默认值/说明）
@@ -60,6 +63,9 @@ ARG_SPECS = [
     ("verbose", "false", "gzserver 是否 --verbose"),
     ("model_name", "zhirong_robot", "Gazebo 中机器人模型名"),
     ("pause", "false", "gzserver 是否以暂停状态启动"),
+    ("lidar", "true", "是否启用激光雷达/IMU 数据（false 等价 lidar_sim:=off）"),
+    ("lidar_sim", "gazebo", "雷达数据源：gazebo=Gazebo 传感器真实场景射线点云+200Hz IMU（默认）；"
+     "python=robot_state_publicer 合成点云/IMU；off=关闭"),
 ]
 
 #: 需要透传给 robot_control/gazebo.launch.py 的参数
@@ -76,6 +82,7 @@ _FORWARD_ARGS = (
     "verbose",
     "model_name",
     "pause",
+    "lidar_sensors",
 )
 
 
@@ -87,6 +94,18 @@ def _robot_control_launch() -> str:
         raise RuntimeError(
             "bring_up: 找不到 robot_control 的 gazebo.launch.py：{}\n"
             "  请先在工作空间根目录 colcon build 并 source install/setup.bash".format(path)
+        )
+    return path
+
+
+def _lidar_launch() -> str:
+    """定位 robot_state_publicer 包内的 mid360_sim.launch.py（安装后 share 目录）。"""
+    share = get_package_share_directory("robot_state_publicer")
+    path = os.path.join(share, "launch", "mid360_sim.launch.py")
+    if not os.path.isfile(path):
+        raise RuntimeError(
+            "bring_up: 找不到 robot_state_publicer 的 mid360_sim.launch.py：{}\n"
+            "  请先 colcon build robot_state_publicer 并 source install/setup.bash".format(path)
         )
     return path
 
@@ -106,12 +125,58 @@ def _launch_setup(context):
             )
         )
     ]
+    lidar_ok = str(cfg.get("lidar", "true")).lower() in ("1", "true", "yes", "on")
+    lidar_sim = str(cfg.get("lidar_sim", "gazebo")).lower()
+    if not lidar_ok:
+        lidar_sim = "off"
+    if lidar_sim not in ("gazebo", "python", "off"):
+        raise RuntimeError("bring_up: lidar_sim 只能是 gazebo / python / off，收到：{}".format(lidar_sim))
+
     actions.append(
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(_robot_control_launch()),
-            launch_arguments={name: LaunchConfiguration(name) for name in _FORWARD_ARGS}.items(),
+            launch_arguments={
+                **{name: LaunchConfiguration(name) for name in _FORWARD_ARGS},
+                # Gazebo 传感器只在 lidar_sim:=gazebo 时拼进 URDF（随机器人 spawn）
+                "lidar_sensors": "true" if lidar_sim == "gazebo" else "false",
+            }.items(),
         )
     )
+
+    # 合成点云/IMU 数据源（robot_state_publicer）：仅 lidar_sim:=python 时启动，
+    # 与 Gazebo 传感器模式互斥，避免同话题双发布。
+    if lidar_sim == "python":
+        actions.append(
+            LogInfo(msg="[bring_up] 启动 Livox Mid-360 合成数据源（/livox/lidar, /livox/imu；robot_state_publicer）")
+        )
+        actions.append(
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(_lidar_launch()),
+                launch_arguments={
+                    # 节点内部定时器按真实时间跑（否则 /clock 只有 10 Hz，IMU 只能 ~20 Hz）；
+                    # 消息时间戳由 /clock 插值成 Gazebo 仿真时间，与其它节点保持一致。
+                    "use_sim_time": "false",
+                    "stamp_from_sim_clock": "true",
+                    "frame_id": "livox_mid360_link",
+                    "publish_tf": "false",
+                }.items(),
+            )
+        )
+    elif lidar_sim == "gazebo":
+        actions.append(
+            LogInfo(msg="[bring_up] 激光雷达数据源=gazebo（Gazebo ray 传感器真实场景点云 + 200 Hz IMU）")
+        )
+        # 需求文档两种拼写都出现过：Gazebo 模式补一个 /livix/lidar 别名
+        actions.append(
+            Node(
+                package="robot_state_publicer",
+                executable="livix_relay",
+                name="livix_relay",
+                output="screen",
+            )
+        )
+    else:
+        actions.append(LogInfo(msg="[bring_up] 激光雷达/IMU 已关闭（lidar_sim:=off）"))
     return actions
 
 

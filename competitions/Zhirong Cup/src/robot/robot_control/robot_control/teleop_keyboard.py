@@ -356,22 +356,6 @@ class FocusModeController:
         """最近一次开启/失败的中文说明。"""
         return self._last_message
 
-    def pressed_keys(self):
-        """查询当前物理按住的按键集合；不可用/假 grab 时返回 ``None``。
-
-        专注模式下不依赖 X11 自动重复事件：主循环每个 tick 用物理键盘位图
-        同步 hold 状态，物理按住就一直动，物理松开立即停。
-        """
-        if not self._active or self._grab is None:
-            return None
-        getter = getattr(self._grab, "pressed_keys", None)
-        if getter is None:
-            return None
-        try:
-            return getter()
-        except Exception:
-            return None
-
     @staticmethod
     def availability() -> tuple[bool, str]:
         """检查当前环境是否支持 X11 全局抓取（转调 focus_grab）。"""
@@ -619,9 +603,6 @@ class TeleopKeyboard(Node):
                     break
             if not self._running:
                 break
-            # 专注模式：用 XQueryKeymap 物理状态精确同步长按（不依赖自动重复）。
-            if self._focus.active:
-                self._sync_global_hold()
 
             now = time.monotonic()
             if now >= next_tick:
@@ -686,37 +667,6 @@ class TeleopKeyboard(Node):
         # X11 自动重复是 press/release 成对事件：按下与松开都刷新 hold，
         # 物理松开后 stale_timeout 内没有新事件才自动停车（与终端一致）。
         self._hold.press(name, time.monotonic())
-
-    def _sync_global_hold(self) -> None:
-        """专注模式下按物理键盘位图同步 hold 状态。
-
-        终端/X11 自动重复可能不稳定，只靠事件续命会导致长按被 stale_timeout
-        误停。这里以 X 服务器键盘位图为准：物理按住就一直动，物理松开立即停；
-        空格仍然立即急停，K 由事件切换不参与同步。
-        """
-        pressed = self._focus.pressed_keys()
-        if pressed is None:
-            return
-        now = time.monotonic()
-        active: set[str] = set()
-        for name in pressed:
-            if not isinstance(name, str):
-                continue
-            if is_toggle_key(name):
-                continue
-            action = key_action(name)
-            if action is None:
-                continue
-            if action == "stop":
-                # 空格在物理按下期间始终急停（急停优先于其它方向键）。
-                self._hold.clear()
-                return
-            active.add(name)
-        for key in self._hold.keys:
-            if key not in active:
-                self._hold.release(key)
-        for key in active:
-            self._hold.press(key, now)
 
     def _publish_hold(self, now: float) -> None:
         """清理过期按键，按当前仍"按住"的键计算并发布速度。"""

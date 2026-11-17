@@ -17,7 +17,7 @@
 | 按 Word 地图创建场景 | `src/maps/zhirong_maps`：world `worlds/zhirong_arena.world`（SDF 1.6，42 个 include），30 个模型（全部 box/cylinder 拼装、无外部 mesh/纹理/fuel 依赖），俯视布置图 `docs/plan.png`，2D 占据栅格 `maps/zhirong_arena.pgm/.yaml` |
 | 地图放在 `.../src/maps` | ✅ `Zhirong Cup/src/maps/zhirong_maps/` |
 | 把工作区完成的机器人建模和控制放进去 | `src/robot/robot_description`（URDF + Gazebo 标签）与 `src/robot/robot_control`（`gazebo.launch.py`、插件配置、遥控节点、166 个单测、文档） |
-| 启动测试 | 在 `Zhirong Cup` 工作空间 `colcon build` + `ros2 launch robot_control gazebo.launch.py` 全流程 headless 实测通过（见第 4 节） |
+| 启动测试 | 在 `Zhirong Cup` 工作空间 `colcon build` + `ros2 launch bring_up bring_up.launch.py` 全流程 headless 实测通过（含 Mid-360 雷达/IMU，见第 4 节） |
 
 场景依据：规则文档图 2「比赛场地简略图」（5 m×5 m、16 单元格、红边界、黄/桔/红三区、
 L/T/工型障碍、斜坡 1/2、入口/出口）、图 4 斜坡规格（1200×1200×19 / 600×1200×19 mm）、
@@ -95,6 +95,20 @@ bash scripts/run_sim.sh gui:=false rviz:=false teleop:=none
 驱动闭环检查 `verification/check_gazebo_drive.py`，日志在 `verification/logs/`。
 同一套检查在开发工作区（`competition_ws`）与交付工作区（`Zhirong Cup`）各跑一次，
 均为 `ACCEPTANCE: PASS`。
+
+## 4.1 激光雷达 / IMU 模拟（bring_up 集成）
+
+`bring_up` 默认启用 Mid-360（`lidar_sim:=gazebo`）：
+
+* **数据源 = Gazebo 传感器**（`robot_control/config/livox_mid360_sensors.xml`，随机器人 URDF 一起 spawn）：
+  - ray 传感器对**比赛场景**做真实射线 -> `/livox/lidar`（PointCloud2，10 Hz、240×8 线、0.35–40 m，
+    `frame_id=livox_mid360_link`），`/livix/lidar` 由 relay 节点补别名；
+  - imu 传感器 -> `/livox/imu`（**200 Hz**，含重力 9.80665，`frame_id=livox_mid360_link`）。
+* 备选：`lidar_sim:=python` 用 `robot_state_publicer` 的**合成**点云/IMU
+  （20000 点/帧、`point_step=26`；IMU ~150–160 Hz，时间戳用 `/clock` 插值）；`lidar_sim:=off` 关闭。
+* 验收脚本已包含两种模式的检查：点云帧率/点数/范围、IMU 帧率、frame、时间戳与 `/clock` 偏差。
+  默认 gazebo 模式实测：`/livox/lidar` 10.0 Hz、385 点/帧（真实场景）、时间戳偏差 0.05 s；
+  `/livox/imu` 199.9 Hz；`/livix/lidar` 别名正常。
 
 ## 5. 截图（Gazebo 相机实渲，非示意图，位于 `docs/sim_verification/`）
 

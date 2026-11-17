@@ -89,6 +89,20 @@ bash scripts/run_sim.sh gui:=false rviz:=false teleop:=none
 同一套检查在开发工作区（`competition_ws`）与交付工作区（`Zhirong Cup`）各跑一次，
 均为 `ACCEPTANCE: PASS`。
 
+## 4.1 激光雷达 / IMU（bring_up 集成，2026-11-17）
+
+`bring_up` 默认拉起 `robot_state_publicer` 的 Mid-360 模拟节点（`lidar:=false` 可关）：
+
+- `/livox/lidar`：PointCloud2，10 Hz、20000 点/帧、`point_step=26`，frame=`livox_mid360_link`
+- `/livox/imu`：~150–200 Hz，frame=`livox_mid360_link`
+- `/livix/lidar`：别名话题
+
+Gazebo 的 `/clock` 只有 ~10 Hz：若节点 `use_sim_time:=true`，ROS 定时器会被限制到 ~20 Hz；
+因此集成改为「定时器按真实时间运行 + 消息时间戳用 `/clock` 插值」（`stamp_from_sim_clock:=true`），
+并用 MultiThreadedExecutor 把点云生成与 IMU 发布分到不同回调组。实测：点云 10.0 Hz、
+IMU ~154 Hz、时间戳与 `/clock` 偏差 <0.05 s；`robot_control` 169 单测与
+`robot_state_publicer` 1 单测通过；验收脚本已加入点云/IMU 检查（PASS=5 FAIL=0）。
+
 ## 5. 截图（Gazebo 相机实渲，非示意图，位于 `docs/sim_verification/`）
 
 `arena_sw_oblique.png`（全景）、`arena_overview.png`、`arena_se_oblique.png`、

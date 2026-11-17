@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # 比赛工作区 Gazebo 启动验收（headless）
-# 1) colcon 构建 3 个包  2) 一把 ros2 launch 起 Gazebo+机器人
+# 1) colcon 构建 5 个包  2) 一把 ros2 launch bring_up 起 Gazebo+机器人+Mid-360 雷达
 # 3) 检查 /clock /joint_states /odom /tf  4) 发 /cmd_vel 验证全向运动
-# 5) 检查场景关键模型是否加载  6) 收尾清理进程
+# 5) 检查场景关键模型 + 激光雷达点云/IMU（/livox/lidar、/livox/imu）  6) 收尾清理进程
 set -o pipefail
 WS="/home/nepenthe/zmf/linux_code/dsh工作区"
 CWS="${CWS_OVERRIDE:-$WS/competition_ws}"
@@ -51,17 +51,17 @@ if [ "${SKIP_BUILD:-0}" = "1" ]; then
 else
   note "----- [1/6] colcon build -----"
   ( cd "$CWS" && source /opt/ros/humble/setup.bash && \
-    colcon build --packages-select robot_description robot_control zhirong_maps \
+    colcon build --packages-select robot_description robot_control zhirong_maps robot_state_publicer bring_up \
         --symlink-install --event-handlers console_direct+ ) > "$LOGD/build.log" 2>&1
   check "colcon build 成功" $?
   tail -3 "$LOGD/build.log" | tee -a "$LOGD/summary.txt"
 fi
 
 # ---------- 2. 启动 launch ----------
-note "----- [2/6] ros2 launch robot_control gazebo.launch.py -----"
+note "----- [2/6] ros2 launch bring_up bring_up.launch.py（含 Mid-360 雷达）-----"
 ( cd "$CWS" && source install/setup.bash && \
-  exec ros2 launch robot_control gazebo.launch.py gui:=false rviz:=false teleop:=none \
-       verbose:=true ) > "$LOGD/launch.log" 2>&1 &
+  exec ros2 launch bring_up bring_up.launch.py gui:=false rviz:=false teleop:=none \
+       verbose:=true lidar:=true ) > "$LOGD/launch.log" 2>&1 &
 LPID=$!
 sleep 2
 note "launch pid=$LPID"
@@ -73,6 +73,23 @@ for i in $(seq 1 90); do
   sleep 1
 done
 check "gzserver 发布 /clock（仿真时钟运行）" $CLOCK_OK
+
+# ---------- 2b. Mid-360 激光雷达 / IMU 数据检查 ----------
+note "----- [2b] Mid-360 激光雷达/IMU 数据检查 -----"
+LIDAR_OK=1
+for i in $(seq 1 40); do
+  if ( cd "$CWS" && source install/setup.bash && timeout 3 ros2 topic echo /livox/lidar --once >/dev/null 2>&1 ); then
+    LIDAR_OK=0; note " /livox/lidar 在 ${i}s 后可用"; break
+  fi
+  sleep 1
+done
+check "Mid-360 点云话题 /livox/lidar 有数据" $LIDAR_OK
+if [ "$LIDAR_OK" -eq 0 ]; then
+  ( cd "$CWS" && source install/setup.bash && \
+    timeout 60 python3 "$WS/verification/check_lidar.py" gazebo ) > "$LOGD/lidar_check.log" 2>&1
+  check "Mid-360 点云/IMU 帧率、frame、点结构检查" $?
+  cat "$LOGD/lidar_check.log" | tee -a "$LOGD/summary.txt"
+fi
 
 # ---------- 3. 模型加载检查 ----------
 note "----- [3/6] 场景模型 & 机器人加载检查 -----"
@@ -96,7 +113,7 @@ timeout 5 gz model -m zhirong_robot -p | tee "$LOGD/robot_pose_end.txt" | sed 's
 # ---------- 5. 话题/TF 汇总 ----------
 note "----- [5/6] 话题 & TF 汇总 -----"
 ( cd "$CWS" && source install/setup.bash && timeout 10 ros2 topic list ) > "$LOGD/topics.txt" 2>&1
-for t in /clock /odom /joint_states /cmd_vel /tf /robot_description; do
+for t in /clock /odom /joint_states /cmd_vel /tf /robot_description /livox/lidar /livox/imu /livix/lidar; do
   if grep -qx "$t" "$LOGD/topics.txt"; then note "  话题存在: $t"; else note "  [警告] 话题缺失: $t"; fi
 done
 ( cd "$CWS" && source install/setup.bash && timeout 10 ros2 run tf2_ros tf2_echo odom base_footprint ) > "$LOGD/tf_echo.log" 2>&1 &
@@ -113,6 +130,7 @@ pkill -TERM -x gzserver 2>/dev/null
 pkill -TERM -x gzclient 2>/dev/null
 sleep 2
 pkill -KILL -x gzserver 2>/dev/null
+pkill -f mid360_sim 2>/dev/null
 REMAIN=$(pgrep -xc gzserver 2>/dev/null || true)
 note "残留 gzserver: ${REMAIN:-0}"
 

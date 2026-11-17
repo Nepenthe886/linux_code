@@ -1,0 +1,57 @@
+[INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-22-35-09-168517-nepenthe-pc-31
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+[INFO] [launch.user]: [gazebo.launch.py] 未附加 Gazebo 传感器（lidar_sensors:=false）
+[INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+[INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+[INFO] [launch.user]: [bring_up] 启动 Livox Mid-360 合成数据源（/livox/lidar, /livox/imu；robot_state_publicer）
+[INFO] [bash-1]: process started with pid [33]
+[INFO] [spawn_entity.py-2]: process started with pid [35]
+[INFO] [robot_state_publisher-3]: process started with pid [37]
+[INFO] [mid360_sim-4]: process started with pid [39]
+[robot_state_publisher-3] [INFO] [1794926109.261792313] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794926109.261844159] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794926109.261849249] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794926109.261852759] [robot_state_publisher]: got segment camera_optical_frame
+[robot_state_publisher-3] [INFO] [1794926109.261856319] [robot_state_publisher]: got segment livox_mid360_link
+[robot_state_publisher-3] [INFO] [1794926109.261859368] [robot_state_publisher]: got segment wheel_front_left_link
+[robot_state_publisher-3] [INFO] [1794926109.261862518] [robot_state_publisher]: got segment wheel_front_right_link
+[robot_state_publisher-3] [INFO] [1794926109.261865498] [robot_state_publisher]: got segment wheel_rear_left_link
+[robot_state_publisher-3] [INFO] [1794926109.261868458] [robot_state_publisher]: got segment wheel_rear_right_link
+[spawn_entity.py-2] [INFO] [1794926109.415355505] [spawn_robot]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794926109.415591140] [spawn_robot]: Loading entity published on topic robot_description
+[spawn_entity.py-2] [INFO] [1794926109.416611938] [spawn_robot]: Waiting for entity xml on robot_description
+[spawn_entity.py-2] [INFO] [1794926109.427756756] [spawn_robot]: Waiting for service /spawn_entity, timeout = 120
+[spawn_entity.py-2] [INFO] [1794926109.428015040] [spawn_robot]: Waiting for service /spawn_entity
+[mid360_sim-4] [INFO] [1794926109.445162161] [mid360_sim]: Mid-360 simulator: 20000 pts @ 10 Hz on /livox/lidar (+ alias /livix/lidar), IMU 200 Hz on /livox/imu, frame=livox_mid360_link
+[spawn_entity.py-2] [INFO] [1794926110.181077145] [spawn_robot]: Calling service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794926110.430841720] [spawn_robot]: Spawn status: SpawnEntity: Successfully spawned entity [zhirong_robot]
+[bash-1] [INFO] [1794926110.438762045] [gazebo_ros_planar_move]: Subscribed to [/cmd_vel]
+[bash-1] [INFO] [1794926110.439803992] [gazebo_ros_planar_move]: Advertise odometry on [/odom]
+[bash-1] [INFO] [1794926110.440883316] [gazebo_ros_planar_move]: Publishing odom transforms between [odom] and [base_footprint]
+[bash-1] [INFO] [1794926110.444808046] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_left_joint]
+[bash-1] [INFO] [1794926110.444825245] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_front_right_joint]
+[bash-1] [INFO] [1794926110.444830244] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_left_joint]
+[bash-1] [INFO] [1794926110.444834064] [gazebo_ros_joint_state_publisher]: Going to publish joint [wheel_rear_right_joint]
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 35]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [mid360_sim-4]: sending signal 'SIGINT' to process[mid360_sim-4]
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[INFO] [bash-1]: sending signal 'SIGINT' to process[bash-1]
+[robot_state_publisher-3] [INFO] [1794926126.692811970] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[mid360_sim-4] Traceback (most recent call last):
+[mid360_sim-4]   File "/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_state_publicer/lib/robot_state_publicer/mid360_sim", line 33, in <module>
+[mid360_sim-4]     sys.exit(load_entry_point('robot-state-publicer', 'console_scripts', 'mid360_sim')())
+[mid360_sim-4]   File "/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/build/robot_state_publicer/robot_state_publicer/mid360_sim_node.py", line 253, in main
+[mid360_sim-4]     rclpy.shutdown()
+[mid360_sim-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+[mid360_sim-4]     _shutdown(context=context)
+[mid360_sim-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+[mid360_sim-4]     return context.shutdown()
+[mid360_sim-4]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+[mid360_sim-4]     self.__context.shutdown()
+[mid360_sim-4] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 37]
+[ERROR] [mid360_sim-4]: process has died [pid 39, exit code 1, cmd '/home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_state_publicer/lib/robot_state_publicer/mid360_sim --ros-args -r __node:=mid360_sim --params-file /home/nepenthe/zmf/linux_code/dsh工作区/competition_ws/install/robot_state_publicer/share/robot_state_publicer/config/mid360_sim.yaml --params-file /tmp/launch_params_uw_ef5ek'].
+[INFO] [bash-1]: process has finished cleanly [pid 33]
+[INFO] [launch]: process[bash-1] was required: shutting down launched system

@@ -1,0 +1,12 @@
+1794926308.7281537 [INFO] [launch]: All log files can be found below /home/nepenthe/zmf/linux_code/dsh工作区/ros_logs/2026-11-17-22-38-28-727688-nepenthe-pc-36
+1794926308.7282252 [INFO] [launch]: Default logging verbosity is set to INFO
+1794926308.7488601 [INFO] [launch.user]: [bring_up] 一键启动：Gazebo 比赛场景 + 机器人 + TF + 插件（gui=false, rviz=false, teleop=none）
+1794926308.7703497 [INFO] [launch.user]: [gazebo.launch.py] 已附加 Mid-360 Gazebo 传感器：/livox/lidar（真实场景射线，10 Hz、360°×24 线）、/livox/imu（200 Hz）
+1794926308.7703981 [INFO] [launch.user]: [gazebo.launch.py] world = /home/nepenthe/zmf/linux_code/competitions/Zhirong Cup/install/zhirong_maps/share/zhirong_maps/worlds/zhirong_arena.world（来源：zhirong_maps）
+1794926308.7704277 [INFO] [launch.user]: [gazebo.launch.py] gzserver 启动中（headless 模式，渲染关闭）……
+1794926308.8023906 [INFO] [launch.user]: [bring_up] 激光雷达数据源=gazebo（Gazebo ray 传感器真实场景点云 + 200 Hz IMU）
+1794926308.8045421 [INFO] [bash-1]: process started with pid [46]
+1794926308.8046029 [INFO] [spawn_entity.py-2]: process started with pid [48]
+1794926308.8046377 [INFO] [robot_state_publisher-3]: process started with pid [50]
+1794926308.8046756 [INFO] [livix_relay-4]: process started with pid [52]
+1794926310.4458218 [INFO] [spawn_entity.py-2]: process has finished cleanly [pid 48]

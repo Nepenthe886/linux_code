@@ -22,7 +22,8 @@ ros2 launch bring_up bring_up.launch.py
 | 2 | 机器人 `robot_description`（URDF + Gazebo 插件）spawn 到入口外侧 `(2.90, 1.60, yaw=π)` |
 | 3 | `robot_state_publisher` 发布 URDF→TF 树 |
 | 4 | Gazebo 插件发布 `/clock`、`/joint_states`、`/odom`、TF `odom→base_footprint` |
-| 5 | 可选：`teleop:=keyboard|gui` 遥控、`rviz:=true`、`gui:=true`（gzclient） |
+| 5 | **Mid-360 激光雷达 + IMU 模拟**（`robot_state_publicer/mid360_sim.launch.py`）：`/livox/lidar`（10 Hz、20000 点/帧、PointCloud2）、`/livox/imu`（~150–200 Hz），`lidar:=false` 可关 |
+| 6 | 可选：`teleop:=keyboard|gui` 遥控、`rviz:=true`、`gui:=true`（gzclient） |
 
 ## 2. 启动方式
 
@@ -56,6 +57,36 @@ ros2 launch bring_up bring_up.launch.py rviz:=true
 | `verbose` | `false` | gzserver `--verbose` |
 | `model_name` | `zhirong_robot` | Gazebo 模型名（`gz model -m zhirong_robot -p` 可查位姿） |
 | `pause` | `false` | gzserver 是否以暂停状态启动 |
+| `lidar` | `true` | 是否启动 Mid-360 激光雷达/IMU 模拟（`robot_state_publicer`） |
+
+### 3.1 激光雷达（Mid-360）说明
+
+`lidar_sim` 决定数据源（默认 `gazebo`）：
+
+| `lidar_sim` | 点云 | IMU | 说明 |
+| --- | --- | --- | --- |
+| `gazebo`（默认） | `gzserver` 里 Mid-360 ray 传感器对**比赛场景**做真实射线：`/livox/lidar`（10 Hz、240×8 线、0.35–40 m，PointCloud2）+ 别名 `/livix/lidar` | Gazebo imu 传感器：`/livox/imu`（**200 Hz**，含重力） | 传感器块随 URDF 一起 spawn（`lidar_sensors:=true`），落地即真实场景点云，适合建图/避障联调 |
+| `python` | `robot_state_publicer` 合成点云：`/livox/lidar`、`/livix/lidar`（10 Hz、20000 点/帧、Livox 26 字节结构） | 合成 IMU：`/livox/imu`（~150–160 Hz） | 不需要 Gazebo 传感器，纯算法联调/无场景依赖时用（`lidar_sim:=python`） |
+| `off` | 关闭（`lidar:=false` 等价） | 关闭 | 省 CPU |
+
+公共约定：
+
+* **frame 统一为 `livox_mid360_link`**（URDF 中 `base_link` 上方 0.10 m）；TF 由 `robot_state_publisher` 提供。
+* `gazebo` 模式的点云是**比赛场景的真实射线结果**（围挡/工型/斜坡/边界都会出现在点云里）；
+  `range.min=0.35 m` 是为了滤掉雷达自身/车体近场遮挡（车体到雷达约 0.25–0.30 m）。
+* `python` 模式的合成点云是"通用室内占位"（地面/墙/箱体），**不是比赛场景**；此时节点
+  内部定时器按真实时间跑、消息时间戳用 `/clock` 插值（Gazebo `/clock` 只有 ~10 Hz，
+  用 `use_sim_time:=true` 会把 IMU 限制到 ~20 Hz）。
+* 两种模式的 `/livox/lidar` 帧率都是 ~10 Hz；IMU 在 `gazebo` 模式是标准 200 Hz。
+
+查看数据：
+
+```bash
+ros2 topic hz /livox/lidar     # ~10 Hz
+ros2 topic hz /livox/imu       # gazebo 模式 ~200 Hz；python 模式 ~150-160 Hz
+ros2 topic echo --once /livox/imu
+# RViz2：Fixed Frame 选 livox_mid360_link 或 odom，添加 PointCloud2 -> /livox/lidar
+```
 
 ## 4. 启动后自检 / 遥控
 
